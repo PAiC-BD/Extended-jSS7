@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<connectdelay value="10000"/>
+<congControl_DelayThreshold_1 value="2.5"/>
+<congControl_DelayThreshold_2 value="8.0"/>
+<congControl_DelayThreshold_3 value="14.0"/>
+<congControl_BackToNormalDelayThreshold_1 value="1.5"/>
+<congControl_BackToNormalDelayThreshold_2 value="5.5"/>
+<congControl_BackToNormalDelayThreshold_3 value="10.0"/>
+<servers/>
+<associations>
+	<name value="clientAssociation"/>
+	<association name="clientAssociation" assoctype="CLIENT" hostAddress="45.79.17.57" hostPort="2345" peerAddress="45.79.14.89" peerPort="3434" ipChannelType="0" extraHostAddresseSize="0"/>
+</associations>

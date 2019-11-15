@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Export-Package: org.restcomm.ss7.management.console;uses:="org.restcom
+ m.ss7.management.transceiver,org.jboss.jreadline.complete,org.jboss.j
+ readline.console,org.jboss.jreadline.console.settings,org.jboss.jread
+ line.history,org.jboss.jreadline.util"
+Implementation-Title: org.restcomm.protocols.ss7.management:shell-clie
+ nt
+Implementation-Version: 8.0.0-170
+Built-By: root
+Tool: Bnd-1.15.0
+Bundle-Name: Restcomm jSS7 :: Management :: shell-client
+Created-By: Apache Maven Bundle Plugin
+Implementation-URL: http://www.restcomm.org
+Implementation-Vendor-Id: TeleStax, Inc.
+Build-Jdk: 1.7.0_80
+Bundle-Version: 8.0.0.170
+Bnd-LastModified: 1566929148725
+Bundle-ManifestVersion: 2
+Bundle-Description: Restcomm :: Parent pom for 2.x releases
+Bundle-License: http://www.gnu.org/licenses/agpl-3.0.html
+Import-Package: org.jboss.jreadline.complete,org.jboss.jreadline.conso
+ le,org.jboss.jreadline.console.settings,org.jboss.jreadline.history,o
+ rg.jboss.jreadline.util,org.restcomm.ss7.management.transceiver
+Bundle-SymbolicName: org.restcomm.protocols.ss7.management.shell-clien
+ t
+

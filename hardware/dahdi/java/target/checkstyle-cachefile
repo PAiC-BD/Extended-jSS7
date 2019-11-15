@@ -1,0 +1,9 @@
+#Tue Aug 27 18:06:55 UTC 2019
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/dahdi/java/src/main/java/org/mobicents/ss7/hardware/dahdi/SelectorKeyImpl.java=1563968420000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/dahdi/java/src/main/java/org/mobicents/ss7/hardware/dahdi/oam/DahdiLink.java=1563981488000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/dahdi/java/src/main/java/org/mobicents/ss7/hardware/dahdi/oam/DahdiLinksetFactory.java=1563981220000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/dahdi/java/src/main/java/org/mobicents/ss7/hardware/dahdi/oam/DahdiLinkset.java=1563981320000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/dahdi/java/src/main/java/org/mobicents/ss7/hardware/dahdi/Channel.java=1563981582000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/dahdi/java/src/main/java/org/mobicents/ss7/hardware/dahdi/Selector.java=1563982426000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/dahdi/java/src/main/java/org/mobicents/ss7/hardware/dahdi/DahdiMtp3UserPart.java=1563982426000
+configuration*?=064C630F9D56B266BA951EDBEBD445CD0984D252

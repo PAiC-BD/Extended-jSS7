@@ -1,0 +1,17 @@
+#Tue Aug 27 18:06:43 UTC 2019
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/statistics/impl/src/main/java/org/restcomm/protocols/ss7/oam/common/statistics/CounterLayer.java=1565883803000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/statistics/impl/src/main/java/org/restcomm/protocols/ss7/oam/common/statistics/CounterValueImpl.java=1565883803000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/statistics/impl/src/main/java/org/restcomm/protocols/ss7/oam/common/statistics/CounterValueSetImpl.java=1565883803000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/statistics/impl/src/main/java/org/restcomm/protocols/ss7/oam/common/statistics/SourceValueObjectImpl.java=1565883803000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/statistics/impl/src/main/java/org/restcomm/protocols/ss7/oam/common/statistics/CounterDefImpl.java=1565883803000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/statistics/impl/src/main/java/org/restcomm/protocols/ss7/oam/common/statistics/CounterCampaignMap.java=1565883803000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/statistics/impl/src/main/java/org/restcomm/protocols/ss7/oam/common/statistics/ComplexValueImpl.java=1565883803000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/statistics/impl/src/main/java/org/restcomm/protocols/ss7/oam/common/statistics/SourceValueCounterImpl.java=1565883803000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/statistics/impl/src/main/java/org/restcomm/protocols/ss7/oam/common/statistics/CounterCampaignImpl.java=1565883803000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/statistics/impl/src/main/java/org/restcomm/protocols/ss7/oam/common/statistics/CounterProviderManagementMBean.java=1565883803000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/statistics/impl/src/main/java/org/restcomm/protocols/ss7/oam/common/statistics/CounterProviderManagement.java=1565883803000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/statistics/impl/src/main/java/org/restcomm/protocols/ss7/oam/common/statistics/SourceValueSetImpl.java=1565883803000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/statistics/impl/src/main/java/org/restcomm/protocols/ss7/oam/common/statistics/CounterDefSetImpl.java=1565883803000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/statistics/impl/src/main/java/org/restcomm/protocols/ss7/oam/common/statistics/CsvStatsPrinter.java=1565883803000
+configuration*?=B62ED82BA4B16E65CFA85B019B71100DC432AC1A
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/statistics/impl/src/main/java/org/restcomm/protocols/ss7/oam/common/statistics/StatsPrinter.java=1565883803000

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.5">
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-transport/src/main/java/org/restcomm/ss7/management/console/SimplePrincipal.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-transport/src/main/java/org/restcomm/ss7/management/console/Version.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-transport/src/main/java/org/restcomm/ss7/management/transceiver/MessageFactory.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-transport/src/main/java/org/restcomm/ss7/management/transceiver/ShellSelectableChannel.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-transport/src/main/java/org/restcomm/ss7/management/transceiver/ChannelSelector.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-transport/src/main/java/org/restcomm/ss7/management/transceiver/ShellServerChannel.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-transport/src/main/java/org/restcomm/ss7/management/transceiver/Message.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-transport/src/main/java/org/restcomm/ss7/management/transceiver/ChannelSelectionKey.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-transport/src/main/java/org/restcomm/ss7/management/transceiver/ShellChannelExt.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-transport/src/main/java/org/restcomm/ss7/management/transceiver/ShellChannel.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-transport/src/main/java/org/restcomm/ss7/management/transceiver/ChannelException.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-transport/src/main/java/org/restcomm/ss7/management/transceiver/ChannelProvider.java">
+</file>
+</checkstyle>

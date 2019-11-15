@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.5">
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/statistics/impl/src/main/java/org/restcomm/protocols/ss7/statistics/StatDataCollector.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/statistics/impl/src/main/java/org/restcomm/protocols/ss7/statistics/StatCounterCollectionImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/statistics/impl/src/main/java/org/restcomm/protocols/ss7/statistics/StatDataCollectionImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/statistics/impl/src/main/java/org/restcomm/protocols/ss7/statistics/StringLongMap.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/statistics/impl/src/main/java/org/restcomm/protocols/ss7/statistics/StatDataCollectorAbstractImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/statistics/impl/src/main/java/org/restcomm/protocols/ss7/statistics/StatDataCollectorMax.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/statistics/impl/src/main/java/org/restcomm/protocols/ss7/statistics/StatDataCollectorLongImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/statistics/impl/src/main/java/org/restcomm/protocols/ss7/statistics/StatDataCollectorMin.java">
+</file>
+</checkstyle>

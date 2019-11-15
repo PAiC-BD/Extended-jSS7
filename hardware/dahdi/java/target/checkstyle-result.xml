@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.5">
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/dahdi/java/src/main/java/org/mobicents/ss7/hardware/dahdi/SelectorKeyImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/dahdi/java/src/main/java/org/mobicents/ss7/hardware/dahdi/DahdiMtp3UserPart.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/dahdi/java/src/main/java/org/mobicents/ss7/hardware/dahdi/Channel.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/dahdi/java/src/main/java/org/mobicents/ss7/hardware/dahdi/Selector.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/dahdi/java/src/main/java/org/mobicents/ss7/hardware/dahdi/oam/DahdiLinkset.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/dahdi/java/src/main/java/org/mobicents/ss7/hardware/dahdi/oam/DahdiLink.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/dahdi/java/src/main/java/org/mobicents/ss7/hardware/dahdi/oam/DahdiLinksetFactory.java">
+</file>
+</checkstyle>

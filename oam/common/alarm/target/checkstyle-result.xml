@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.5">
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/alarm/src/main/java/org/restcomm/protocols/ss7/oam/common/alarm/AlarmProvider.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/alarm/src/main/java/org/restcomm/protocols/ss7/oam/common/alarm/AlarmListener.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/alarm/src/main/java/org/restcomm/protocols/ss7/oam/common/alarm/CurrentAlarmListImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/alarm/src/main/java/org/restcomm/protocols/ss7/oam/common/alarm/AlarmProviderMBean.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/alarm/src/main/java/org/restcomm/protocols/ss7/oam/common/alarm/AlarmLayer.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/alarm/src/main/java/org/restcomm/protocols/ss7/oam/common/alarm/AlarmMessage.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/alarm/src/main/java/org/restcomm/protocols/ss7/oam/common/alarm/AlarmMessageImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/alarm/src/main/java/org/restcomm/protocols/ss7/oam/common/alarm/AlarmProviderStandardMBean.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/alarm/src/main/java/org/restcomm/protocols/ss7/oam/common/alarm/CurrentAlarmList.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/alarm/src/main/java/org/restcomm/protocols/ss7/oam/common/alarm/AlarmMediator.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/alarm/src/main/java/org/restcomm/protocols/ss7/oam/common/alarm/AlarmNotification.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/alarm/src/main/java/org/restcomm/protocols/ss7/oam/common/alarm/AlarmListenerCollection.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/alarm/src/main/java/org/restcomm/protocols/ss7/oam/common/alarm/AlarmSeverity.java">
+</file>
+</checkstyle>

@@ -1,0 +1,46 @@
+Manifest-Version: 1.0
+Export-Package: org.restcomm.protocols.ss7.inap.api;uses:="org.restcom
+ m.protocols.ss7.isup.message.parameter,org.restcomm.protocols.ss7.ina
+ p.api.isup,org.restcomm.protocols.ss7.inap.api.primitives",org.restco
+ mm.protocols.ss7.inap.api.EsiBcsm;uses:="org.restcomm.protocols.ss7.i
+ nap.api.isup",org.restcomm.protocols.ss7.inap.api.charging;uses:="org
+ .restcomm.protocols.ss7.inap.api.primitives",org.restcomm.protocols.s
+ s7.inap.api.primitives;uses:="org.restcomm.protocols.ss7.inap.api.ser
+ vice.circuitSwitchedCall.primitive,org.restcomm.protocols.ss7.inap.ap
+ i.isup",org.restcomm.protocols.ss7.inap.api.isup;uses:="org.restcomm.
+ protocols.ss7.isup.message.parameter,org.restcomm.protocols.ss7.inap.
+ api,org.restcomm.protocols.ss7.isup.message.parameter.accessTransport
+ ",org.restcomm.protocols.ss7.inap.api.service.circuitSwitchedCall;use
+ s:="org.restcomm.protocols.ss7.inap.api.service.circuitSwitchedCall.p
+ rimitive,org.restcomm.protocols.ss7.map.api.primitives,org.restcomm.p
+ rotocols.ss7.inap.api.isup,org.restcomm.protocols.ss7.inap.api.primit
+ ives,org.restcomm.protocols.ss7.map.api.service.callhandling,org.rest
+ comm.protocols.ss7.map.api.service.mobility.subscriberInformation,org
+ .restcomm.protocols.ss7.map.api.service.mobility.subscriberManagement
+ ",org.restcomm.protocols.ss7.inap.api.service.circuitSwitchedCall.pri
+ mitive;uses:="org.restcomm.protocols.ss7.map.api.primitives,org.restc
+ omm.protocols.ss7.inap.api.isup,org.restcomm.protocols.ss7.inap.api.E
+ siBcsm,org.restcomm.protocols.ss7.inap.api.primitives,org.restcomm.pr
+ otocols.ss7.inap.api.charging"
+Implementation-Title: org.restcomm.protocols.ss7.inap:inap-api
+Implementation-Version: 8.0.0-170
+Built-By: root
+Tool: Bnd-1.15.0
+Bundle-Name: Restcomm jSS7 :: INAP :: Api :: inap-api
+Created-By: Apache Maven Bundle Plugin
+Implementation-URL: http://www.restcomm.org
+Implementation-Vendor-Id: TeleStax, Inc.
+Build-Jdk: 1.7.0_80
+Bundle-Version: 8.0.0.170
+Bnd-LastModified: 1566929190109
+Bundle-ManifestVersion: 2
+Bundle-License: http://www.gnu.org/licenses/agpl-3.0.html
+Bundle-Description: Restcomm :: Parent pom for 2.x releases
+Import-Package: org.restcomm.protocols.ss7.isup.message.parameter,org.
+ restcomm.protocols.ss7.isup.message.parameter.accessTransport,org.res
+ tcomm.protocols.ss7.map.api.primitives,org.restcomm.protocols.ss7.map
+ .api.service.callhandling,org.restcomm.protocols.ss7.map.api.service.
+ mobility.subscriberInformation,org.restcomm.protocols.ss7.map.api.ser
+ vice.mobility.subscriberManagement
+Bundle-SymbolicName: org.restcomm.protocols.ss7.inap.api
+

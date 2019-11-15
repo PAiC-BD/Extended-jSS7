@@ -1,0 +1,973 @@
+[2019-08-19 11:50:06,729] INFO     0[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:839) - Starting ...
+[2019-08-19 11:50:06,731] INFO     2[pool-2-thread-3] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:81) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MessageReassemblyTestStack1_management2.xml
+[2019-08-19 11:50:06,732] INFO     3[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:852) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MessageSegmentationTestStack_management2.xml
+[2019-08-19 11:50:06,732] WARN     3[pool-2-thread-3] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:86) - Failed to load the Sccp Management configuration file. 
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MessageReassemblyTestStack1_management2.xml (No such file or directory)
+[2019-08-19 11:50:06,733] WARN     4[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:857) - Failed to load the Sccp Management configuration file. 
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MessageSegmentationTestStack_management2.xml (No such file or directory)
+[2019-08-19 11:50:06,734] INFO     5[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MessageSegmentationTestStack_sccprouter3.xml
+[2019-08-19 11:50:06,735] INFO     6[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:06,736] INFO     7[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MessageSegmentationTestStack_sccpresource2.xml
+[2019-08-19 11:50:06,736] INFO     7[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:06,737] INFO     8[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:878) - Starting routing engine...
+[2019-08-19 11:50:06,737] INFO     8[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:880) - Starting management ...
+[2019-08-19 11:50:06,737] INFO     8[pool-2-thread-3] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MessageReassemblyTestStack1_sccprouter3.xml
+[2019-08-19 11:50:06,737] INFO     8[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:882) - Starting MSU handler...
+[2019-08-19 11:50:06,738] INFO     9[pool-2-thread-3] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:06,739] INFO    10[pool-2-thread-3] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MessageReassemblyTestStack1_sccpresource2.xml
+[2019-08-19 11:50:06,745] INFO    16[pool-2-thread-3] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:06,746] WARN    17[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.message.SccpDataNoticeTemplateMessageImpl.encode(SccpDataNoticeTemplateMessageImpl.java:337) - Failure when sending a UDT message: message is too long. SccpMessageSegment=Sccp Msg [Type=-1 networkId=0 sls=0 incomingOpc=-1 incomingDpc=-1 outgoingDpc=-1 CallingAddress(pc=1,ssn=8,AI=67,gt=null) CalledParty(pc=0,ssn=8,AI=66,gt=null) DataLen=600]
+[2019-08-19 11:50:06,747] WARN    18[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.message.SccpDataNoticeTemplateMessageImpl.encode(SccpDataNoticeTemplateMessageImpl.java:337) - Failure when sending a UDT message: message is too long. SccpMessageSegment=Sccp Msg [Type=-1 networkId=0 sls=0 incomingOpc=-1 incomingDpc=-1 outgoingDpc=-1 CallingAddress(pc=1,ssn=8,AI=67,gt=null) CalledParty(pc=0,ssn=8,AI=66,gt=null) DataLen=600]
+[2019-08-19 11:50:06,747] INFO    18[pool-2-thread-3] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:81) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MessageReassemblyTestStack2_management2.xml
+[2019-08-19 11:50:06,747] WARN    18[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.message.SccpDataNoticeTemplateMessageImpl.encode(SccpDataNoticeTemplateMessageImpl.java:464) - Failure when segmenting a message: message is not locally originated but "segmentation" field is absent. SccpMessageSegment=Sccp Msg [Type=XUDT networkId=0 sls=0 incomingOpc=1 incomingDpc=2 outgoingDpc=-1 CallingAddress(pc=1,ssn=8,AI=67,gt=null) CalledParty(pc=0,ssn=8,AI=66,gt=null) importance=7 hopCounter=15 DataLen=600]
+[2019-08-19 11:50:06,748] INFO    19[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:06,749] INFO    20[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:06,749] INFO    20[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:06,749] INFO    20[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:06,751] INFO    22[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:839) - Starting ...
+[2019-08-19 11:50:06,751] INFO    22[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:852) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MessageSegmentationTestStack_management2.xml
+[2019-08-19 11:50:06,753] INFO    24[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MessageSegmentationTestStack_sccprouter3.xml
+[2019-08-19 11:50:06,754] INFO    25[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:06,754] INFO    25[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MessageSegmentationTestStack_sccpresource2.xml
+[2019-08-19 11:50:06,755] INFO    26[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:06,756] INFO    27[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:878) - Starting routing engine...
+[2019-08-19 11:50:06,756] INFO    27[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:880) - Starting management ...
+[2019-08-19 11:50:06,756] INFO    27[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:882) - Starting MSU handler...
+[2019-08-19 11:50:06,757] INFO    28[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:06,758] INFO    29[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:06,758] INFO    29[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:06,758] INFO    29[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:06,747] WARN    18[pool-2-thread-3] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:86) - Failed to load the Sccp Management configuration file. 
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MessageReassemblyTestStack2_management2.xml (No such file or directory)
+[2019-08-19 11:50:06,760] INFO    31[pool-2-thread-3] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MessageReassemblyTestStack2_sccprouter3.xml
+[2019-08-19 11:50:06,760] INFO    31[pool-2-thread-3] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:06,761] INFO    32[pool-2-thread-3] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MessageReassemblyTestStack2_sccpresource2.xml
+[2019-08-19 11:50:06,761] INFO    32[pool-2-thread-3] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:06,766] INFO    37[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:839) - Starting ...
+[2019-08-19 11:50:06,766] INFO    37[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:852) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpNoticeMessageTestStack_management2.xml
+[2019-08-19 11:50:06,767] INFO    38[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:839) - Starting ...
+[2019-08-19 11:50:06,767] WARN    38[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:857) - Failed to load the Sccp Management configuration file. 
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpNoticeMessageTestStack_management2.xml (No such file or directory)
+[2019-08-19 11:50:06,767] INFO    38[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:852) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpRemoveSpcTest_management2.xml
+[2019-08-19 11:50:06,768] INFO    39[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpNoticeMessageTestStack_sccprouter3.xml
+[2019-08-19 11:50:06,768] WARN    39[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:857) - Failed to load the Sccp Management configuration file. 
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpRemoveSpcTest_management2.xml (No such file or directory)
+[2019-08-19 11:50:06,769] INFO    40[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpRemoveSpcTest_sccprouter3.xml
+[2019-08-19 11:50:06,769] INFO    40[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:06,769] INFO    40[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:06,769] INFO    40[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpNoticeMessageTestStack_sccpresource2.xml
+[2019-08-19 11:50:06,770] INFO    41[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpRemoveSpcTest_sccpresource2.xml
+[2019-08-19 11:50:06,770] INFO    41[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:06,770] INFO    41[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:878) - Starting routing engine...
+[2019-08-19 11:50:06,771] INFO    42[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:880) - Starting management ...
+[2019-08-19 11:50:06,770] INFO    41[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:06,771] INFO    42[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:878) - Starting routing engine...
+[2019-08-19 11:50:06,772] INFO    43[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:880) - Starting management ...
+[2019-08-19 11:50:06,771] INFO    42[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:882) - Starting MSU handler...
+[2019-08-19 11:50:06,772] INFO    43[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:882) - Starting MSU handler...
+[2019-08-19 11:50:06,774] INFO    45[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:06,775] INFO    46[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:06,775] INFO    46[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:06,775] INFO    46[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:06,776] INFO    47[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:06,776] INFO    47[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:06,776] INFO    47[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:06,777] INFO    48[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:06,778] INFO    49[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:839) - Starting ...
+[2019-08-19 11:50:06,778] INFO    49[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:839) - Starting ...
+[2019-08-19 11:50:06,778] INFO    49[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:852) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpNoticeMessageTestStack_management2.xml
+[2019-08-19 11:50:06,779] INFO    50[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:852) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpRemoveSpcTest_management2.xml
+[2019-08-19 11:50:06,781] INFO    52[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpRemoveSpcTest_sccprouter3.xml
+[2019-08-19 11:50:06,781] INFO    52[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpNoticeMessageTestStack_sccprouter3.xml
+[2019-08-19 11:50:06,781] INFO    52[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:06,781] INFO    52[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:06,782] INFO    53[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpRemoveSpcTest_sccpresource2.xml
+[2019-08-19 11:50:06,782] INFO    53[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpNoticeMessageTestStack_sccpresource2.xml
+[2019-08-19 11:50:06,782] INFO    53[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:06,783] INFO    54[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:878) - Starting routing engine...
+[2019-08-19 11:50:06,783] INFO    54[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:880) - Starting management ...
+[2019-08-19 11:50:06,783] INFO    54[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:06,783] INFO    54[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:878) - Starting routing engine...
+[2019-08-19 11:50:06,784] INFO    55[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:880) - Starting management ...
+[2019-08-19 11:50:06,783] INFO    54[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:882) - Starting MSU handler...
+[2019-08-19 11:50:06,784] INFO    55[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:882) - Starting MSU handler...
+[2019-08-19 11:50:06,788] INFO    59[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:06,788] INFO    59[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:06,788] INFO    59[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:06,789] INFO    60[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:06,788] INFO    59[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:06,789] INFO    60[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:06,790] INFO    61[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:06,790] INFO    61[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:06,791] INFO    62[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpResourceProhibitedTest_sccpresource2.xml
+[2019-08-19 11:50:06,791] INFO    62[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpResourceTest_sccpresource2.xml
+[2019-08-19 11:50:06,792] INFO    63[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:06,792] INFO    63[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:06,794] INFO    65[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpResourceProhibitedTest_sccpresource2.xml
+[2019-08-19 11:50:06,794] INFO    65[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:06,795] INFO    66[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpResourceTest_sccpresource2.xml
+[2019-08-19 11:50:06,796] INFO    67[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpResourceProhibitedTest_sccpresource2.xml
+[2019-08-19 11:50:06,796] INFO    67[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:06,797] INFO    68[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:06,799] INFO    70[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:839) - Starting ...
+[2019-08-19 11:50:06,799] INFO    70[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:852) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpStackTest_management2.xml
+[2019-08-19 11:50:06,800] INFO    71[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpResourceProhibitedTest_sccpresource2.xml
+[2019-08-19 11:50:06,800] WARN    71[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:857) - Failed to load the Sccp Management configuration file. 
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpStackTest_management2.xml (No such file or directory)
+[2019-08-19 11:50:06,800] INFO    71[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpStackTest_sccprouter3.xml
+[2019-08-19 11:50:06,801] INFO    72[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:06,801] INFO    72[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:06,801] INFO    72[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpStackTest_sccpresource2.xml
+[2019-08-19 11:50:06,802] INFO    73[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:06,802] INFO    73[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:878) - Starting routing engine...
+[2019-08-19 11:50:06,802] INFO    73[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:880) - Starting management ...
+[2019-08-19 11:50:06,802] INFO    73[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:882) - Starting MSU handler...
+[2019-08-19 11:50:06,803] INFO    74[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:839) - Starting ...
+[2019-08-19 11:50:06,803] INFO    74[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:852) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/TestUudt_management2.xml
+[2019-08-19 11:50:06,804] WARN    75[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:857) - Failed to load the Sccp Management configuration file. 
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/TestUudt_management2.xml (No such file or directory)
+[2019-08-19 11:50:06,804] INFO    75[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/TestUudt_sccprouter3.xml
+[2019-08-19 11:50:06,805] INFO    76[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:06,805] INFO    76[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/TestUudt_sccpresource2.xml
+[2019-08-19 11:50:06,806] INFO    77[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:06,806] INFO    77[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:878) - Starting routing engine...
+[2019-08-19 11:50:06,806] INFO    77[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:880) - Starting management ...
+[2019-08-19 11:50:06,807] INFO    78[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:882) - Starting MSU handler...
+[2019-08-19 11:50:06,811] WARN    82[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.onMtp3TransferMessage(SccpStackImpl.java:1346) - Incoming Mtp3 Message for local address for localPC=1002, remotePC=1001, sls=5. But SAP is not found for localPC
+[2019-08-19 11:50:06,812] WARN    83[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.onMtp3TransferMessage(SccpStackImpl.java:1346) - Incoming Mtp3 Message for local address for localPC=1002, remotePC=1001, sls=5. But SAP is not found for localPC
+[2019-08-19 11:50:06,812] INFO    83[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:06,812] INFO    83[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:06,813] INFO    84[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:06,813] INFO    84[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:06,813] WARN    84[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.Ss7ExtSccpDetailedInterfaceDefault.translationFunction(Ss7ExtSccpDetailedInterfaceDefault.java:74) - Ss7ExtSccpDetailedInterfaceDefault does not support routing based on GT
+SccpMessage=Sccp Msg [Type=XUDT networkId=0 sls=5 incomingOpc=1001 incomingDpc=1002 outgoingDpc=-1 CallingAddress(pc=0,ssn=7,AI=10,gt=GlobalTitle0010Impl [digits=900080002001, translationType=1, encodingScheme=BCDEvenEncodingScheme[type=BCD_EVEN, code=2]]) CalledParty(pc=0,ssn=6,AI=10,gt=GlobalTitle0010Impl [digits=900080001002, translationType=1, encodingScheme=BCDEvenEncodingScheme[type=BCD_EVEN, code=2]]) hopCounter=15 segmentation=Segmentation [remainingSegments=1 firstSegment localRef=262148] DataLen=258]
+[2019-08-19 11:50:06,814] INFO    85[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:839) - Starting ...
+[2019-08-19 11:50:06,814] WARN    85[pool-2-thread-1] - org.restcomm.protocols.ss7.sccp.impl.Ss7ExtSccpDetailedInterfaceDefault.translationFunction(Ss7ExtSccpDetailedInterfaceDefault.java:74) - Ss7ExtSccpDetailedInterfaceDefault does not support routing based on GT
+SccpMessage=Sccp Msg [Type=XUDTS networkId=0 sls=0 returnCause=ReturnCause [value=ERR_IN_LOCAL_PROCESSING] incomingOpc=-1 incomingDpc=-1 outgoingDpc=-1 CallingAddress(pc=0,ssn=6,AI=10,gt=GlobalTitle0010Impl [digits=900080001002, translationType=1, encodingScheme=BCDEvenEncodingScheme[type=BCD_EVEN, code=2]]) CalledParty(pc=0,ssn=7,AI=10,gt=GlobalTitle0010Impl [digits=900080002001, translationType=1, encodingScheme=BCDEvenEncodingScheme[type=BCD_EVEN, code=2]]) DataLen=258
+[2019-08-19 11:50:06,815] INFO    86[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:852) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpStackTest_management2.xml
+[2019-08-19 11:50:06,816] INFO    87[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpStackTest_sccprouter3.xml
+[2019-08-19 11:50:06,816] INFO    87[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:06,817] INFO    88[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpStackTest_sccpresource2.xml
+[2019-08-19 11:50:06,817] INFO    88[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:06,817] INFO    88[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:878) - Starting routing engine...
+[2019-08-19 11:50:06,817] INFO    88[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:880) - Starting management ...
+[2019-08-19 11:50:06,818] INFO    89[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:882) - Starting MSU handler...
+[2019-08-19 11:50:06,818] INFO    89[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:06,819] INFO    90[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:06,819] INFO    90[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:06,819] INFO    90[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:06,820] INFO    91[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:06,821] INFO    92[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:06,821] INFO    92[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:06,821] INFO    92[pool-2-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:12,665] WARN  5936[Mtp3-DeliveryExecutor-0-1-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.onMtp3TransferMessage(SccpStackImpl.java:1395) - Reassembly function failure: received a non first segment without the first segement having recieved. SccpMessageSegment=Sccp Msg [Type=XUDT networkId=0 sls=0 incomingOpc=2 incomingDpc=1 outgoingDpc=-1 CallingAddress(pc=2,ssn=8,AI=67,gt=null) CalledParty(pc=0,ssn=8,AI=66,gt=null) importance=7 hopCounter=15 segmentation=Segmentation [remainingSegments=1 class1Selected localRef=1] DataLen=240]
+[2019-08-19 11:50:12,865] WARN  6136[Mtp3-DeliveryExecutor-0-1-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.onMtp3TransferMessage(SccpStackImpl.java:1410) - Reassembly function failure: when receiving a next segment message order is missing. SccpMessageSegment=Sccp Msg [Type=XUDTS networkId=0 sls=0 returnCause=ReturnCause [value=SEG_FAILURE] incomingOpc=2 incomingDpc=1 outgoingDpc=-1 CallingAddress(pc=2,ssn=8,AI=67,gt=null) CalledParty(pc=0,ssn=8,AI=66,gt=null) DataLen=120
+[2019-08-19 11:50:13,266] INFO  6537[pool-2-thread-3] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:13,267] INFO  6538[pool-2-thread-3] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:13,267] INFO  6538[pool-2-thread-3] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:13,267] INFO  6538[pool-2-thread-3] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:13,269] INFO  6540[pool-2-thread-3] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:13,269] INFO  6540[pool-2-thread-3] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:13,269] INFO  6540[pool-2-thread-3] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:13,269] INFO  6540[pool-2-thread-3] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:13,295] INFO  6566[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:81) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MessageMultiSapTestStack1_management2.xml
+[2019-08-19 11:50:13,295] INFO  6566[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:81) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack1_management2.xml
+[2019-08-19 11:50:13,296] WARN  6567[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:86) - Failed to load the Sccp Management configuration file. 
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MessageMultiSapTestStack1_management2.xml (No such file or directory)
+[2019-08-19 11:50:13,296] WARN  6567[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:86) - Failed to load the Sccp Management configuration file. 
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack1_management2.xml (No such file or directory)
+[2019-08-19 11:50:13,296] INFO  6567[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MessageMultiSapTestStack1_sccprouter3.xml
+[2019-08-19 11:50:13,300] INFO  6571[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack1_sccprouter3.xml
+[2019-08-19 11:50:13,301] INFO  6572[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:13,301] INFO  6572[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:13,301] INFO  6572[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MessageMultiSapTestStack1_sccpresource2.xml
+[2019-08-19 11:50:13,301] INFO  6572[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack1_sccpresource2.xml
+[2019-08-19 11:50:13,302] INFO  6573[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:13,303] INFO  6574[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:13,304] INFO  6575[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:81) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack2_management2.xml
+[2019-08-19 11:50:13,305] WARN  6576[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:86) - Failed to load the Sccp Management configuration file. 
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack2_management2.xml (No such file or directory)
+[2019-08-19 11:50:13,305] INFO  6576[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack2_sccprouter3.xml
+[2019-08-19 11:50:13,305] INFO  6576[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:13,305] INFO  6576[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:81) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MessageMultiSapTestStack2_management2.xml
+[2019-08-19 11:50:13,306] INFO  6577[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack2_sccpresource2.xml
+[2019-08-19 11:50:13,306] WARN  6577[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:86) - Failed to load the Sccp Management configuration file. 
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MessageMultiSapTestStack2_management2.xml (No such file or directory)
+[2019-08-19 11:50:13,306] INFO  6577[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:13,306] INFO  6577[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MessageMultiSapTestStack2_sccprouter3.xml
+[2019-08-19 11:50:13,307] INFO  6578[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:13,307] INFO  6578[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MessageMultiSapTestStack2_sccpresource2.xml
+[2019-08-19 11:50:13,307] INFO  6578[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:13,308] WARN  6579[Mtp3-DeliveryExecutorSystem-27-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.onMtp3PauseMessage(SccpStackImpl.java:1182) - Rx : MTP-PAUSE: AffectedDpc=2
+[2019-08-19 11:50:13,614] WARN  6885[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpRoutingControl.send(SccpRoutingControl.java:331) - SccpMessage for sending=Sccp Msg [Type=-1 networkId=0 sls=0 incomingOpc=-1 incomingDpc=-1 outgoingDpc=15 CallingAddress(pc=1,ssn=8,AI=67,gt=null) CalledParty(pc=15,ssn=8,AI=67,gt=null) DataLen=5] but no matching dpc=15 & sls=0 SAP found
+[2019-08-19 11:50:13,808] WARN  7079[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpRoutingControl.routeAddressed(SccpRoutingControl.java:643) - Received SccpMessage=Sccp Msg [Type=-1 networkId=0 sls=1 incomingOpc=-1 incomingDpc=-1 outgoingDpc=-1 CallingAddress(pc=1,ssn=8,AI=67,gt=null) CalledParty(pc=2,ssn=8,AI=67,gt=null) DataLen=10] for routing but Remote Signaling Pointcode = 2 is prohibited
+[2019-08-19 11:50:14,309] WARN  7580[Mtp3-DeliveryExecutorSystem-27-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.onMtp3ResumeMessage(SccpStackImpl.java:1193) - Rx : MTP-RESUME: AffectedDpc=2
+[2019-08-19 11:50:14,416] INFO  7687[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:14,416] INFO  7687[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:14,417] INFO  7688[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:14,418] INFO  7689[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:14,419] INFO  7690[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:14,419] INFO  7690[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:14,419] INFO  7690[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:14,419] INFO  7690[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:14,421] INFO  7692[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:81) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/RouteOnGtTestStack1_management2.xml
+[2019-08-19 11:50:14,421] WARN  7692[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:86) - Failed to load the Sccp Management configuration file. 
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/RouteOnGtTestStack1_management2.xml (No such file or directory)
+[2019-08-19 11:50:14,422] INFO  7693[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/RouteOnGtTestStack1_sccprouter3.xml
+[2019-08-19 11:50:14,422] INFO  7693[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:14,422] INFO  7693[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/RouteOnGtTestStack1_sccpresource2.xml
+[2019-08-19 11:50:14,423] INFO  7694[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:14,424] INFO  7695[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:81) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/RouteOnGtTestStack2_management2.xml
+[2019-08-19 11:50:14,424] WARN  7695[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:86) - Failed to load the Sccp Management configuration file. 
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/RouteOnGtTestStack2_management2.xml (No such file or directory)
+[2019-08-19 11:50:14,425] INFO  7696[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/RouteOnGtTestStack2_sccprouter3.xml
+[2019-08-19 11:50:14,425] INFO  7696[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:14,425] INFO  7696[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/RouteOnGtTestStack2_sccpresource2.xml
+[2019-08-19 11:50:14,426] INFO  7697[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:14,427] WARN  7698[Mtp3-DeliveryExecutor-0-82-1] - org.restcomm.protocols.ss7.sccp.impl.Ss7ExtSccpDetailedInterfaceDefault.translationFunction(Ss7ExtSccpDetailedInterfaceDefault.java:74) - Ss7ExtSccpDetailedInterfaceDefault does not support routing based on GT
+SccpMessage=Sccp Msg [Type=UDT networkId=0 sls=0 incomingOpc=2 incomingDpc=1 outgoingDpc=-1 CallingAddress(pc=0,ssn=7,AI=18,gt=GlobalTitle0100Impl [digits=97254120625, natureOfAddress=INTERNATIONAL, numberingPlan=ISDN_TELEPHONY, translationType=0, encodingScheme=BCDOddEncodingScheme[type=BCD_ODD, code=1]]) CalledParty(pc=0,ssn=6,AI=18,gt=GlobalTitle0100Impl [digits=543200120005, natureOfAddress=INTERNATIONAL, numberingPlan=ISDN_TELEPHONY, translationType=0, encodingScheme=BCDEvenEncodingScheme[type=BCD_EVEN, code=2]]) DataLen=91]
+[2019-08-19 11:50:14,428] WARN  7699[Mtp3-DeliveryExecutor-0-82-1] - org.restcomm.protocols.ss7.sccp.impl.Ss7ExtSccpDetailedInterfaceDefault.translationFunction(Ss7ExtSccpDetailedInterfaceDefault.java:74) - Ss7ExtSccpDetailedInterfaceDefault does not support routing based on GT
+SccpMessage=Sccp Msg [Type=UDTS networkId=0 sls=0 returnCause=ReturnCause [value=ERR_IN_LOCAL_PROCESSING] incomingOpc=-1 incomingDpc=-1 outgoingDpc=-1 CallingAddress(pc=0,ssn=6,AI=18,gt=GlobalTitle0100Impl [digits=543200120005, natureOfAddress=INTERNATIONAL, numberingPlan=ISDN_TELEPHONY, translationType=0, encodingScheme=BCDEvenEncodingScheme[type=BCD_EVEN, code=2]]) CalledParty(pc=0,ssn=7,AI=18,gt=GlobalTitle0100Impl [digits=97254120625, natureOfAddress=INTERNATIONAL, numberingPlan=ISDN_TELEPHONY, translationType=0, encodingScheme=BCDOddEncodingScheme[type=BCD_ODD, code=1]]) DataLen=91
+[2019-08-19 11:50:14,528] INFO  7799[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:14,528] INFO  7799[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:14,529] INFO  7800[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:14,529] INFO  7800[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:14,531] INFO  7802[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:14,532] INFO  7803[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:14,532] INFO  7803[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:14,533] INFO  7804[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:14,534] INFO  7805[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:81) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/RouteOnGtTestStack1_management2.xml
+[2019-08-19 11:50:14,536] INFO  7807[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/RouteOnGtTestStack1_sccprouter3.xml
+[2019-08-19 11:50:14,537] INFO  7808[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:14,537] INFO  7808[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/RouteOnGtTestStack1_sccpresource2.xml
+[2019-08-19 11:50:14,538] INFO  7809[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:14,539] INFO  7810[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:81) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/RouteOnGtTestStack2_management2.xml
+[2019-08-19 11:50:14,540] INFO  7811[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/RouteOnGtTestStack2_sccprouter3.xml
+[2019-08-19 11:50:14,541] INFO  7812[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:14,541] INFO  7812[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/RouteOnGtTestStack2_sccpresource2.xml
+[2019-08-19 11:50:14,542] INFO  7813[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:14,543] WARN  7814[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.Ss7ExtSccpDetailedInterfaceDefault.translationFunction(Ss7ExtSccpDetailedInterfaceDefault.java:74) - Ss7ExtSccpDetailedInterfaceDefault does not support routing based on GT
+SccpMessage=Sccp Msg [Type=-1 networkId=0 sls=0 incomingOpc=-1 incomingDpc=-1 outgoingDpc=-1 CallingAddress(pc=1,ssn=8,AI=67,gt=null) CalledParty(pc=0,ssn=0,AI=8,gt=GlobalTitle0010Impl [digits=111111, translationType=1, encodingScheme=BCDEvenEncodingScheme[type=BCD_EVEN, code=2]]) DataLen=5]
+[2019-08-19 11:50:14,645] INFO  7916[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:14,646] INFO  7917[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:14,646] INFO  7917[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:14,647] INFO  7918[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:14,648] INFO  7919[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:14,649] INFO  7920[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:14,649] INFO  7920[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:14,649] INFO  7920[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:14,651] INFO  7922[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/RouterStoreTest_sccprouter3.xml
+[2019-08-19 11:50:14,652] INFO  7923[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:14,659] INFO  7930[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/RouterStoreTest_sccprouter3.xml
+[2019-08-19 11:50:14,660] INFO  7931[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:14,665] INFO  7936[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:81) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack1_management2.xml
+[2019-08-19 11:50:14,666] WARN  7937[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:86) - Failed to load the Sccp Management configuration file. 
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack1_management2.xml (No such file or directory)
+[2019-08-19 11:50:14,667] INFO  7938[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack1_sccprouter3.xml
+[2019-08-19 11:50:14,667] INFO  7938[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:14,668] INFO  7939[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack1_sccpresource2.xml
+[2019-08-19 11:50:14,668] INFO  7939[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:14,670] INFO  7941[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:81) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack2_management2.xml
+[2019-08-19 11:50:14,670] WARN  7941[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:86) - Failed to load the Sccp Management configuration file. 
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack2_management2.xml (No such file or directory)
+[2019-08-19 11:50:14,671] INFO  7942[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack2_sccprouter3.xml
+[2019-08-19 11:50:14,671] INFO  7942[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:14,672] INFO  7943[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack2_sccpresource2.xml
+[2019-08-19 11:50:14,672] INFO  7943[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:14,777] INFO  8048[Mtp3-DeliveryExecutor-0-73-1] - org.restcomm.protocols.ss7.sccp.impl.SccpManagement.onManagementMessage(SccpManagement.java:143) - Rx : SSA, Affected SSN=8, Affected PC=1, Subsystem Multiplicity Ind=0 SeqControl=0
+[2019-08-19 11:50:14,877] WARN  8148[Mtp3-DeliveryExecutor-0-73-1] - org.restcomm.protocols.ss7.sccp.impl.SccpManagement.onManagementMessage(SccpManagement.java:160) - Rx : SSP, Affected SSN=8, Affected PC=1, Subsystem Multiplicity Ind=0 SeqControl=0
+[2019-08-19 11:50:14,978] INFO  8249[Mtp3-DeliveryExecutor-0-73-1] - org.restcomm.protocols.ss7.sccp.impl.SccpManagement.onManagementMessage(SccpManagement.java:143) - Rx : SSA, Affected SSN=8, Affected PC=1, Subsystem Multiplicity Ind=0 SeqControl=0
+[2019-08-19 11:50:15,078] WARN  8349[Mtp3-DeliveryExecutorSystem-72-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.onMtp3PauseMessage(SccpStackImpl.java:1182) - Rx : MTP-PAUSE: AffectedDpc=2
+[2019-08-19 11:50:15,178] WARN  8449[Mtp3-DeliveryExecutorSystem-72-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.onMtp3ResumeMessage(SccpStackImpl.java:1193) - Rx : MTP-RESUME: AffectedDpc=2
+[2019-08-19 11:50:15,179] INFO  8450[Mtp3-DeliveryExecutor-0-73-1] - org.restcomm.protocols.ss7.sccp.impl.SccpManagement.onManagementMessage(SccpManagement.java:143) - Rx : SSA, Affected SSN=8, Affected PC=1, Subsystem Multiplicity Ind=0 SeqControl=0
+[2019-08-19 11:50:15,279] INFO  8550[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:15,280] INFO  8551[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:15,280] INFO  8551[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:15,280] INFO  8551[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:15,282] INFO  8553[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:15,282] INFO  8553[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:15,282] INFO  8553[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:15,283] INFO  8554[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:15,284] INFO  8555[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:81) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack1_management2.xml
+[2019-08-19 11:50:15,285] INFO  8556[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack1_sccprouter3.xml
+[2019-08-19 11:50:15,286] INFO  8557[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:15,286] INFO  8557[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack1_sccpresource2.xml
+[2019-08-19 11:50:15,287] INFO  8558[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:15,288] INFO  8559[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:81) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack2_management2.xml
+[2019-08-19 11:50:15,289] INFO  8560[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack2_sccprouter3.xml
+[2019-08-19 11:50:15,290] INFO  8561[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:15,290] INFO  8561[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack2_sccpresource2.xml
+[2019-08-19 11:50:15,290] INFO  8561[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:15,310] INFO  8581[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:15,310] INFO  8581[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:15,310] INFO  8581[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:15,310] INFO  8581[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:15,311] INFO  8582[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:15,312] INFO  8583[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:15,312] INFO  8583[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:15,312] INFO  8583[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:15,313] INFO  8584[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:81) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack1_management2.xml
+[2019-08-19 11:50:15,314] INFO  8585[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack1_sccprouter3.xml
+[2019-08-19 11:50:15,314] INFO  8585[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:15,315] INFO  8586[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack1_sccpresource2.xml
+[2019-08-19 11:50:15,315] INFO  8586[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:15,316] INFO  8587[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:81) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack2_management2.xml
+[2019-08-19 11:50:15,317] INFO  8588[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack2_sccprouter3.xml
+[2019-08-19 11:50:15,317] INFO  8588[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:15,318] INFO  8589[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack2_sccpresource2.xml
+[2019-08-19 11:50:15,318] INFO  8589[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:15,319] WARN  8590[Mtp3-DeliveryExecutorSystem-27-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.onMtp3StatusMessage(SccpStackImpl.java:1223) - Rx : MTP-STATUS: AffectedDpc=2, Cause=UserPartUnavailability_UnequippedRemoteUser, CongLevel=0, userPartIdentity=0 (one message in 100 seconds)
+[2019-08-19 11:50:15,394] WARN  8665[Mtp3-DeliveryExecutor-1-74-1] - org.restcomm.protocols.ss7.sccp.impl.SccpRoutingControl.routeMssgFromMtp(SccpRoutingControl.java:198) - Received SccpMessage=Sccp Msg [Type=UDT networkId=0 sls=1 incomingOpc=1 incomingDpc=2 outgoingDpc=-1 CallingAddress(pc=1,ssn=8,AI=67,gt=null) CalledParty(pc=2,ssn=8,AI=67,gt=null) DataLen=10] from MTP but the SSN is not available for local routing
+[2019-08-19 11:50:15,394] WARN  8665[Mtp3-DeliveryExecutor-0-64-1] - org.restcomm.protocols.ss7.sccp.impl.SccpManagement.onManagementMessage(SccpManagement.java:160) - Rx : SSP, Affected SSN=8, Affected PC=2, Subsystem Multiplicity Ind=0 SeqControl=0
+[2019-08-19 11:50:15,595] WARN  8866[Mtp3-DeliveryExecutor-2-75-1] - org.restcomm.protocols.ss7.sccp.impl.SccpRoutingControl.routeMssgFromMtp(SccpRoutingControl.java:198) - Received SccpMessage=Sccp Msg [Type=UDT networkId=0 sls=2 incomingOpc=1 incomingDpc=2 outgoingDpc=-1 CallingAddress(pc=1,ssn=8,AI=67,gt=null) CalledParty(pc=2,ssn=8,AI=67,gt=null) DataLen=10] from MTP but the SSN is not available for local routing
+[2019-08-19 11:50:15,820] WARN  9091[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpRoutingControl.routeAddressed(SccpRoutingControl.java:673) - Routing of Sccp Message=Sccp Msg [Type=-1 networkId=0 sls=1 incomingOpc=-1 incomingDpc=-1 outgoingDpc=-1 CallingAddress(pc=1,ssn=8,AI=67,gt=null) CalledParty(pc=2,ssn=8,AI=67,gt=null) DataLen=10] failed as Remote SubSystem = 8 is prohibited 
+[2019-08-19 11:50:16,321] WARN  9592[Mtp3-DeliveryExecutorSystem-27-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.onMtp3StatusMessage(SccpStackImpl.java:1227) - Rx : MTP-STATUS: AffectedDpc=2, Cause=UserPartUnavailability_InaccessibleRemoteUser, CongLevel=0, userPartIdentity=0 (one message in 100 seconds)
+[2019-08-19 11:50:17,795] WARN 11066[Mtp3-DeliveryExecutor-3-76-1] - org.restcomm.protocols.ss7.sccp.impl.SccpRoutingControl.routeMssgFromMtp(SccpRoutingControl.java:198) - Received SccpMessage=Sccp Msg [Type=UDT networkId=0 sls=3 incomingOpc=1 incomingDpc=2 outgoingDpc=-1 CallingAddress(pc=1,ssn=8,AI=67,gt=null) CalledParty(pc=2,ssn=8,AI=67,gt=null) DataLen=10] from MTP but the SSN is not available for local routing
+[2019-08-19 11:50:17,796] WARN 11067[Mtp3-DeliveryExecutor-0-64-1] - org.restcomm.protocols.ss7.sccp.impl.SccpManagement.onManagementMessage(SccpManagement.java:160) - Rx : SSP, Affected SSN=8, Affected PC=2, Subsystem Multiplicity Ind=0 SeqControl=0
+[2019-08-19 11:50:17,895] INFO 11166[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:17,896] INFO 11167[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:17,896] INFO 11167[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:17,896] INFO 11167[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:17,897] INFO 11168[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:17,898] INFO 11169[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:17,898] INFO 11169[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:17,898] INFO 11169[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:17,900] INFO 11171[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:81) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack1_management2.xml
+[2019-08-19 11:50:17,901] INFO 11172[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack1_sccprouter3.xml
+[2019-08-19 11:50:17,902] INFO 11173[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:17,902] INFO 11173[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack1_sccpresource2.xml
+[2019-08-19 11:50:17,903] INFO 11174[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:17,904] INFO 11175[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:81) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack2_management2.xml
+[2019-08-19 11:50:17,905] INFO 11176[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack2_sccprouter3.xml
+[2019-08-19 11:50:17,905] INFO 11176[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:17,906] INFO 11177[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack2_sccpresource2.xml
+[2019-08-19 11:50:17,907] INFO 11178[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:17,909] INFO 11180[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:17,909] INFO 11180[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:17,909] INFO 11180[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:17,909] INFO 11180[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:17,910] INFO 11181[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:17,910] INFO 11181[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:17,910] INFO 11181[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:17,911] INFO 11182[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:17,912] INFO 11183[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:81) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack1_management2.xml
+[2019-08-19 11:50:17,912] INFO 11183[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack1_sccprouter3.xml
+[2019-08-19 11:50:17,913] INFO 11184[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:17,913] INFO 11184[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack1_sccpresource2.xml
+[2019-08-19 11:50:17,913] INFO 11184[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:17,914] INFO 11185[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:81) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack2_management2.xml
+[2019-08-19 11:50:17,915] INFO 11186[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack2_sccprouter3.xml
+[2019-08-19 11:50:17,916] INFO 11187[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:17,916] INFO 11187[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack2_sccpresource2.xml
+[2019-08-19 11:50:17,916] INFO 11187[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:17,919] WARN 11190[Mtp3-DeliveryExecutor-1-74-1] - org.restcomm.protocols.ss7.sccp.impl.SccpRoutingControl.routeMssgFromMtp(SccpRoutingControl.java:198) - Received SccpMessage=Sccp Msg [Type=UDT networkId=0 sls=1 incomingOpc=1 incomingDpc=2 outgoingDpc=-1 CallingAddress(pc=1,ssn=8,AI=67,gt=null) CalledParty(pc=2,ssn=8,AI=67,gt=null) DataLen=10] from MTP but the SSN is not available for local routing
+[2019-08-19 11:50:17,919] WARN 11190[Mtp3-DeliveryExecutor-0-64-1] - org.restcomm.protocols.ss7.sccp.impl.SccpManagement.onManagementMessage(SccpManagement.java:160) - Rx : SSP, Affected SSN=8, Affected PC=2, Subsystem Multiplicity Ind=0 SeqControl=0
+[2019-08-19 11:50:22,921] INFO 16192[Mtp3-DeliveryExecutor-0-73-1] - org.restcomm.protocols.ss7.sccp.impl.SccpManagement.onManagementMessage(SccpManagement.java:175) - Rx : SST, Affected SSN=8, Affected PC=2, Subsystem Multiplicity Ind=0 SeqControl=0
+[2019-08-19 11:50:22,922] INFO 16193[Mtp3-DeliveryExecutor-0-73-1] - org.restcomm.protocols.ss7.sccp.impl.SccpManagement.onManagementMessage(SccpManagement.java:198) - Received SST for unavailable SSN=8
+[2019-08-19 11:50:26,323] INFO 19594[Mtp3-DeliveryExecutor-0-28-1] - org.restcomm.protocols.ss7.sccp.impl.SccpManagement.onManagementMessage(SccpManagement.java:175) - Rx : SST, Affected SSN=1, Affected PC=2, Subsystem Multiplicity Ind=0 SeqControl=0
+[2019-08-19 11:50:26,324] INFO 19595[Mtp3-DeliveryExecutor-0-19-1] - org.restcomm.protocols.ss7.sccp.impl.SccpManagement.onManagementMessage(SccpManagement.java:143) - Rx : SSA, Affected SSN=1, Affected PC=2, Subsystem Multiplicity Ind=0 SeqControl=0
+[2019-08-19 11:50:27,922] INFO 21193[Mtp3-DeliveryExecutor-0-73-1] - org.restcomm.protocols.ss7.sccp.impl.SccpManagement.onManagementMessage(SccpManagement.java:175) - Rx : SST, Affected SSN=8, Affected PC=2, Subsystem Multiplicity Ind=0 SeqControl=0
+[2019-08-19 11:50:27,922] INFO 21193[Mtp3-DeliveryExecutor-0-64-1] - org.restcomm.protocols.ss7.sccp.impl.SccpManagement.onManagementMessage(SccpManagement.java:143) - Rx : SSA, Affected SSN=8, Affected PC=2, Subsystem Multiplicity Ind=0 SeqControl=0
+[2019-08-19 11:50:31,822] INFO 25093[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:31,822] INFO 25093[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:31,822] INFO 25093[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:31,822] INFO 25093[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:31,823] INFO 25094[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:31,823] INFO 25094[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:31,823] INFO 25094[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:31,823] INFO 25094[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:31,825] INFO 25096[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:81) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack1_management2.xml
+[2019-08-19 11:50:31,825] INFO 25096[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack1_sccprouter3.xml
+[2019-08-19 11:50:31,826] INFO 25097[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:31,826] INFO 25097[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack1_sccpresource2.xml
+[2019-08-19 11:50:31,826] INFO 25097[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:31,827] INFO 25098[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:81) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack2_management2.xml
+[2019-08-19 11:50:31,828] INFO 25099[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack2_sccprouter3.xml
+[2019-08-19 11:50:31,828] INFO 25099[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:31,829] INFO 25100[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack2_sccpresource2.xml
+[2019-08-19 11:50:31,829] INFO 25100[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:31,830] WARN 25101[Mtp3-DeliveryExecutorSystem-27-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.onMtp3StatusMessage(SccpStackImpl.java:1223) - Rx : MTP-STATUS: AffectedDpc=2, Cause=UserPartUnavailability_UnequippedRemoteUser, CongLevel=0, userPartIdentity=0 (one message in 100 seconds)
+[2019-08-19 11:50:32,330] WARN 25601[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpRoutingControl.routeAddressed(SccpRoutingControl.java:673) - Routing of Sccp Message=Sccp Msg [Type=-1 networkId=0 sls=1 incomingOpc=-1 incomingDpc=-1 outgoingDpc=-1 CallingAddress(pc=1,ssn=8,AI=67,gt=null) CalledParty(pc=2,ssn=8,AI=67,gt=null) DataLen=10] failed as Remote SubSystem = 8 is prohibited 
+[2019-08-19 11:50:32,831] WARN 26102[Mtp3-DeliveryExecutorSystem-27-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.onMtp3StatusMessage(SccpStackImpl.java:1227) - Rx : MTP-STATUS: AffectedDpc=2, Cause=UserPartUnavailability_Unknown, CongLevel=0, userPartIdentity=0 (one message in 100 seconds)
+[2019-08-19 11:50:34,122] INFO 27393[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:34,122] INFO 27393[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:34,123] INFO 27394[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:34,123] INFO 27394[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:34,124] INFO 27395[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:34,124] INFO 27395[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:34,124] INFO 27395[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:34,124] INFO 27395[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:34,125] INFO 27396[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:81) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack1_management2.xml
+[2019-08-19 11:50:34,126] INFO 27397[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack1_sccprouter3.xml
+[2019-08-19 11:50:34,126] INFO 27397[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:34,126] INFO 27397[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack1_sccpresource2.xml
+[2019-08-19 11:50:34,127] INFO 27398[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:34,128] INFO 27399[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:81) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack2_management2.xml
+[2019-08-19 11:50:34,128] INFO 27399[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack2_sccprouter3.xml
+[2019-08-19 11:50:34,128] INFO 27399[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:34,128] INFO 27399[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/sspTestSccpStack2_sccpresource2.xml
+[2019-08-19 11:50:34,129] INFO 27400[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:34,131] WARN 27402[Mtp3-DeliveryExecutor-1-74-1] - org.restcomm.protocols.ss7.sccp.impl.SccpRoutingControl.routeMssgFromMtp(SccpRoutingControl.java:198) - Received SccpMessage=Sccp Msg [Type=UDT networkId=0 sls=1 incomingOpc=1 incomingDpc=2 outgoingDpc=-1 CallingAddress(pc=1,ssn=8,AI=67,gt=null) CalledParty(pc=2,ssn=8,AI=67,gt=null) DataLen=10] from MTP but the SSN is not available for local routing
+[2019-08-19 11:50:34,132] WARN 27403[Mtp3-DeliveryExecutor-0-64-1] - org.restcomm.protocols.ss7.sccp.impl.SccpManagement.onManagementMessage(SccpManagement.java:160) - Rx : SSP, Affected SSN=8, Affected PC=2, Subsystem Multiplicity Ind=0 SeqControl=0
+[2019-08-19 11:50:39,133] INFO 32404[Mtp3-DeliveryExecutor-0-73-1] - org.restcomm.protocols.ss7.sccp.impl.SccpManagement.onManagementMessage(SccpManagement.java:175) - Rx : SST, Affected SSN=8, Affected PC=2, Subsystem Multiplicity Ind=0 SeqControl=0
+[2019-08-19 11:50:39,134] INFO 32405[Mtp3-DeliveryExecutor-0-73-1] - org.restcomm.protocols.ss7.sccp.impl.SccpManagement.onManagementMessage(SccpManagement.java:198) - Received SST for unavailable SSN=8
+[2019-08-19 11:50:40,231] WARN 33502[Mtp3-DeliveryExecutorSystem-72-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.onMtp3PauseMessage(SccpStackImpl.java:1182) - Rx : MTP-PAUSE: AffectedDpc=2
+[2019-08-19 11:50:42,833] INFO 36104[Mtp3-DeliveryExecutor-0-28-1] - org.restcomm.protocols.ss7.sccp.impl.SccpManagement.onManagementMessage(SccpManagement.java:175) - Rx : SST, Affected SSN=1, Affected PC=2, Subsystem Multiplicity Ind=0 SeqControl=0
+[2019-08-19 11:50:42,834] INFO 36105[Mtp3-DeliveryExecutor-0-19-1] - org.restcomm.protocols.ss7.sccp.impl.SccpManagement.onManagementMessage(SccpManagement.java:143) - Rx : SSA, Affected SSN=1, Affected PC=2, Subsystem Multiplicity Ind=0 SeqControl=0
+[2019-08-19 11:50:45,232] INFO 38503[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:45,233] INFO 38504[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:45,233] INFO 38504[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:45,233] INFO 38504[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:45,234] INFO 38505[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:45,235] INFO 38506[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:45,235] INFO 38506[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:45,235] INFO 38506[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:45,237] INFO 38508[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:839) - Starting ...
+[2019-08-19 11:50:45,237] INFO 38508[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:852) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpExecutorTest_management2.xml
+[2019-08-19 11:50:45,237] WARN 38508[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:857) - Failed to load the Sccp Management configuration file. 
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpExecutorTest_management2.xml (No such file or directory)
+[2019-08-19 11:50:45,238] INFO 38509[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpExecutorTest_sccprouter3.xml
+[2019-08-19 11:50:45,238] INFO 38509[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:45,239] INFO 38510[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpExecutorTest_sccpresource2.xml
+[2019-08-19 11:50:45,239] INFO 38510[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:45,239] INFO 38510[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:878) - Starting routing engine...
+[2019-08-19 11:50:45,239] INFO 38510[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:880) - Starting management ...
+[2019-08-19 11:50:45,240] INFO 38511[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:882) - Starting MSU handler...
+[2019-08-19 11:50:45,242]ERROR 38513[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:124) - Error while executing comand [sccp, csp, create, 3, 22]
+java.lang.Exception: Concerned spc already exists
+	at org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.addConcernedSpc(SccpResourceImpl.java:302)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.manageConcernedSpc(SccpExecutor.java:1202)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:114)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutorTest.testConcernedSpc(SccpExecutorTest.java:578)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:50:45,244]ERROR 38515[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:124) - Error while executing comand [sccp, csp, delete, 33]
+java.lang.Exception: Concerned spc doesn't exist on stack=SccpExecutorTest
+	at org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.removeConcernedSpc(SccpResourceImpl.java:319)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.manageConcernedSpc(SccpExecutor.java:1280)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:114)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutorTest.testConcernedSpc(SccpExecutorTest.java:604)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:50:45,245] INFO 38516[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:45,245] INFO 38516[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:45,246] INFO 38517[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:45,246] INFO 38517[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:45,247] INFO 38518[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:839) - Starting ...
+[2019-08-19 11:50:45,247] INFO 38518[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:852) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpExecutorTest_management2.xml
+[2019-08-19 11:50:45,248] INFO 38519[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpExecutorTest_sccprouter3.xml
+[2019-08-19 11:50:45,249] INFO 38520[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:45,249] INFO 38520[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpExecutorTest_sccpresource2.xml
+[2019-08-19 11:50:45,249] INFO 38520[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:45,250] INFO 38521[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:878) - Starting routing engine...
+[2019-08-19 11:50:45,250] INFO 38521[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:880) - Starting management ...
+[2019-08-19 11:50:45,250] INFO 38521[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:882) - Starting MSU handler...
+[2019-08-19 11:50:45,252]ERROR 38523[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:124) - Error while executing comand [sccp, lmr, create, 4, 19, 20, ludt_segm]
+java.lang.Exception: Long message rule already exists
+	at org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.addLongMessageRule(RouterImpl.java:330)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.manageLmr(SccpExecutor.java:594)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:108)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutorTest.testLmr(SccpExecutorTest.java:152)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:50:45,254]ERROR 38525[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:124) - Error while executing comand [sccp, lmr, modify, 5, first-spc, 23, last-spc, 24, rule-type, udt]
+java.lang.Exception: Long message rule doesn't exist on stack=SccpExecutorTest
+	at org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.modifyLongMessageRule(RouterImpl.java:364)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.manageLmr(SccpExecutor.java:650)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:108)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutorTest.testLmr(SccpExecutorTest.java:191)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:50:45,255]ERROR 38526[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:124) - Error while executing comand [sccp, lmr, delete, 10]
+java.lang.Exception: Long message rule doesn't exist on stack=SccpExecutorTest
+	at org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.removeLongMessageRule(RouterImpl.java:388)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.manageLmr(SccpExecutor.java:684)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:108)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutorTest.testLmr(SccpExecutorTest.java:217)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:50:45,256] INFO 38527[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:45,257] INFO 38528[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:45,257] INFO 38528[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:45,257] INFO 38528[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:45,258] INFO 38529[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:839) - Starting ...
+[2019-08-19 11:50:45,259] INFO 38530[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:852) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpExecutorTest_management2.xml
+[2019-08-19 11:50:45,260] INFO 38531[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpExecutorTest_sccprouter3.xml
+[2019-08-19 11:50:45,260] INFO 38531[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:45,261] INFO 38532[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpExecutorTest_sccpresource2.xml
+[2019-08-19 11:50:45,261] INFO 38532[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:45,261] INFO 38532[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:878) - Starting routing engine...
+[2019-08-19 11:50:45,262] INFO 38533[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:880) - Starting management ...
+[2019-08-19 11:50:45,262] INFO 38533[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:882) - Starting MSU handler...
+[2019-08-19 11:50:45,270] INFO 38541[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:45,270] INFO 38541[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:45,271] INFO 38542[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:45,271] INFO 38542[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:45,272] INFO 38543[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:839) - Starting ...
+[2019-08-19 11:50:45,273] INFO 38544[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:852) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpExecutorTest_management2.xml
+[2019-08-19 11:50:45,273] INFO 38544[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpExecutorTest_sccprouter3.xml
+[2019-08-19 11:50:45,274] INFO 38545[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:45,274] INFO 38545[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpExecutorTest_sccpresource2.xml
+[2019-08-19 11:50:45,275] INFO 38546[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:45,275] INFO 38546[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:878) - Starting routing engine...
+[2019-08-19 11:50:45,275] INFO 38546[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:880) - Starting management ...
+[2019-08-19 11:50:45,275] INFO 38546[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:882) - Starting MSU handler...
+[2019-08-19 11:50:45,276]ERROR 38547[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:124) - Error while executing comand [sccp, rsp, create, 1, 12, 0, 0]
+java.lang.Exception: Remote Signaling Pointcode already exists
+	at org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.addRemoteSpc(SccpResourceImpl.java:214)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.manageRsp(SccpExecutor.java:384)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:104)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutorTest.testRsp(SccpExecutorTest.java:427)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:50:45,277]ERROR 38548[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:124) - Error while executing comand [sccp, rsp, modify, 2, remote-spc, 12, rspc-flag, 0, mask, 0]
+java.lang.Exception: Remote Signaling Pointcode doesn't exist on stack=SccpExecutorTest
+	at org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.modifyRemoteSpc(SccpResourceImpl.java:248)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.manageRsp(SccpExecutor.java:431)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:104)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutorTest.testRsp(SccpExecutorTest.java:435)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:50:45,278]ERROR 38549[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:124) - Error while executing comand [sccp, rsp, delete, 5]
+java.lang.Exception: Remote Signaling Pointcode doesn't exist on stack=SccpExecutorTest
+	at org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.removeRemoteSpc(SccpResourceImpl.java:265)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.manageRsp(SccpExecutor.java:467)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:104)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutorTest.testRsp(SccpExecutorTest.java:460)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:50:45,280] INFO 38551[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:45,280] INFO 38551[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:45,280] INFO 38551[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:45,281] INFO 38552[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:45,282] INFO 38553[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:839) - Starting ...
+[2019-08-19 11:50:45,282] INFO 38553[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:852) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpExecutorTest_management2.xml
+[2019-08-19 11:50:45,283] INFO 38554[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpExecutorTest_sccprouter3.xml
+[2019-08-19 11:50:45,283] INFO 38554[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:45,284] INFO 38555[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpExecutorTest_sccpresource2.xml
+[2019-08-19 11:50:45,284] INFO 38555[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:45,284] INFO 38555[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:878) - Starting routing engine...
+[2019-08-19 11:50:45,285] INFO 38556[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:880) - Starting management ...
+[2019-08-19 11:50:45,285] INFO 38556[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:882) - Starting MSU handler...
+[2019-08-19 11:50:45,286]ERROR 38557[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:124) - Error while executing comand [sccp, rss, delete, 5]
+java.lang.Exception: Remote Subsystem doesn't exist on stack=SccpExecutorTest
+	at org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.removeRemoteSsn(SccpResourceImpl.java:177)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.manageRss(SccpExecutor.java:274)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:106)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutorTest.testRss(SccpExecutorTest.java:488)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:50:45,287]ERROR 38558[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:124) - Error while executing comand [sccp, rss, create, 2, 12, 8, 0]
+java.lang.Exception: Remote Subsystem already exists
+	at org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.addRemoteSsn(SccpResourceImpl.java:116)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.manageRss(SccpExecutor.java:188)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:106)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutorTest.testRss(SccpExecutorTest.java:508)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:50:45,288]ERROR 38559[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:124) - Error while executing comand [sccp, rss, modify, 3, remote-spc, 15, remote-ssn, 19, rss-flag, 0, prohibitedwhenspcresuming, true]
+java.lang.Exception: Remote Subsystem doesn't exist on stack=SccpExecutorTest
+	at org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.modifyRemoteSsn(SccpResourceImpl.java:157)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.manageRss(SccpExecutor.java:237)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:106)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutorTest.testRss(SccpExecutorTest.java:536)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:50:45,290] INFO 38561[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:45,291] INFO 38562[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:45,291] INFO 38562[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:45,291] INFO 38562[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:45,293] INFO 38564[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:839) - Starting ...
+[2019-08-19 11:50:45,293] INFO 38564[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:852) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpExecutorTest_management2.xml
+[2019-08-19 11:50:45,294] INFO 38565[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpExecutorTest_sccprouter3.xml
+[2019-08-19 11:50:45,294] INFO 38565[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:45,295] INFO 38566[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/SccpExecutorTest_sccpresource2.xml
+[2019-08-19 11:50:45,295] INFO 38566[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:45,295] INFO 38566[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:878) - Starting routing engine...
+[2019-08-19 11:50:45,296] INFO 38567[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:880) - Starting management ...
+[2019-08-19 11:50:45,296] INFO 38567[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:882) - Starting MSU handler...
+[2019-08-19 11:50:45,297]ERROR 38568[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:124) - Error while executing comand [sccp, sap, create, 5, 101, 11, 2]
+java.lang.Exception: Mtp3UserPart doesn't exist
+	at org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.addMtp3ServiceAccessPoint(RouterImpl.java:467)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.manageSap(SccpExecutor.java:803)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:110)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutorTest.testSap(SccpExecutorTest.java:230)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:50:45,298]ERROR 38569[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:124) - Error while executing comand [sccp, sap, create, 5, 1, 11, 2]
+java.lang.Exception: Service access point already exists
+	at org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.addMtp3ServiceAccessPoint(RouterImpl.java:463)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.manageSap(SccpExecutor.java:803)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:110)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutorTest.testSap(SccpExecutorTest.java:247)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:50:45,299]ERROR 38570[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:124) - Error while executing comand [sccp, sap, modify, 5, mtp3-id, 2, opc, 12, ni, 2]
+java.lang.Exception: Mtp3UserPart doesn't exist
+	at org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.modifyMtp3ServiceAccessPoint(RouterImpl.java:513)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.manageSap(SccpExecutor.java:856)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:110)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutorTest.testSap(SccpExecutorTest.java:257)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:50:45,300]ERROR 38571[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:124) - Error while executing comand [sccp, sap, modify, 6, mtp3-id, 2, opc, 14, ni, 2]
+java.lang.Exception: Service access point doesn't exist on stack=SccpExecutorTest
+	at org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.modifyMtp3ServiceAccessPoint(RouterImpl.java:509)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.manageSap(SccpExecutor.java:856)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:110)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutorTest.testSap(SccpExecutorTest.java:279)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:50:45,301]ERROR 38572[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:124) - Error while executing comand [sccp, dest, create, 1, 7, 31, 32, 3, 4, 255]
+java.lang.Exception: Service access point doesn't exist on stack=SccpExecutorTest
+	at org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.addMtp3Destination(RouterImpl.java:404)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.manageDest(SccpExecutor.java:1008)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:112)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutorTest.testSap(SccpExecutorTest.java:287)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:50:45,302]ERROR 38573[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:124) - Error while executing comand [sccp, dest, create, 5, 7, 33, 34, 3, 4, 255]
+java.lang.Exception: Destination definition already exists
+	at org.restcomm.protocols.ss7.sccp.impl.router.Mtp3ServiceAccessPointImpl.addMtp3Destination(Mtp3ServiceAccessPointImpl.java:119)
+	at org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.addMtp3Destination(RouterImpl.java:407)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.manageDest(SccpExecutor.java:1008)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:112)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutorTest.testSap(SccpExecutorTest.java:308)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:50:45,303]ERROR 38574[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:124) - Error while executing comand [sccp, dest, modify, 1, 7, first-dpc, 35, last-dpc, 36, first-sls, 3, last-sls, 4, sls-mask, 15]
+java.lang.Exception: Service access point doesn't exist on stack=SccpExecutorTest
+	at org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.modifyMtp3Destination(RouterImpl.java:427)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.manageDest(SccpExecutor.java:1059)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:112)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutorTest.testSap(SccpExecutorTest.java:320)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:50:45,304]ERROR 38575[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:124) - Error while executing comand [sccp, dest, modify, 5, 9, first-dpc, 38, last-dpc, 39, first-sls, 3, last-sls, 4, sls-mask, 15]
+java.lang.Exception: Destination definition doesn't exist on stack=SccpExecutorTest
+	at org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.modifyMtp3Destination(RouterImpl.java:432)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.manageDest(SccpExecutor.java:1059)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:112)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutorTest.testSap(SccpExecutorTest.java:330)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:50:45,306]ERROR 38577[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:124) - Error while executing comand [sccp, dest, delete, 1, 7]
+java.lang.Exception: Service access point doesn't exist on stack=SccpExecutorTest
+	at org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.removeMtp3Destination(RouterImpl.java:453)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.manageDest(SccpExecutor.java:1096)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:112)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutorTest.testSap(SccpExecutorTest.java:373)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:50:45,307]ERROR 38578[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:124) - Error while executing comand [sccp, dest, delete, 5, 9]
+java.lang.Exception: Destination definition doesn't exist on stack=SccpExecutorTest
+	at org.restcomm.protocols.ss7.sccp.impl.router.Mtp3ServiceAccessPointImpl.removeMtp3Destination(Mtp3ServiceAccessPointImpl.java:151)
+	at org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.removeMtp3Destination(RouterImpl.java:456)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.manageDest(SccpExecutor.java:1096)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:112)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutorTest.testSap(SccpExecutorTest.java:383)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:50:45,308]ERROR 38579[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:124) - Error while executing comand [sccp, sap, delete, 1]
+java.lang.Exception: Service access point doesn't exist on stack=SccpExecutorTest
+	at org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.removeMtp3ServiceAccessPoint(RouterImpl.java:546)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.manageSap(SccpExecutor.java:892)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutor.execute(SccpExecutor.java:110)
+	at org.restcomm.protocols.ss7.sccp.impl.oam.SccpExecutorTest.testSap(SccpExecutorTest.java:400)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:50:45,310] INFO 38581[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:45,310] INFO 38581[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:45,310] INFO 38581[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:45,311] INFO 38582[pool-26-thread-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:48,332] INFO 41603[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:48,332] INFO 41603[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:48,333] INFO 41604[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:48,335] INFO 41606[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:48,336] INFO 41607[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:48,336] INFO 41607[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:48,337] INFO 41608[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:48,337] INFO 41608[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:48,338] INFO 41609[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:81) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack1_management2.xml
+[2019-08-19 11:50:48,342] INFO 41613[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack1_sccprouter3.xml
+[2019-08-19 11:50:48,343] INFO 41614[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:48,343] INFO 41614[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack1_sccpresource2.xml
+[2019-08-19 11:50:48,343] INFO 41614[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:48,345] INFO 41616[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:81) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack2_management2.xml
+[2019-08-19 11:50:48,345] INFO 41616[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack2_sccprouter3.xml
+[2019-08-19 11:50:48,346] INFO 41617[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:48,346] INFO 41617[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack2_sccpresource2.xml
+[2019-08-19 11:50:48,347] INFO 41618[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:48,349] INFO 41620[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:48,349] INFO 41620[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:48,350] INFO 41621[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:48,360] INFO 41631[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:48,362] INFO 41633[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:50:48,362] INFO 41633[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:50:48,363] INFO 41634[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:50:48,363] INFO 41634[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:50:48,364] INFO 41635[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:81) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack1_management2.xml
+[2019-08-19 11:50:48,365] INFO 41636[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack1_sccprouter3.xml
+[2019-08-19 11:50:48,366] INFO 41637[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:48,366] INFO 41637[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack1_sccpresource2.xml
+[2019-08-19 11:50:48,367] INFO 41638[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:48,368] INFO 41639[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImplProxy.start(SccpStackImplProxy.java:81) - SCCP Management configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack2_management2.xml
+[2019-08-19 11:50:48,369] INFO 41640[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:228) - SCCP Router configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack2_sccprouter3.xml
+[2019-08-19 11:50:48,370] INFO 41641[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.router.RouterImpl.start(RouterImpl.java:232) - Started SCCP Router
+[2019-08-19 11:50:48,370] INFO 41641[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl$PersistentStorage.setPersistDir(SccpResourceImpl.java:417) - SCCP Resource configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-impl/target/test-classes/MtpPrimitivesTestSccpStack2_sccpresource2.xml
+[2019-08-19 11:50:48,371] INFO 41642[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpResourceImpl.start(SccpResourceImpl.java:88) - Started Sccp Resource
+[2019-08-19 11:50:48,373] WARN 41644[Mtp3-DeliveryExecutorSystem-27-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.onMtp3StatusMessage(SccpStackImpl.java:1223) - Rx : MTP-STATUS: AffectedDpc=8000002, Cause=UserPartUnavailability_UnequippedRemoteUser, CongLevel=0, userPartIdentity=0 (one message in 100 seconds)
+[2019-08-19 11:50:48,873] WARN 42144[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpRoutingControl.routeAddressed(SccpRoutingControl.java:673) - Routing of Sccp Message=Sccp Msg [Type=-1 networkId=0 sls=1 incomingOpc=-1 incomingDpc=-1 outgoingDpc=-1 CallingAddress(pc=8000001,ssn=8,AI=67,gt=null) CalledParty(pc=8000002,ssn=8,AI=67,gt=null) DataLen=10] failed as Remote SubSystem = 8 is prohibited 
+[2019-08-19 11:50:49,374] WARN 42645[Mtp3-DeliveryExecutorSystem-27-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.onMtp3StatusMessage(SccpStackImpl.java:1227) - Rx : MTP-STATUS: AffectedDpc=8000002, Cause=UserPartUnavailability_InaccessibleRemoteUser, CongLevel=0, userPartIdentity=0 (one message in 100 seconds)
+[2019-08-19 11:50:59,376] INFO 52647[Mtp3-DeliveryExecutor-0-28-1] - org.restcomm.protocols.ss7.sccp.impl.SccpManagement.onManagementMessage(SccpManagement.java:175) - Rx : SST, Affected SSN=1, Affected PC=8000002, Subsystem Multiplicity Ind=0 SeqControl=0
+[2019-08-19 11:50:59,377] INFO 52648[Mtp3-DeliveryExecutor-0-19-1] - org.restcomm.protocols.ss7.sccp.impl.SccpManagement.onManagementMessage(SccpManagement.java:143) - Rx : SSA, Affected SSN=1, Affected PC=8000002, Subsystem Multiplicity Ind=0 SeqControl=0
+[2019-08-19 11:51:04,876] INFO 58147[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:51:04,876] INFO 58147[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:51:04,876] INFO 58147[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:51:04,876] INFO 58147[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...
+[2019-08-19 11:51:04,877] INFO 58148[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:917) - Stopping ...
+[2019-08-19 11:51:04,877] INFO 58148[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:949) - Stopping management...
+[2019-08-19 11:51:04,878] INFO 58149[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:951) - Stopping routing engine...
+[2019-08-19 11:51:04,878] INFO 58149[pool-26-thread-2] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.stop(SccpStackImpl.java:953) - Stopping MSU handler...

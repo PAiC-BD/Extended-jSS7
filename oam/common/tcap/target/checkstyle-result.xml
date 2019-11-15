@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.5">
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/tcap/src/main/java/org/restcomm/protocols/ss7/oam/common/tcap/TcapManagementJmxMBean.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/tcap/src/main/java/org/restcomm/protocols/ss7/oam/common/tcap/TcapManagementJmx.java">
+</file>
+</checkstyle>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.5">
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/scheduler/src/main/java/org/restcomm/protocols/ss7/scheduler/SchedulerMBean.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/scheduler/src/main/java/org/restcomm/protocols/ss7/scheduler/ConcurrentLinkedList.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/scheduler/src/main/java/org/restcomm/protocols/ss7/scheduler/DefaultClock.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/scheduler/src/main/java/org/restcomm/protocols/ss7/scheduler/OrderedTaskQueue.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/scheduler/src/main/java/org/restcomm/protocols/ss7/scheduler/IntConcurrentHashMap.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/scheduler/src/main/java/org/restcomm/protocols/ss7/scheduler/IntConcurrentLinkedList.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/scheduler/src/main/java/org/restcomm/protocols/ss7/scheduler/Scheduler.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/scheduler/src/main/java/org/restcomm/protocols/ss7/scheduler/Task.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/scheduler/src/main/java/org/restcomm/protocols/ss7/scheduler/Clock.java">
+</file>
+</checkstyle>

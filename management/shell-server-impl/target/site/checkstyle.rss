@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rss version="0.91">
+  <channel>
+    <title>Restcomm jSS7 :: Management :: shell-server-impl - Checkstyle report</title>
+    <link>http://www.restcomm.org/ss7-parent/management/shell-server-impl</link>
+    <description>Restcomm jSS7 :: Management :: shell-server-impl - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2019</copyright>
+    <item>
+      <title>File: 4,
+             Errors: 0,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>http://www.restcomm.org/ss7-parent/management/shell-server-impl/checkstyle.html</link>
+      <description>
+        <p>Click <a href="http://www.restcomm.org/ss7-parent/management/shell-server-impl/checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-server-impl/checkstyle.html#org.restcomm.ss7.management.console.ShellServerMBean.java">org/restcomm/ss7/management/console/ShellServerMBean.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-server-impl/checkstyle.html#org.restcomm.ss7.management.console.ShellServerWildFly.java">org/restcomm/ss7/management/console/ShellServerWildFly.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-server-impl/checkstyle.html#org.restcomm.ss7.management.console.ShellServerJboss.java">org/restcomm/ss7/management/console/ShellServerJboss.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-server-impl/checkstyle.html#org.restcomm.ss7.management.console.ShellServer.java">org/restcomm/ss7/management/console/ShellServer.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

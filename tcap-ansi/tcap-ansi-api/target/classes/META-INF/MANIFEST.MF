@@ -1,0 +1,42 @@
+Manifest-Version: 1.0
+Export-Package: org.restcomm.protocols.ss7.tcapAnsi.api;uses:="org.res
+ tcomm.protocols.ss7.tcapAnsi.api.tc.component,org.restcomm.protocols.
+ ss7.tcapAnsi.api.asn.comp,org.restcomm.protocols.ss7.tcapAnsi.api.tc.
+ dialog,org.restcomm.protocols.ss7.tcapAnsi.api.asn,org.restcomm.proto
+ cols.ss7.tcapAnsi.api.tc.dialog.events,org.mobicents.protocols.asn,or
+ g.restcomm.protocols.ss7.statistics.api,javolution.util,org.restcomm.
+ protocols.ss7.sccp,org.restcomm.protocols.ss7.sccp.parameter",org.res
+ tcomm.protocols.ss7.tcapAnsi.api.asn;uses:="org.mobicents.protocols.a
+ sn,org.restcomm.protocols.ss7.tcapAnsi.api.asn.comp",org.restcomm.pro
+ tocols.ss7.tcapAnsi.api.asn.comp;uses:="org.restcomm.protocols.ss7.tc
+ apAnsi.api.asn,org.restcomm.protocols.ss7.tcapAnsi.api.tc.component",
+ org.restcomm.protocols.ss7.tcapAnsi.api.tc.dialog.events;uses:="org.r
+ estcomm.protocols.ss7.tcapAnsi.api.asn.comp,org.restcomm.protocols.ss
+ 7.tcapAnsi.api.tc.dialog,org.restcomm.protocols.ss7.tcapAnsi.api,org.
+ restcomm.protocols.ss7.sccp.parameter,org.restcomm.protocols.ss7.tcap
+ Ansi.api.asn",org.restcomm.protocols.ss7.tcapAnsi.api.tc.dialog;uses:
+ ="org.restcomm.protocols.ss7.tcapAnsi.api,org.restcomm.protocols.ss7.
+ sccp.parameter,org.restcomm.protocols.ss7.tcapAnsi.api.asn.comp,org.r
+ estcomm.protocols.ss7.tcapAnsi.api.asn,org.restcomm.protocols.ss7.tca
+ pAnsi.api.tc.dialog.events",org.restcomm.protocols.ss7.tcapAnsi.api.t
+ c.component
+Implementation-Title: org.restcomm.protocols.ss7.tcapAnsi:tcap-ansi-ap
+ i
+Implementation-Version: 8.0.0-170
+Built-By: root
+Tool: Bnd-1.15.0
+Bundle-Name: Restcomm jSS7 :: TCAP ANSI :: Api :: tcap-ansi-api
+Created-By: Apache Maven Bundle Plugin
+Implementation-URL: http://www.restcomm.org
+Implementation-Vendor-Id: TeleStax, Inc.
+Build-Jdk: 1.7.0_80
+Bundle-Version: 8.0.0.170
+Bnd-LastModified: 1566929175471
+Bundle-ManifestVersion: 2
+Bundle-License: http://www.gnu.org/licenses/agpl-3.0.html
+Bundle-Description: Restcomm :: Parent pom for 2.x releases
+Import-Package: javolution.util,org.mobicents.protocols.asn,org.restco
+ mm.protocols.ss7.sccp,org.restcomm.protocols.ss7.sccp.parameter,org.r
+ estcomm.protocols.ss7.statistics.api
+Bundle-SymbolicName: org.restcomm.protocols.ss7.tcapAnsi.tcap-ansi-api
+

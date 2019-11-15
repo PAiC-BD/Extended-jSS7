@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.5">
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/TCAPStackImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/DialogImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/NonPersistentTCAPStackImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/TCAPProviderImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/TCAPCounterProviderImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/asn/ConfidentialityImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/asn/TCQueryMessageImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/asn/InvokeImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/asn/TCNoticeIndicationImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/asn/ErrorCodeImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/asn/SecurityContextImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/asn/TcapFactory.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/asn/UserInformationElementImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/asn/ReturnImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/asn/TCUniMessageImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/asn/UserInformationImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/asn/TCConversationMessageImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/asn/ReturnResultNotLastImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/asn/TCResponseMessageImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/asn/ProtocolVersionImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/asn/ApplicationContextImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/asn/TransactionID.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/asn/TCUnidentifiedMessage.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/asn/RejectImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/asn/OperationCodeImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/asn/Utils.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/asn/ReturnErrorImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/asn/DialogPortionImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/asn/TCAbortMessageImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/asn/ParameterImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/asn/ReturnResultLastImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/SlsRangeType.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/PreviewDialogData.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/PreviewDialogDataKey.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/oam/TCAPAnsiOAMMessage.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/oam/TCAPAnsiExecutor.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/tc/dialog/events/DialogRequestImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/tc/dialog/events/DialogPrimitiveFactoryImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/tc/dialog/events/TCUniIndicationImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/tc/dialog/events/TCPAbortIndicationImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/tc/dialog/events/TCQueryRequestImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/tc/dialog/events/TCUserAbortRequestImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/tc/dialog/events/DialogIndicationImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/tc/dialog/events/DraftParsedMessageImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/tc/dialog/events/TCConversationIndicationImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/tc/dialog/events/TCUserAbortIndicationImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/tc/dialog/events/TCConversationRequestImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/tc/dialog/events/TCQueryIndicationImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/tc/dialog/events/TCUniRequestImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/tc/dialog/events/TCResponseRequestImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/tc/dialog/events/TCResponseIndicationImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/tcap-ansi/tcap-ansi-impl/src/main/java/org/restcomm/protocols/ss7/tcapAnsi/tc/component/ComponentPrimitiveFactoryImpl.java">
+</file>
+</checkstyle>

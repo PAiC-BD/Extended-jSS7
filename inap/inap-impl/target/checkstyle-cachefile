@@ -1,0 +1,9 @@
+#Tue Aug 27 18:06:30 UTC 2019
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-impl/src/main/java/org/restcomm/protocols/ss7/inap/primitives/INAPAsnPrimitive.java=1565800969000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-impl/src/main/java/org/restcomm/protocols/ss7/inap/isup/INAPParameterFactoryImpl.java=1565800969000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-impl/src/main/java/org/restcomm/protocols/ss7/inap/isup/CallingPartysCategoryInapImpl.java=1565800969000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-impl/src/main/java/org/restcomm/protocols/ss7/inap/isup/RedirectionInformationInapImpl.java=1565800969000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-impl/src/main/java/org/restcomm/protocols/ss7/inap/isup/HighLayerCompatibilityInapImpl.java=1565800969000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-impl/src/main/java/org/restcomm/protocols/ss7/inap/primitives/LegIDImpl.java=1565800969000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-impl/src/main/java/org/restcomm/protocols/ss7/inap/primitives/MiscCallInfoImpl.java=1565800969000
+configuration*?=E618E022C8BC1AF0A6CCFF57C8F2599CFAF8EC5A

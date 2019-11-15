@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.5">
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/indicator/GlobalTitleIndicator.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/indicator/NumberingPlan.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/indicator/RoutingIndicator.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/indicator/NatureOfAddress.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/indicator/AddressIndicator.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/utils/Utils.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/RemoteSubSystem.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/parameter/SccpAddress.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/parameter/ReleaseCauseValue.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/parameter/HopCounter.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/parameter/ErrorCause.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/parameter/GlobalTitle.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/parameter/LocalReference.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/parameter/GlobalTitle0010.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/parameter/Credit.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/parameter/ReleaseCause.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/parameter/SegmentingReassembling.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/parameter/Importance.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/parameter/ReceiveSequenceNumber.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/parameter/ResetCause.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/parameter/EncodingScheme.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/parameter/SequencingSegmenting.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/parameter/Segmentation.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/parameter/GlobalTitle0011.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/parameter/GlobalTitle0100.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/parameter/ReturnCause.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/parameter/ReturnCauseValue.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/parameter/ParameterFactory.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/parameter/GlobalTitle0001.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/parameter/ResetCauseValue.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/parameter/RefusalCauseValue.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/parameter/ErrorCauseValue.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/parameter/ProtocolClass.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/parameter/SequenceNumber.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/parameter/RefusalCause.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/parameter/EncodingSchemeType.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/parameter/Parameter.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/SccpManagementEventListener.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/SccpConnectionState.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/SignallingPointStatus.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/SccpResource.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/RemoteSccpStatus.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/SccpProvider.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/SccpConnection.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/LoadSharingAlgorithm.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/Mtp3ServiceAccessPoint.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/SccpProtocolVersion.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/OriginationType.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/SccpListener.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/RemoteSignalingPointCode.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/RuleType.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/Rule.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/MaxConnectionCountReached.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/NetworkIdState.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/LongMessageRuleType.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/SccpStack.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/message/SccpConnRlsdMessage.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/message/MessageFactory.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/message/SccpNoticeMessage.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/message/SccpConnDt1Message.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/message/SccpConnMessage.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/message/SccpConnCrMessage.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/message/SccpConnCcMessage.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/message/SccpConnErrMessage.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/message/SccpConnCrefMessage.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/message/SccpMessage.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/message/SccpConnDt2Message.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/message/SccpConnRsrMessage.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/message/SccpDataMessage.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/message/SccpConnAkMessage.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/message/ParseException.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/message/SccpAddressedMessage.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/message/SccpConnRlcMessage.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/message/SccpConnItMessage.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/message/SccpConnRscMessage.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/SccpCongestionControlAlgo.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/ConcernedSignalingPointCode.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/Mtp3Destination.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/LongMessageRule.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/sccp/sccp-api/src/main/java/org/restcomm/protocols/ss7/sccp/Router.java">
+</file>
+</checkstyle>

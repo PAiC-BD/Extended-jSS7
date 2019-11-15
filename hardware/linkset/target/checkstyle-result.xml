@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.5">
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/linkset/src/main/java/org/mobicents/ss7/linkset/oam/LinksetFactoryFactory.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/linkset/src/main/java/org/mobicents/ss7/linkset/oam/LinksetManagerImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/linkset/src/main/java/org/mobicents/ss7/linkset/oam/LinkState.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/linkset/src/main/java/org/mobicents/ss7/linkset/oam/LinkMode.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/linkset/src/main/java/org/mobicents/ss7/linkset/oam/LinksetState.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/linkset/src/main/java/org/mobicents/ss7/linkset/oam/Link.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/linkset/src/main/java/org/mobicents/ss7/linkset/oam/Linkset.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/linkset/src/main/java/org/mobicents/ss7/linkset/oam/LinksetStream.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/linkset/src/main/java/org/mobicents/ss7/linkset/oam/LinksetSelectorKey.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/linkset/src/main/java/org/mobicents/ss7/linkset/oam/Layer4.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/linkset/src/main/java/org/mobicents/ss7/linkset/oam/LinksetExecutor.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/linkset/src/main/java/org/mobicents/ss7/linkset/oam/LinkOAMMessages.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/linkset/src/main/java/org/mobicents/ss7/linkset/oam/LinksetManager.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/linkset/src/main/java/org/mobicents/ss7/linkset/oam/LinksetMode.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/linkset/src/main/java/org/mobicents/ss7/linkset/oam/LinksetSelector.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/linkset/src/main/java/org/mobicents/ss7/linkset/oam/LinksetFactory.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/hardware/linkset/src/main/java/org/mobicents/ss7/linkset/oam/FormatterHelp.java">
+</file>
+</checkstyle>

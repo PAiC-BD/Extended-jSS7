@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.5">
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-server-impl/src/main/java/org/restcomm/ss7/management/console/ShellServer.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-server-impl/src/main/java/org/restcomm/ss7/management/console/ShellServerWildFly.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-server-impl/src/main/java/org/restcomm/ss7/management/console/ShellServerJboss.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-server-impl/src/main/java/org/restcomm/ss7/management/console/ShellServerMBean.java">
+</file>
+</checkstyle>

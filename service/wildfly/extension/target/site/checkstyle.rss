@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rss version="0.91">
+  <channel>
+    <title>Restcomm jSS7 :: Service :: WildFly :: restcomm-ss7-wildfly-extension - Checkstyle report</title>
+    <link>http://www.restcomm.org/ss7-parent/restcomm-service-parent/restcomm-ss7-wildfly/restcomm-ss7-wildfly-extension</link>
+    <description>Restcomm jSS7 :: Service :: WildFly :: restcomm-ss7-wildfly-extension - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2019</copyright>
+    <item>
+      <title>File: 24,
+             Errors: 0,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>http://www.restcomm.org/ss7-parent/restcomm-service-parent/restcomm-ss7-wildfly/restcomm-ss7-wildfly-extension/checkstyle.html</link>
+      <description>
+        <p>Click <a href="http://www.restcomm.org/ss7-parent/restcomm-service-parent/restcomm-ss7-wildfly/restcomm-ss7-wildfly-extension/checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/restcomm-service-parent/restcomm-ss7-wildfly/restcomm-ss7-wildfly-extension/checkstyle.html#org.restcomm.ss7.extension.SS7MbeanPropertyEntryRemove.java">org/restcomm/ss7/extension/SS7MbeanPropertyEntryRemove.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/restcomm-service-parent/restcomm-ss7-wildfly/restcomm-ss7-wildfly-extension/checkstyle.html#org.restcomm.ss7.extension.SS7MbeanConstructorDefinition.java">org/restcomm/ss7/extension/SS7MbeanConstructorDefinition.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/restcomm-service-parent/restcomm-ss7-wildfly/restcomm-ss7-wildfly-extension/checkstyle.html#org.restcomm.ss7.extension.SubsystemRemove.java">org/restcomm/ss7/extension/SubsystemRemove.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/restcomm-service-parent/restcomm-ss7-wildfly/restcomm-ss7-wildfly-extension/checkstyle.html#org.restcomm.ss7.extension.SS7MbeanRemove.java">org/restcomm/ss7/extension/SS7MbeanRemove.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/restcomm-service-parent/restcomm-ss7-wildfly/restcomm-ss7-wildfly-extension/checkstyle.html#org.restcomm.ss7.extension.SubsystemDefinition.java">org/restcomm/ss7/extension/SubsystemDefinition.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/restcomm-service-parent/restcomm-ss7-wildfly/restcomm-ss7-wildfly-extension/checkstyle.html#org.restcomm.ss7.extension.SS7MbeanPropertyEntryDefinition.java">org/restcomm/ss7/extension/SS7MbeanPropertyEntryDefinition.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/restcomm-service-parent/restcomm-ss7-wildfly/restcomm-ss7-wildfly-extension/checkstyle.html#org.restcomm.ss7.extension.SS7MbeanPropertyDefinition.java">org/restcomm/ss7/extension/SS7MbeanPropertyDefinition.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/restcomm-service-parent/restcomm-ss7-wildfly/restcomm-ss7-wildfly-extension/checkstyle.html#org.restcomm.ss7.extension.Constants.java">org/restcomm/ss7/extension/Constants.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/restcomm-service-parent/restcomm-ss7-wildfly/restcomm-ss7-wildfly-extension/checkstyle.html#org.restcomm.ss7.service.SS7ExtensionService.java">org/restcomm/ss7/service/SS7ExtensionService.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/restcomm-service-parent/restcomm-ss7-wildfly/restcomm-ss7-wildfly-extension/checkstyle.html#org.restcomm.ss7.extension.SS7MbeanConstructorAdd.java">org/restcomm/ss7/extension/SS7MbeanConstructorAdd.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/restcomm-service-parent/restcomm-ss7-wildfly/restcomm-ss7-wildfly-extension/checkstyle.html#org.restcomm.ss7.extension.SS7MbeanPropertyEntryAdd.java">org/restcomm/ss7/extension/SS7MbeanPropertyEntryAdd.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/restcomm-service-parent/restcomm-ss7-wildfly/restcomm-ss7-wildfly-extension/checkstyle.html#org.restcomm.ss7.extension.SS7MbeanConstructorParameterDefinition.java">org/restcomm/ss7/extension/SS7MbeanConstructorParameterDefinition.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/restcomm-service-parent/restcomm-ss7-wildfly/restcomm-ss7-wildfly-extension/checkstyle.html#org.restcomm.ss7.extension.SS7MbeanConstructorRemove.java">org/restcomm/ss7/extension/SS7MbeanConstructorRemove.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/restcomm-service-parent/restcomm-ss7-wildfly/restcomm-ss7-wildfly-extension/checkstyle.html#org.restcomm.ss7.service.SS7ServiceInterface.java">org/restcomm/ss7/service/SS7ServiceInterface.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/restcomm-service-parent/restcomm-ss7-wildfly/restcomm-ss7-wildfly-extension/checkstyle.html#org.restcomm.ss7.extension.SS7Extension.java">org/restcomm/ss7/extension/SS7Extension.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/restcomm-service-parent/restcomm-ss7-wildfly/restcomm-ss7-wildfly-extension/checkstyle.html#org.restcomm.ss7.extension.SS7MbeanPropertyRemove.java">org/restcomm/ss7/extension/SS7MbeanPropertyRemove.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/restcomm-service-parent/restcomm-ss7-wildfly/restcomm-ss7-wildfly-extension/checkstyle.html#org.restcomm.ss7.extension.SS7SubsystemParser.java">org/restcomm/ss7/extension/SS7SubsystemParser.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/restcomm-service-parent/restcomm-ss7-wildfly/restcomm-ss7-wildfly-extension/checkstyle.html#org.restcomm.ss7.extension.SubsystemAdd.java">org/restcomm/ss7/extension/SubsystemAdd.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/restcomm-service-parent/restcomm-ss7-wildfly/restcomm-ss7-wildfly-extension/checkstyle.html#org.restcomm.ss7.extension.SS7MbeanDefinition.java">org/restcomm/ss7/extension/SS7MbeanDefinition.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/restcomm-service-parent/restcomm-ss7-wildfly/restcomm-ss7-wildfly-extension/checkstyle.html#org.restcomm.ss7.extension.SS7MbeanConstructorParameterAdd.java">org/restcomm/ss7/extension/SS7MbeanConstructorParameterAdd.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/restcomm-service-parent/restcomm-ss7-wildfly/restcomm-ss7-wildfly-extension/checkstyle.html#org.restcomm.ss7.extension.Namespace.java">org/restcomm/ss7/extension/Namespace.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/restcomm-service-parent/restcomm-ss7-wildfly/restcomm-ss7-wildfly-extension/checkstyle.html#org.restcomm.ss7.extension.SS7MbeanConstructorParameterRemove.java">org/restcomm/ss7/extension/SS7MbeanConstructorParameterRemove.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/restcomm-service-parent/restcomm-ss7-wildfly/restcomm-ss7-wildfly-extension/checkstyle.html#org.restcomm.ss7.extension.SS7MbeanAdd.java">org/restcomm/ss7/extension/SS7MbeanAdd.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/restcomm-service-parent/restcomm-ss7-wildfly/restcomm-ss7-wildfly-extension/checkstyle.html#org.restcomm.ss7.extension.SS7MbeanPropertyAdd.java">org/restcomm/ss7/extension/SS7MbeanPropertyAdd.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

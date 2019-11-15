@@ -1,0 +1,61 @@
+Manifest-Version: 1.0
+Export-Package: org.restcomm.protocols.ss7.tcapAnsi;uses:="org.restcom
+ m.protocols.ss7.tcapAnsi.api.asn.comp,org.restcomm.protocols.ss7.tcap
+ Ansi.asn,org.restcomm.protocols.ss7.tcapAnsi.api,org.apache.log4j,org
+ .restcomm.protocols.ss7.tcapAnsi.api.asn,org.restcomm.protocols.ss7.s
+ ccp.parameter,org.restcomm.protocols.ss7.tcapAnsi.api.tc.component,or
+ g.mobicents.protocols.asn,org.restcomm.protocols.ss7.tcapAnsi.tc.dial
+ og.events,org.restcomm.protocols.ss7.tcapAnsi.api.tc.dialog,org.restc
+ omm.protocols.ss7.tcapAnsi.api.tc.dialog.events,org.restcomm.protocol
+ s.ss7.sccp,javolution.util,org.restcomm.protocols.ss7.statistics.api,
+ org.restcomm.protocols.ss7.statistics,org.restcomm.ss7.congestion,org
+ .restcomm.protocols.ss7.tcapAnsi.tc.component,io.netty.util.concurren
+ t,org.restcomm.protocols.ss7.sccp.message,javolution.xml.stream,javol
+ ution.xml,javolution.text",org.restcomm.protocols.ss7.tcapAnsi.asn;us
+ es:="org.mobicents.protocols.asn,org.restcomm.protocols.ss7.tcapAnsi.
+ api.asn.comp,org.restcomm.protocols.ss7.tcapAnsi.api.asn,org.restcomm
+ .protocols.ss7.tcapAnsi.api.tc.component,org.restcomm.protocols.ss7.t
+ capAnsi,org.restcomm.protocols.ss7.sccp.parameter,org.restcomm.protoc
+ ols.ss7.tcapAnsi.api.tc.dialog,org.restcomm.protocols.ss7.tcapAnsi.ap
+ i.tc.dialog.events,org.apache.log4j",org.restcomm.protocols.ss7.tcapA
+ nsi.oam;uses:="javolution.util,org.apache.log4j,org.restcomm.ss7.mana
+ gement.console,org.restcomm.protocols.ss7.tcapAnsi",org.restcomm.prot
+ ocols.ss7.tcapAnsi.tc.dialog.events;uses:="org.restcomm.protocols.ss7
+ .tcapAnsi.api.asn.comp,org.restcomm.protocols.ss7.tcapAnsi.api.tc.dia
+ log,org.restcomm.protocols.ss7.tcapAnsi.api.tc.dialog.events,org.rest
+ comm.protocols.ss7.tcapAnsi.api,org.restcomm.protocols.ss7.tcapAnsi.a
+ sn,org.restcomm.protocols.ss7.sccp.parameter,org.restcomm.protocols.s
+ s7.tcapAnsi.tc.component,org.restcomm.protocols.ss7.tcapAnsi.api.asn"
+ ,org.restcomm.protocols.ss7.tcapAnsi.tc.component;uses:="org.restcomm
+ .protocols.ss7.tcapAnsi.asn,org.restcomm.protocols.ss7.tcapAnsi.api,o
+ rg.restcomm.protocols.ss7.tcapAnsi.api.tc.component,org.restcomm.prot
+ ocols.ss7.tcapAnsi,org.restcomm.protocols.ss7.tcapAnsi.api.asn.comp"
+Implementation-Title: org.restcomm.protocols.ss7.tcapAnsi:tcap-ansi-im
+ pl
+Implementation-Version: 8.0.0-170
+Built-By: root
+Tool: Bnd-1.15.0
+Bundle-Name: Restcomm jSS7 :: TCAP ANSI :: Impl :: tcap-ansi-impl
+Created-By: Apache Maven Bundle Plugin
+Implementation-URL: http://www.restcomm.org
+Implementation-Vendor-Id: TeleStax, Inc.
+Build-Jdk: 1.7.0_80
+Bundle-Version: 8.0.0.170
+Bnd-LastModified: 1566929177259
+Bundle-ManifestVersion: 2
+Bundle-License: http://www.gnu.org/licenses/agpl-3.0.html
+Bundle-Description: Restcomm :: Parent pom for 2.x releases
+Import-Package: io.netty.util.concurrent,javolution.text,javolution.ut
+ il,javolution.xml,javolution.xml.stream,org.apache.log4j,org.mobicent
+ s.protocols.asn,org.restcomm.protocols.ss7.sccp,org.restcomm.protocol
+ s.ss7.sccp.message,org.restcomm.protocols.ss7.sccp.parameter,org.rest
+ comm.protocols.ss7.statistics,org.restcomm.protocols.ss7.statistics.a
+ pi,org.restcomm.protocols.ss7.tcapAnsi.api,org.restcomm.protocols.ss7
+ .tcapAnsi.api.asn,org.restcomm.protocols.ss7.tcapAnsi.api.asn.comp,or
+ g.restcomm.protocols.ss7.tcapAnsi.api.tc.component,org.restcomm.proto
+ cols.ss7.tcapAnsi.api.tc.dialog,org.restcomm.protocols.ss7.tcapAnsi.a
+ pi.tc.dialog.events,org.restcomm.ss7.congestion,org.restcomm.ss7.mana
+ gement.console
+Bundle-SymbolicName: org.restcomm.protocols.ss7.tcapAnsi.tcap-ansi-imp
+ l
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.5">
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/statistics/impl/src/main/java/org/restcomm/protocols/ss7/oam/common/statistics/CounterCampaignImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/statistics/impl/src/main/java/org/restcomm/protocols/ss7/oam/common/statistics/SourceValueCounterImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/statistics/impl/src/main/java/org/restcomm/protocols/ss7/oam/common/statistics/CounterLayer.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/statistics/impl/src/main/java/org/restcomm/protocols/ss7/oam/common/statistics/CounterValueSetImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/statistics/impl/src/main/java/org/restcomm/protocols/ss7/oam/common/statistics/CsvStatsPrinter.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/statistics/impl/src/main/java/org/restcomm/protocols/ss7/oam/common/statistics/StatsPrinter.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/statistics/impl/src/main/java/org/restcomm/protocols/ss7/oam/common/statistics/CounterValueImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/statistics/impl/src/main/java/org/restcomm/protocols/ss7/oam/common/statistics/CounterProviderManagement.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/statistics/impl/src/main/java/org/restcomm/protocols/ss7/oam/common/statistics/CounterProviderManagementMBean.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/statistics/impl/src/main/java/org/restcomm/protocols/ss7/oam/common/statistics/SourceValueObjectImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/statistics/impl/src/main/java/org/restcomm/protocols/ss7/oam/common/statistics/CounterDefSetImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/statistics/impl/src/main/java/org/restcomm/protocols/ss7/oam/common/statistics/CounterDefImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/statistics/impl/src/main/java/org/restcomm/protocols/ss7/oam/common/statistics/ComplexValueImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/statistics/impl/src/main/java/org/restcomm/protocols/ss7/oam/common/statistics/SourceValueSetImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/statistics/impl/src/main/java/org/restcomm/protocols/ss7/oam/common/statistics/CounterCampaignMap.java">
+</file>
+</checkstyle>

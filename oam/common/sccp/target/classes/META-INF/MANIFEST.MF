@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Export-Package: org.restcomm.protocols.ss7.oam.common.sccp;uses:="org.
+ restcomm.protocols.ss7.sccp.impl,org.restcomm.protocols.ss7.oam.commo
+ n.alarm,org.restcomm.protocols.ss7.mtp,org.restcomm.protocols.ss7.oam
+ .common.jmx,org.restcomm.protocols.ss7.ss7ext,org.restcomm.protocols.
+ ss7.sccpext.router,org.restcomm.protocols.ss7.sccp,org.restcomm.proto
+ cols.ss7.oam.common.jmxss7,org.restcomm.protocols.ss7.sccpext.impl.ro
+ uter,org.restcomm.protocols.ss7.sccpext.impl,org.restcomm.protocols.s
+ s7.indicator,org.restcomm.protocols.ss7.sccp.parameter"
+Implementation-Title: org.restcomm.protocols.ss7.oam.common:sccp-oam
+Implementation-Version: 8.0.0-170
+Built-By: root
+Tool: Bnd-1.15.0
+Bundle-Name: Restcomm jSS7 :: Management-jmx :: sccp-oam
+Created-By: Apache Maven Bundle Plugin
+Implementation-URL: http://www.restcomm.org
+Implementation-Vendor-Id: TeleStax, Inc.
+Build-Jdk: 1.7.0_80
+Bundle-Version: 8.0.0.170
+Bnd-LastModified: 1566929206577
+Bundle-ManifestVersion: 2
+Bundle-License: http://www.gnu.org/licenses/agpl-3.0.html
+Bundle-Description: Restcomm :: Parent pom for 2.x releases
+Import-Package: org.restcomm.protocols.ss7.indicator,org.restcomm.prot
+ ocols.ss7.mtp,org.restcomm.protocols.ss7.oam.common.alarm,org.restcom
+ m.protocols.ss7.oam.common.jmx,org.restcomm.protocols.ss7.oam.common.
+ jmxss7,org.restcomm.protocols.ss7.sccp,org.restcomm.protocols.ss7.scc
+ p.impl,org.restcomm.protocols.ss7.sccp.parameter,org.restcomm.protoco
+ ls.ss7.sccpext.impl,org.restcomm.protocols.ss7.sccpext.impl.router,or
+ g.restcomm.protocols.ss7.sccpext.router,org.restcomm.protocols.ss7.ss
+ 7ext
+Bundle-SymbolicName: org.restcomm.protocols.ss7.oam.common.sccp-oam
+

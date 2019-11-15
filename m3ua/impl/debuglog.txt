@@ -1,0 +1,584 @@
+[2019-08-19 11:31:47,913] INFO     0[pool-2-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/M3UAShellExecutorTest_m3ua1.xml
+[2019-08-19 11:31:47,935] INFO    22[pool-2-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:31:47,949]ERROR    36[pool-2-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.executeM3UA(M3UAShellExecutor.java:729) - Error while executing comand [m3ua, as, create, testas, AS, mode, SE, rc, 100, traffic-mode, loadshare]
+java.lang.Exception: Creation of AS failed. Other AS with name=testas already exist
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.createAs(M3UAManagementImpl.java:442)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.createAs(M3UAShellExecutor.java:162)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.executeM3UA(M3UAShellExecutor.java:440)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.execute(M3UAShellExecutor.java:880)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutorTest.testServerCommands(M3UAShellExecutorTest.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:31:47,972]ERROR    59[pool-2-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.executeM3UA(M3UAShellExecutor.java:729) - Error while executing comand [m3ua, asp, create, testasp2, testAssoc2, aspid, 2]
+java.lang.Exception: ASP Identifier=2 is already taken
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.createAspFactory(M3UAManagementImpl.java:614)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.executeM3UA(M3UAShellExecutor.java:515)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.execute(M3UAShellExecutor.java:880)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutorTest.testServerCommands(M3UAShellExecutorTest.java:138)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:31:47,975]ERROR    62[pool-2-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.executeM3UA(M3UAShellExecutor.java:729) - Error while executing comand [m3ua, asp, create, testasp1, testAssoc1]
+java.lang.Exception: Creation of ASP failed. Other ASP with name=testasp1 already exist
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.createAspFactory(M3UAManagementImpl.java:595)
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.createAspFactory(M3UAManagementImpl.java:569)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.executeM3UA(M3UAShellExecutor.java:513)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.execute(M3UAShellExecutor.java:880)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutorTest.testServerCommands(M3UAShellExecutorTest.java:146)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:31:47,976]ERROR    63[pool-2-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.executeM3UA(M3UAShellExecutor.java:729) - Error while executing comand [m3ua, asp, start, testasp1]
+java.lang.Exception: ASP name=testasp1 not assigned to any AS yet
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.startAsp(M3UAManagementImpl.java:803)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.executeM3UA(M3UAShellExecutor.java:579)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.execute(M3UAShellExecutor.java:880)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutorTest.testServerCommands(M3UAShellExecutorTest.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:31:47,982]ERROR    69[pool-2-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.executeM3UA(M3UAShellExecutor.java:729) - Error while executing comand [m3ua, as, add, testas, testasp1]
+java.lang.Exception: Cannot assign ASP=testasp1 to AS=testas. This ASP is already assigned to this AS
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.assignAspToAs(M3UAManagementImpl.java:692)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.addAspToAs(M3UAShellExecutor.java:242)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.executeM3UA(M3UAShellExecutor.java:444)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.execute(M3UAShellExecutor.java:880)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutorTest.testServerCommands(M3UAShellExecutorTest.java:160)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:31:48,053]ERROR   140[pool-2-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.executeM3UA(M3UAShellExecutor.java:729) - Error while executing comand [m3ua, asp, start, testasp1]
+java.lang.Exception: ASP name=testasp1 already started
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.startAsp(M3UAManagementImpl.java:799)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.executeM3UA(M3UAShellExecutor.java:579)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.execute(M3UAShellExecutor.java:880)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutorTest.testServerCommands(M3UAShellExecutorTest.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:31:51,436] WARN  3523[pool-3-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.AspFactoryStopTimer.tick(AspFactoryStopTimer.java:61) - Asp=testasp1 was stopped but underlying Association=testAssoc1 was not stopped after TIMEOUT=3000 ms. Forcing stop now
+[2019-08-19 11:31:51,557] WARN  3644[pool-2-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.AspFactoryImpl.onCommunicationLost(AspFactoryImpl.java:835) - Communication channel lost for AspFactroy=testasp1 Association=testAssoc1
+[2019-08-19 11:31:51,560]ERROR  3647[pool-2-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.executeM3UA(M3UAShellExecutor.java:729) - Error while executing comand [m3ua, as, destroy, testas]
+java.lang.Exception: As=testas used in route=2:-1:-1. Remove from route
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.destroyAs(M3UAManagementImpl.java:495)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.destroyAs(M3UAShellExecutor.java:203)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.executeM3UA(M3UAShellExecutor.java:442)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.execute(M3UAShellExecutor.java:880)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutorTest.testServerCommands(M3UAShellExecutorTest.java:206)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:31:51,564] INFO  3651[pool-2-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=3, AspFactories=1
+[2019-08-19 11:32:00,676] INFO 12763[pool-7-thread-1] - org.mobicents.protocols.sctp.netty.NettySctpManagementImpl.start(NettySctpManagementImpl.java:324) - SCTP configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/GatewayTest_sctp.xml
+[2019-08-19 11:32:00,728] WARN 12815[pool-7-thread-1] - org.mobicents.protocols.sctp.netty.NettySctpManagementImpl.start(NettySctpManagementImpl.java:338) - Failed to load the SCTP configuration file. 
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/GatewayTest_sctp.xml (No such file or directory)
+[2019-08-19 11:32:00,729] INFO 12816[pool-7-thread-1] - org.mobicents.protocols.sctp.netty.NettySctpManagementImpl.start(NettySctpManagementImpl.java:344) - Started SCTP Management=GatewayTest
+[2019-08-19 11:32:00,759] INFO 12846[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/GatewayTest_m3ua1.xml
+[2019-08-19 11:32:00,760] INFO 12847[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:32:00,773] INFO 12860[pool-7-thread-1] - org.mobicents.protocols.sctp.netty.NettySctpManagementImpl.addServer(NettySctpManagementImpl.java:557) - Created Server=testserver
+[2019-08-19 11:32:00,777] INFO 12864[pool-7-thread-1] - org.mobicents.protocols.sctp.netty.NettySctpManagementImpl.addServerAssociation(NettySctpManagementImpl.java:815) - Added Associoation=serverAsscoiation of type=SERVER
+[2019-08-19 11:32:00,855] INFO 12942[Sctp-BossGroup-GatewayTest-10-1] - io.netty.util.internal.logging.AbstractInternalLogger.log(AbstractInternalLogger.java:100) - [id: 0x356310a9] REGISTERED
+[2019-08-19 11:32:00,857] INFO 12944[Sctp-BossGroup-GatewayTest-10-1] - io.netty.util.internal.logging.AbstractInternalLogger.log(AbstractInternalLogger.java:100) - [id: 0x356310a9] BIND(/127.0.0.1:2365)
+[2019-08-19 11:32:00,858] INFO 12945[pool-7-thread-1] - org.mobicents.protocols.sctp.netty.NettyServerImpl.initSocket(NettyServerImpl.java:341) - SctpServerChannel bound to=[/127.0.0.1:2365] 
+[2019-08-19 11:32:00,859] INFO 12946[pool-7-thread-1] - org.mobicents.protocols.sctp.netty.NettyServerImpl.start(NettyServerImpl.java:265) - Started Server=testserver
+[2019-08-19 11:32:00,859] INFO 12946[Sctp-BossGroup-GatewayTest-10-1] - io.netty.util.internal.logging.AbstractInternalLogger.log(AbstractInternalLogger.java:100) - [id: 0x356310a9, /127.0.0.1:2365] ACTIVE
+[2019-08-19 11:32:00,867] INFO 12954[pool-7-thread-1] - org.mobicents.protocols.sctp.netty.NettyAssociationImpl.start(NettyAssociationImpl.java:503) - Started Association=Association [name=serverAsscoiation, associationType=SERVER, ipChannelType=SCTP, hostAddress=null, hostPort=0, peerAddress=127.0.0.1, peerPort=2366, serverName=testserver, extraHostAddress=[]]
+[2019-08-19 11:32:00,970] INFO 13057[pool-7-thread-1] - org.mobicents.protocols.sctp.netty.NettySctpManagementImpl.addAssociation(NettySctpManagementImpl.java:911) - Added Associoation=clientAsscoiation of type=CLIENT
+[2019-08-19 11:32:00,979] INFO 13066[pool-7-thread-1] - org.mobicents.protocols.sctp.netty.NettyAssociationImpl.start(NettyAssociationImpl.java:503) - Started Association=Association [name=clientAsscoiation, associationType=CLIENT, ipChannelType=SCTP, hostAddress=127.0.0.1, hostPort=2366, peerAddress=127.0.0.1, peerPort=2365, serverName=null, extraHostAddress=[]]
+[2019-08-19 11:32:05,992] INFO 18079[Sctp-BossGroup-GatewayTest-10-1] - io.netty.util.internal.logging.AbstractInternalLogger.log(AbstractInternalLogger.java:100) - [id: 0x356310a9, /127.0.0.1:2365] RECEIVED: [id: 0x76002cee, /127.0.0.1:2366 => /127.0.0.1:2365]
+[2019-08-19 11:32:05,995] INFO 18082[Sctp-BossGroup-GatewayTest-10-1] - org.mobicents.protocols.sctp.netty.NettySctpClientHandler.channelActive(NettySctpClientHandler.java:82) - Association=clientAsscoiation connected to host=127.0.0.1 port=2365
+[2019-08-19 11:32:05,995] INFO 18082[Sctp-WorkerGroup-GatewayTest-12-1] - org.mobicents.protocols.sctp.netty.NettySctpServerHandler.channelRegistered(NettySctpServerHandler.java:108) - Connected Association [name=serverAsscoiation, associationType=SERVER, ipChannelType=SCTP, hostAddress=null, hostPort=0, peerAddress=127.0.0.1, peerPort=2366, serverName=testserver, extraHostAddress=[]]
+[2019-08-19 11:32:05,998] INFO 18085[Sctp-BossGroup-GatewayTest-10-1] - org.mobicents.protocols.sctp.netty.NettySctpChannelInboundHandlerAdapter.userEventTriggered(NettySctpChannelInboundHandlerAdapter.java:95) - New association setup for Association=clientAsscoiation with 10 outbound streams, and 10 inbound streams.
+
+[2019-08-19 11:32:05,998] INFO 18085[Sctp-WorkerGroup-GatewayTest-12-1] - org.mobicents.protocols.sctp.netty.NettySctpChannelInboundHandlerAdapter.userEventTriggered(NettySctpChannelInboundHandlerAdapter.java:95) - New association setup for Association=serverAsscoiation with 10 outbound streams, and 10 inbound streams.
+
+[2019-08-19 11:32:13,989] INFO 26076[Sctp-BossGroup-GatewayTest-10-1] - org.mobicents.protocols.sctp.netty.NettyAssociationImpl.stop(NettyAssociationImpl.java:518) - Management requested to stop Association [name=clientAsscoiation, associationType=CLIENT, ipChannelType=SCTP, hostAddress=127.0.0.1, hostPort=2366, peerAddress=127.0.0.1, peerPort=2365, serverName=null, extraHostAddress=[]]
+[2019-08-19 11:32:13,990] INFO 26077[Sctp-WorkerGroup-GatewayTest-12-1] - org.mobicents.protocols.sctp.netty.NettySctpChannelInboundHandlerAdapter.userEventTriggered(NettySctpChannelInboundHandlerAdapter.java:160) - Association=serverAsscoiation SHUTDOWN
+[2019-08-19 11:32:13,991] WARN 26078[Sctp-WorkerGroup-GatewayTest-12-1] - org.restcomm.protocols.ss7.m3ua.impl.AspFactoryImpl.onCommunicationShutdown(AspFactoryImpl.java:864) - Communication channel shutdown for AspFactroy=server-testasp Association=serverAsscoiation
+[2019-08-19 11:32:13,992] WARN 26079[Sctp-BossGroup-GatewayTest-10-1] - org.restcomm.protocols.ss7.m3ua.impl.AspFactoryImpl.onCommunicationShutdown(AspFactoryImpl.java:864) - Communication channel shutdown for AspFactroy=client-testasp Association=clientAsscoiation
+[2019-08-19 11:32:13,992] WARN 26079[Sctp-BossGroup-GatewayTest-10-1] - org.mobicents.protocols.sctp.netty.NettySctpClientHandler.channelUnregistered(NettySctpClientHandler.java:50) - ChannelUnregistered event: association=Association [name=clientAsscoiation, associationType=CLIENT, ipChannelType=SCTP, hostAddress=127.0.0.1, hostPort=2366, peerAddress=127.0.0.1, peerPort=2365, serverName=null, extraHostAddress=[]]
+[2019-08-19 11:32:13,992] WARN 26079[Sctp-WorkerGroup-GatewayTest-12-1] - org.mobicents.protocols.sctp.netty.NettySctpServerHandler.channelUnregistered(NettySctpServerHandler.java:56) - ChannelUnregistered event: association=Association [name=serverAsscoiation, associationType=SERVER, ipChannelType=SCTP, hostAddress=null, hostPort=0, peerAddress=127.0.0.1, peerPort=2366, serverName=testserver, extraHostAddress=[]]
+[2019-08-19 11:32:16,261] WARN 28348[pool-17-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.AsStatePenTimeout.onEvent(AsStatePenTimeout.java:71) - PENDING timedout for As=client-testas
+[2019-08-19 11:32:18,091] INFO 30178[pool-7-thread-1] - org.mobicents.protocols.sctp.netty.NettyAssociationImpl.stop(NettyAssociationImpl.java:518) - Management requested to stop Association [name=serverAsscoiation, associationType=SERVER, ipChannelType=SCTP, hostAddress=null, hostPort=0, peerAddress=127.0.0.1, peerPort=2366, serverName=testserver, extraHostAddress=[]]
+[2019-08-19 11:32:18,094] INFO 30181[pool-7-thread-1] - org.mobicents.protocols.sctp.netty.NettyServerImpl.stop(NettyServerImpl.java:291) - Stoped Server=testserver
+[2019-08-19 11:32:18,095] INFO 30182[Sctp-BossGroup-GatewayTest-10-1] - io.netty.util.internal.logging.AbstractInternalLogger.log(AbstractInternalLogger.java:100) - [id: 0x356310a9, /127.0.0.1:2365] CLOSE()
+[2019-08-19 11:32:18,095] INFO 30182[Sctp-BossGroup-GatewayTest-10-1] - io.netty.util.internal.logging.AbstractInternalLogger.log(AbstractInternalLogger.java:100) - [id: 0x356310a9, /127.0.0.1:2365] INACTIVE
+[2019-08-19 11:32:18,095] INFO 30182[Sctp-BossGroup-GatewayTest-10-1] - io.netty.util.internal.logging.AbstractInternalLogger.log(AbstractInternalLogger.java:100) - [id: 0x356310a9, /127.0.0.1:2365] UNREGISTERED
+[2019-08-19 11:32:18,216] INFO 30303[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/M3UAManagementTest_m3ua1.xml
+[2019-08-19 11:32:18,218] INFO 30305[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:32:18,228] INFO 30315[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/M3UAManagementTest_m3ua1.xml
+[2019-08-19 11:32:18,230] INFO 30317[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:32:18,248] INFO 30335[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/M3UAManagementTest_m3ua1.xml
+[2019-08-19 11:32:18,250] INFO 30337[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:32:18,263] INFO 30350[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/M3UAManagementTest_m3ua1.xml
+[2019-08-19 11:32:18,269]ERROR 30356[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.loadActualData(M3UAManagementImpl.java:1160) - Error setting Assciation=ASPAssoc1 for the AspFactory=ASP1 while loading from XML
+java.lang.NullPointerException
+	at org.restcomm.protocols.ss7.m3ua.impl.AspFactoryImpl.setAssociation(AspFactoryImpl.java:317)
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.loadActualData(M3UAManagementImpl.java:1158)
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.loadVer2(M3UAManagementImpl.java:1198)
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.load(M3UAManagementImpl.java:1072)
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:306)
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementTest.setUp(M3UAManagementTest.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:543)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:212)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:631)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:32:18,270] INFO 30357[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:32:18,271] INFO 30358[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=1, AspFactories=1
+[2019-08-19 11:32:18,274] INFO 30361[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/M3UAManagementTest_OldVerToNewVers_m3ua1.xml
+[2019-08-19 11:32:18,275]ERROR 30362[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.loadVer1(M3UAManagementImpl.java:1187) - new XML 
+<?xml version="1.0" encoding="UTF-8" ?><heartbeattime value="10000"/><aspFactoryList><aspFactory name="testasp" assocName="test" started="false" maxseqnumber="256" aspid="2" heartbeat="false"/><aspFactory name="testasp1" assocName="test1" started="false" maxseqnumber="256" aspid="3" heartbeat="false"/></aspFactoryList><asList><as name="testAs" minAspActiveForLb="0" functionality="AS" exchangeType="SE" ipspType="CLIENT"><trafficMode mode="2"/><defTrafficMode mode="2"/><asps><asp name="testasp"/></asps></as><as name="testAs1" minAspActiveForLb="0" functionality="AS" exchangeType="SE" ipspType="CLIENT"><trafficMode mode="2"/><defTrafficMode mode="2"/><asps><asp name="testasp1"/></asps></as></asList><route><key value="2:-1:-1"/><routeAs trafficModeType="2"  as="testAs,testAs1"/></route>
+
+[2019-08-19 11:32:18,275]ERROR 30362[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.loadActualData(M3UAManagementImpl.java:1104) - Errro while reading attribute
+java.lang.NullPointerException
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.loadActualData(M3UAManagementImpl.java:1099)
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.loadVer1(M3UAManagementImpl.java:1191)
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.load(M3UAManagementImpl.java:1078)
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:306)
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementTest.testSerializationFromOldVerToNewVers(M3UAManagementTest.java:200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:32:18,278] INFO 30365[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:32:18,288] INFO 30375[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/RemSgFSMTest_m3ua1.xml
+[2019-08-19 11:32:18,289] INFO 30376[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:32:18,296] INFO 30383[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.AsImpl.write(AsImpl.java:698) - Adding the PayloadData=TransferMessage: {6=RoutingContext rc=[100], 528=Protocol opc=1408 dpc=123 si=3 ni=1 sls=1} to PendingQueue for AS=testas
+[2019-08-19 11:32:18,299] INFO 30386[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=1, AspFactories=1
+[2019-08-19 11:32:18,308] INFO 30395[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/RemSgFSMTest_m3ua1.xml
+[2019-08-19 11:32:18,309] INFO 30396[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:32:20,809] WARN 32896[pool-36-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.AsStatePenTimeout.onEvent(AsStatePenTimeout.java:71) - PENDING timedout for As=testas
+[2019-08-19 11:32:20,811] INFO 32898[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=1, AspFactories=1
+[2019-08-19 11:32:20,817] INFO 32904[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/RemSgFSMTest_m3ua1.xml
+[2019-08-19 11:32:20,818] INFO 32905[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:32:23,318] WARN 35405[pool-39-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.AsStatePenTimeout.onEvent(AsStatePenTimeout.java:71) - PENDING timedout for As=testas
+[2019-08-19 11:32:23,319] INFO 35406[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=1, AspFactories=1
+[2019-08-19 11:32:23,323] INFO 35410[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/RemSgFSMTest_m3ua1.xml
+[2019-08-19 11:32:23,324] INFO 35411[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:32:25,825] WARN 37912[pool-42-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.AsStatePenTimeout.onEvent(AsStatePenTimeout.java:71) - PENDING timedout for As=testas1
+[2019-08-19 11:32:25,825] WARN 37912[pool-42-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.AsStatePenTimeout.onEvent(AsStatePenTimeout.java:71) - PENDING timedout for As=testas2
+[2019-08-19 11:32:25,826] INFO 37913[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=2, AspFactories=1
+[2019-08-19 11:32:25,838] INFO 37925[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/RemSgFSMTest_m3ua1.xml
+[2019-08-19 11:32:25,839] INFO 37926[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:32:28,339] WARN 40426[pool-47-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.AsStatePenTimeout.onEvent(AsStatePenTimeout.java:71) - PENDING timedout for As=testas1
+[2019-08-19 11:32:33,339] WARN 45426[pool-47-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.AsStatePenTimeout.onEvent(AsStatePenTimeout.java:71) - PENDING timedout for As=testas2
+[2019-08-19 11:32:33,340] INFO 45427[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=2, AspFactories=2
+[2019-08-19 11:32:33,348] INFO 45435[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/RemSgFSMTest_m3ua1.xml
+[2019-08-19 11:32:33,349] INFO 45436[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:32:33,352] WARN 45439[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.AspFactoryImpl.onCommunicationLost(AspFactoryImpl.java:835) - Communication channel lost for AspFactroy=testasp1 Association=testAssoc1
+[2019-08-19 11:32:33,354] INFO 45441[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=1, AspFactories=1
+[2019-08-19 11:32:33,358] INFO 45445[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/RemSgFSMTest_m3ua1.xml
+[2019-08-19 11:32:33,359] INFO 45446[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:32:33,363] WARN 45450[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.AspFactoryImpl.onCommunicationLost(AspFactoryImpl.java:835) - Communication channel lost for AspFactroy=testasp1 Association=testAssoc1
+[2019-08-19 11:32:33,366] INFO 45453[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=1, AspFactories=2
+[2019-08-19 11:32:33,380] INFO 45467[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/SgFSMTest_m3ua1.xml
+[2019-08-19 11:32:33,381] INFO 45468[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:32:33,406] INFO 45493[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=1, AspFactories=1
+[2019-08-19 11:32:33,427] INFO 45514[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/SgFSMTest_m3ua1.xml
+[2019-08-19 11:32:33,428] INFO 45515[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:32:33,431] INFO 45518[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.AsImpl.write(AsImpl.java:698) - Adding the PayloadData=TransferMessage: {6=RoutingContext rc=[100], 528=Protocol opc=1408 dpc=123 si=3 ni=1 sls=1} to PendingQueue for AS=testas
+[2019-08-19 11:32:33,453] INFO 45540[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=1, AspFactories=1
+[2019-08-19 11:32:33,466] INFO 45553[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/SgFSMTest_m3ua1.xml
+[2019-08-19 11:32:33,467] INFO 45554[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:32:35,968] INFO 48055[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=1, AspFactories=1
+[2019-08-19 11:32:35,973] INFO 48060[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/SgFSMTest_m3ua1.xml
+[2019-08-19 11:32:35,974] INFO 48061[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:32:38,476] INFO 50563[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=1, AspFactories=1
+[2019-08-19 11:32:38,480] INFO 50567[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/SgFSMTest_m3ua1.xml
+[2019-08-19 11:32:38,480] INFO 50567[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:32:41,485] INFO 53572[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=2, AspFactories=1
+[2019-08-19 11:32:41,491] INFO 53578[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/SgFSMTest_m3ua1.xml
+[2019-08-19 11:32:41,491] INFO 53578[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:32:46,992] INFO 59079[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=2, AspFactories=2
+[2019-08-19 11:32:47,000] INFO 59087[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/SgFSMTest_m3ua1.xml
+[2019-08-19 11:32:47,001] INFO 59088[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:32:52,502] INFO 64589[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=2, AspFactories=2
+[2019-08-19 11:32:52,506] INFO 64593[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/SgFSMTest_m3ua1.xml
+[2019-08-19 11:32:52,507] INFO 64594[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:32:52,542] INFO 64629[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=1, AspFactories=2
+[2019-08-19 11:32:52,558] INFO 64645[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/SgFSMTest_m3ua1.xml
+[2019-08-19 11:32:52,559] INFO 64646[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:32:52,566] INFO 64653[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=1, AspFactories=2
+[2019-08-19 11:37:18,249] INFO     0[pool-2-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/M3UAShellExecutorTest_m3ua1.xml
+[2019-08-19 11:37:18,270] INFO    21[pool-2-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:37:18,286]ERROR    37[pool-2-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.executeM3UA(M3UAShellExecutor.java:729) - Error while executing comand [m3ua, as, create, testas, AS, mode, SE, rc, 100, traffic-mode, loadshare]
+java.lang.Exception: Creation of AS failed. Other AS with name=testas already exist
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.createAs(M3UAManagementImpl.java:442)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.createAs(M3UAShellExecutor.java:162)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.executeM3UA(M3UAShellExecutor.java:440)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.execute(M3UAShellExecutor.java:880)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutorTest.testServerCommands(M3UAShellExecutorTest.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:37:18,309]ERROR    60[pool-2-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.executeM3UA(M3UAShellExecutor.java:729) - Error while executing comand [m3ua, asp, create, testasp2, testAssoc2, aspid, 2]
+java.lang.Exception: ASP Identifier=2 is already taken
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.createAspFactory(M3UAManagementImpl.java:614)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.executeM3UA(M3UAShellExecutor.java:515)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.execute(M3UAShellExecutor.java:880)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutorTest.testServerCommands(M3UAShellExecutorTest.java:138)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:37:18,311]ERROR    62[pool-2-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.executeM3UA(M3UAShellExecutor.java:729) - Error while executing comand [m3ua, asp, create, testasp1, testAssoc1]
+java.lang.Exception: Creation of ASP failed. Other ASP with name=testasp1 already exist
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.createAspFactory(M3UAManagementImpl.java:595)
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.createAspFactory(M3UAManagementImpl.java:569)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.executeM3UA(M3UAShellExecutor.java:513)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.execute(M3UAShellExecutor.java:880)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutorTest.testServerCommands(M3UAShellExecutorTest.java:146)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:37:18,313]ERROR    64[pool-2-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.executeM3UA(M3UAShellExecutor.java:729) - Error while executing comand [m3ua, asp, start, testasp1]
+java.lang.Exception: ASP name=testasp1 not assigned to any AS yet
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.startAsp(M3UAManagementImpl.java:803)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.executeM3UA(M3UAShellExecutor.java:579)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.execute(M3UAShellExecutor.java:880)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutorTest.testServerCommands(M3UAShellExecutorTest.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:37:18,317]ERROR    68[pool-2-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.executeM3UA(M3UAShellExecutor.java:729) - Error while executing comand [m3ua, as, add, testas, testasp1]
+java.lang.Exception: Cannot assign ASP=testasp1 to AS=testas. This ASP is already assigned to this AS
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.assignAspToAs(M3UAManagementImpl.java:692)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.addAspToAs(M3UAShellExecutor.java:242)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.executeM3UA(M3UAShellExecutor.java:444)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.execute(M3UAShellExecutor.java:880)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutorTest.testServerCommands(M3UAShellExecutorTest.java:160)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:37:18,359]ERROR   110[pool-2-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.executeM3UA(M3UAShellExecutor.java:729) - Error while executing comand [m3ua, asp, start, testasp1]
+java.lang.Exception: ASP name=testasp1 already started
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.startAsp(M3UAManagementImpl.java:799)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.executeM3UA(M3UAShellExecutor.java:579)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.execute(M3UAShellExecutor.java:880)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutorTest.testServerCommands(M3UAShellExecutorTest.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:37:21,770] WARN  3521[pool-3-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.AspFactoryStopTimer.tick(AspFactoryStopTimer.java:61) - Asp=testasp1 was stopped but underlying Association=testAssoc1 was not stopped after TIMEOUT=3000 ms. Forcing stop now
+[2019-08-19 11:37:21,862] WARN  3613[pool-2-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.AspFactoryImpl.onCommunicationLost(AspFactoryImpl.java:835) - Communication channel lost for AspFactroy=testasp1 Association=testAssoc1
+[2019-08-19 11:37:21,866]ERROR  3617[pool-2-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.executeM3UA(M3UAShellExecutor.java:729) - Error while executing comand [m3ua, as, destroy, testas]
+java.lang.Exception: As=testas used in route=2:-1:-1. Remove from route
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.destroyAs(M3UAManagementImpl.java:495)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.destroyAs(M3UAShellExecutor.java:203)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.executeM3UA(M3UAShellExecutor.java:442)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutor.execute(M3UAShellExecutor.java:880)
+	at org.restcomm.protocols.ss7.m3ua.impl.oam.M3UAShellExecutorTest.testServerCommands(M3UAShellExecutorTest.java:206)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:37:21,869] INFO  3620[pool-2-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=3, AspFactories=1
+[2019-08-19 11:37:31,012] INFO 12763[pool-7-thread-1] - org.mobicents.protocols.sctp.netty.NettySctpManagementImpl.start(NettySctpManagementImpl.java:324) - SCTP configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/GatewayTest_sctp.xml
+[2019-08-19 11:37:31,049] WARN 12800[pool-7-thread-1] - org.mobicents.protocols.sctp.netty.NettySctpManagementImpl.start(NettySctpManagementImpl.java:338) - Failed to load the SCTP configuration file. 
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/GatewayTest_sctp.xml (No such file or directory)
+[2019-08-19 11:37:31,049] INFO 12800[pool-7-thread-1] - org.mobicents.protocols.sctp.netty.NettySctpManagementImpl.start(NettySctpManagementImpl.java:344) - Started SCTP Management=GatewayTest
+[2019-08-19 11:37:31,053] INFO 12804[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/GatewayTest_m3ua1.xml
+[2019-08-19 11:37:31,057] INFO 12808[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:37:31,065] INFO 12816[pool-7-thread-1] - org.mobicents.protocols.sctp.netty.NettySctpManagementImpl.addServer(NettySctpManagementImpl.java:557) - Created Server=testserver
+[2019-08-19 11:37:31,069] INFO 12820[pool-7-thread-1] - org.mobicents.protocols.sctp.netty.NettySctpManagementImpl.addServerAssociation(NettySctpManagementImpl.java:815) - Added Associoation=serverAsscoiation of type=SERVER
+[2019-08-19 11:37:31,139] INFO 12890[Sctp-BossGroup-GatewayTest-10-1] - io.netty.util.internal.logging.AbstractInternalLogger.log(AbstractInternalLogger.java:100) - [id: 0xa7467405] REGISTERED
+[2019-08-19 11:37:31,140] INFO 12891[Sctp-BossGroup-GatewayTest-10-1] - io.netty.util.internal.logging.AbstractInternalLogger.log(AbstractInternalLogger.java:100) - [id: 0xa7467405] BIND(/127.0.0.1:2365)
+[2019-08-19 11:37:31,142] INFO 12893[pool-7-thread-1] - org.mobicents.protocols.sctp.netty.NettyServerImpl.initSocket(NettyServerImpl.java:341) - SctpServerChannel bound to=[/127.0.0.1:2365] 
+[2019-08-19 11:37:31,142] INFO 12893[pool-7-thread-1] - org.mobicents.protocols.sctp.netty.NettyServerImpl.start(NettyServerImpl.java:265) - Started Server=testserver
+[2019-08-19 11:37:31,143] INFO 12894[Sctp-BossGroup-GatewayTest-10-1] - io.netty.util.internal.logging.AbstractInternalLogger.log(AbstractInternalLogger.java:100) - [id: 0xa7467405, /127.0.0.1:2365] ACTIVE
+[2019-08-19 11:37:31,145] INFO 12896[pool-7-thread-1] - org.mobicents.protocols.sctp.netty.NettyAssociationImpl.start(NettyAssociationImpl.java:503) - Started Association=Association [name=serverAsscoiation, associationType=SERVER, ipChannelType=SCTP, hostAddress=null, hostPort=0, peerAddress=127.0.0.1, peerPort=2366, serverName=testserver, extraHostAddress=[]]
+[2019-08-19 11:37:31,247] INFO 12998[pool-7-thread-1] - org.mobicents.protocols.sctp.netty.NettySctpManagementImpl.addAssociation(NettySctpManagementImpl.java:911) - Added Associoation=clientAsscoiation of type=CLIENT
+[2019-08-19 11:37:31,251] INFO 13002[pool-7-thread-1] - org.mobicents.protocols.sctp.netty.NettyAssociationImpl.start(NettyAssociationImpl.java:503) - Started Association=Association [name=clientAsscoiation, associationType=CLIENT, ipChannelType=SCTP, hostAddress=127.0.0.1, hostPort=2366, peerAddress=127.0.0.1, peerPort=2365, serverName=null, extraHostAddress=[]]
+[2019-08-19 11:37:36,276] INFO 18027[Sctp-BossGroup-GatewayTest-10-1] - io.netty.util.internal.logging.AbstractInternalLogger.log(AbstractInternalLogger.java:100) - [id: 0xa7467405, /127.0.0.1:2365] RECEIVED: [id: 0x97803fc3, /127.0.0.1:2366 => /127.0.0.1:2365]
+[2019-08-19 11:37:36,280] INFO 18031[Sctp-BossGroup-GatewayTest-10-1] - org.mobicents.protocols.sctp.netty.NettySctpClientHandler.channelActive(NettySctpClientHandler.java:82) - Association=clientAsscoiation connected to host=127.0.0.1 port=2365
+[2019-08-19 11:37:36,281] INFO 18032[Sctp-WorkerGroup-GatewayTest-12-1] - org.mobicents.protocols.sctp.netty.NettySctpServerHandler.channelRegistered(NettySctpServerHandler.java:108) - Connected Association [name=serverAsscoiation, associationType=SERVER, ipChannelType=SCTP, hostAddress=null, hostPort=0, peerAddress=127.0.0.1, peerPort=2366, serverName=testserver, extraHostAddress=[]]
+[2019-08-19 11:37:36,284] INFO 18035[Sctp-WorkerGroup-GatewayTest-12-1] - org.mobicents.protocols.sctp.netty.NettySctpChannelInboundHandlerAdapter.userEventTriggered(NettySctpChannelInboundHandlerAdapter.java:95) - New association setup for Association=serverAsscoiation with 10 outbound streams, and 10 inbound streams.
+
+[2019-08-19 11:37:36,284] INFO 18035[Sctp-BossGroup-GatewayTest-10-1] - org.mobicents.protocols.sctp.netty.NettySctpChannelInboundHandlerAdapter.userEventTriggered(NettySctpChannelInboundHandlerAdapter.java:95) - New association setup for Association=clientAsscoiation with 10 outbound streams, and 10 inbound streams.
+
+[2019-08-19 11:37:44,265] INFO 26016[Sctp-BossGroup-GatewayTest-10-1] - org.mobicents.protocols.sctp.netty.NettyAssociationImpl.stop(NettyAssociationImpl.java:518) - Management requested to stop Association [name=clientAsscoiation, associationType=CLIENT, ipChannelType=SCTP, hostAddress=127.0.0.1, hostPort=2366, peerAddress=127.0.0.1, peerPort=2365, serverName=null, extraHostAddress=[]]
+[2019-08-19 11:37:44,266] INFO 26017[Sctp-WorkerGroup-GatewayTest-12-1] - org.mobicents.protocols.sctp.netty.NettySctpChannelInboundHandlerAdapter.userEventTriggered(NettySctpChannelInboundHandlerAdapter.java:160) - Association=serverAsscoiation SHUTDOWN
+[2019-08-19 11:37:44,267] WARN 26018[Sctp-WorkerGroup-GatewayTest-12-1] - org.restcomm.protocols.ss7.m3ua.impl.AspFactoryImpl.onCommunicationShutdown(AspFactoryImpl.java:864) - Communication channel shutdown for AspFactroy=server-testasp Association=serverAsscoiation
+[2019-08-19 11:37:44,267] WARN 26018[Sctp-BossGroup-GatewayTest-10-1] - org.restcomm.protocols.ss7.m3ua.impl.AspFactoryImpl.onCommunicationShutdown(AspFactoryImpl.java:864) - Communication channel shutdown for AspFactroy=client-testasp Association=clientAsscoiation
+[2019-08-19 11:37:44,269] WARN 26020[Sctp-BossGroup-GatewayTest-10-1] - org.mobicents.protocols.sctp.netty.NettySctpClientHandler.channelUnregistered(NettySctpClientHandler.java:50) - ChannelUnregistered event: association=Association [name=clientAsscoiation, associationType=CLIENT, ipChannelType=SCTP, hostAddress=127.0.0.1, hostPort=2366, peerAddress=127.0.0.1, peerPort=2365, serverName=null, extraHostAddress=[]]
+[2019-08-19 11:37:44,269] WARN 26020[Sctp-WorkerGroup-GatewayTest-12-1] - org.mobicents.protocols.sctp.netty.NettySctpServerHandler.channelUnregistered(NettySctpServerHandler.java:56) - ChannelUnregistered event: association=Association [name=serverAsscoiation, associationType=SERVER, ipChannelType=SCTP, hostAddress=null, hostPort=0, peerAddress=127.0.0.1, peerPort=2366, serverName=testserver, extraHostAddress=[]]
+[2019-08-19 11:37:46,555] WARN 28306[pool-15-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.AsStatePenTimeout.onEvent(AsStatePenTimeout.java:71) - PENDING timedout for As=client-testas
+[2019-08-19 11:37:48,367] INFO 30118[pool-7-thread-1] - org.mobicents.protocols.sctp.netty.NettyAssociationImpl.stop(NettyAssociationImpl.java:518) - Management requested to stop Association [name=serverAsscoiation, associationType=SERVER, ipChannelType=SCTP, hostAddress=null, hostPort=0, peerAddress=127.0.0.1, peerPort=2366, serverName=testserver, extraHostAddress=[]]
+[2019-08-19 11:37:48,370] INFO 30121[pool-7-thread-1] - org.mobicents.protocols.sctp.netty.NettyServerImpl.stop(NettyServerImpl.java:291) - Stoped Server=testserver
+[2019-08-19 11:37:48,371] INFO 30122[Sctp-BossGroup-GatewayTest-10-1] - io.netty.util.internal.logging.AbstractInternalLogger.log(AbstractInternalLogger.java:100) - [id: 0xa7467405, /127.0.0.1:2365] CLOSE()
+[2019-08-19 11:37:48,372] INFO 30123[Sctp-BossGroup-GatewayTest-10-1] - io.netty.util.internal.logging.AbstractInternalLogger.log(AbstractInternalLogger.java:100) - [id: 0xa7467405, /127.0.0.1:2365] INACTIVE
+[2019-08-19 11:37:48,372] INFO 30123[Sctp-BossGroup-GatewayTest-10-1] - io.netty.util.internal.logging.AbstractInternalLogger.log(AbstractInternalLogger.java:100) - [id: 0xa7467405, /127.0.0.1:2365] UNREGISTERED
+[2019-08-19 11:37:48,503] INFO 30254[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/M3UAManagementTest_m3ua1.xml
+[2019-08-19 11:37:48,504] INFO 30255[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:37:48,508] INFO 30259[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/M3UAManagementTest_m3ua1.xml
+[2019-08-19 11:37:48,509] INFO 30260[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:37:48,529] INFO 30280[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/M3UAManagementTest_m3ua1.xml
+[2019-08-19 11:37:48,531] INFO 30282[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:37:48,543] INFO 30294[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/M3UAManagementTest_m3ua1.xml
+[2019-08-19 11:37:48,545]ERROR 30296[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.loadActualData(M3UAManagementImpl.java:1160) - Error setting Assciation=ASPAssoc1 for the AspFactory=ASP1 while loading from XML
+java.lang.NullPointerException
+	at org.restcomm.protocols.ss7.m3ua.impl.AspFactoryImpl.setAssociation(AspFactoryImpl.java:317)
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.loadActualData(M3UAManagementImpl.java:1158)
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.loadVer2(M3UAManagementImpl.java:1198)
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.load(M3UAManagementImpl.java:1072)
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:306)
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementTest.setUp(M3UAManagementTest.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:543)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:212)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:631)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:37:48,546] INFO 30297[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:37:48,547] INFO 30298[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=1, AspFactories=1
+[2019-08-19 11:37:48,558] INFO 30309[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/M3UAManagementTest_OldVerToNewVers_m3ua1.xml
+[2019-08-19 11:37:48,559]ERROR 30310[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.loadVer1(M3UAManagementImpl.java:1187) - new XML 
+<?xml version="1.0" encoding="UTF-8" ?><heartbeattime value="10000"/><aspFactoryList><aspFactory name="testasp" assocName="test" started="false" maxseqnumber="256" aspid="2" heartbeat="false"/><aspFactory name="testasp1" assocName="test1" started="false" maxseqnumber="256" aspid="3" heartbeat="false"/></aspFactoryList><asList><as name="testAs" minAspActiveForLb="0" functionality="AS" exchangeType="SE" ipspType="CLIENT"><trafficMode mode="2"/><defTrafficMode mode="2"/><asps><asp name="testasp"/></asps></as><as name="testAs1" minAspActiveForLb="0" functionality="AS" exchangeType="SE" ipspType="CLIENT"><trafficMode mode="2"/><defTrafficMode mode="2"/><asps><asp name="testasp1"/></asps></as></asList><route><key value="2:-1:-1"/><routeAs trafficModeType="2"  as="testAs,testAs1"/></route>
+
+[2019-08-19 11:37:48,560]ERROR 30311[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.loadActualData(M3UAManagementImpl.java:1104) - Errro while reading attribute
+java.lang.NullPointerException
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.loadActualData(M3UAManagementImpl.java:1099)
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.loadVer1(M3UAManagementImpl.java:1191)
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.load(M3UAManagementImpl.java:1078)
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:306)
+	at org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementTest.testSerializationFromOldVerToNewVers(M3UAManagementTest.java:200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2019-08-19 11:37:48,564] INFO 30315[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:37:48,571] INFO 30322[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/RemSgFSMTest_m3ua1.xml
+[2019-08-19 11:37:48,572] INFO 30323[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:37:48,595] INFO 30346[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.AsImpl.write(AsImpl.java:698) - Adding the PayloadData=TransferMessage: {6=RoutingContext rc=[100], 528=Protocol opc=1408 dpc=123 si=3 ni=1 sls=1} to PendingQueue for AS=testas
+[2019-08-19 11:37:48,599] INFO 30350[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=1, AspFactories=1
+[2019-08-19 11:37:48,602] INFO 30353[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/RemSgFSMTest_m3ua1.xml
+[2019-08-19 11:37:48,603] INFO 30354[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:37:51,103] WARN 32854[pool-36-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.AsStatePenTimeout.onEvent(AsStatePenTimeout.java:71) - PENDING timedout for As=testas
+[2019-08-19 11:37:51,106] INFO 32857[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=1, AspFactories=1
+[2019-08-19 11:37:51,109] INFO 32860[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/RemSgFSMTest_m3ua1.xml
+[2019-08-19 11:37:51,110] INFO 32861[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:37:53,611] WARN 35362[pool-39-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.AsStatePenTimeout.onEvent(AsStatePenTimeout.java:71) - PENDING timedout for As=testas
+[2019-08-19 11:37:53,612] INFO 35363[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=1, AspFactories=1
+[2019-08-19 11:37:53,617] INFO 35368[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/RemSgFSMTest_m3ua1.xml
+[2019-08-19 11:37:53,617] INFO 35368[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:37:56,117] WARN 37868[pool-42-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.AsStatePenTimeout.onEvent(AsStatePenTimeout.java:71) - PENDING timedout for As=testas1
+[2019-08-19 11:37:56,118] WARN 37869[pool-42-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.AsStatePenTimeout.onEvent(AsStatePenTimeout.java:71) - PENDING timedout for As=testas2
+[2019-08-19 11:37:56,119] INFO 37870[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=2, AspFactories=1
+[2019-08-19 11:37:56,126] INFO 37877[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/RemSgFSMTest_m3ua1.xml
+[2019-08-19 11:37:56,127] INFO 37878[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:37:58,627] WARN 40378[pool-45-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.AsStatePenTimeout.onEvent(AsStatePenTimeout.java:71) - PENDING timedout for As=testas1
+[2019-08-19 11:38:03,627] WARN 45378[pool-45-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.AsStatePenTimeout.onEvent(AsStatePenTimeout.java:71) - PENDING timedout for As=testas2
+[2019-08-19 11:38:03,629] INFO 45380[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=2, AspFactories=2
+[2019-08-19 11:38:03,635] INFO 45386[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/RemSgFSMTest_m3ua1.xml
+[2019-08-19 11:38:03,636] INFO 45387[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:38:03,644] WARN 45395[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.AspFactoryImpl.onCommunicationLost(AspFactoryImpl.java:835) - Communication channel lost for AspFactroy=testasp1 Association=testAssoc1
+[2019-08-19 11:38:03,646] INFO 45397[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=1, AspFactories=1
+[2019-08-19 11:38:03,649] INFO 45400[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/RemSgFSMTest_m3ua1.xml
+[2019-08-19 11:38:03,649] INFO 45400[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:38:03,658] WARN 45409[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.AspFactoryImpl.onCommunicationLost(AspFactoryImpl.java:835) - Communication channel lost for AspFactroy=testasp1 Association=testAssoc1
+[2019-08-19 11:38:03,666] INFO 45417[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=1, AspFactories=2
+[2019-08-19 11:38:03,683] INFO 45434[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/SgFSMTest_m3ua1.xml
+[2019-08-19 11:38:03,684] INFO 45435[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:38:03,687] INFO 45438[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=1, AspFactories=1
+[2019-08-19 11:38:03,714] INFO 45465[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/SgFSMTest_m3ua1.xml
+[2019-08-19 11:38:03,715] INFO 45466[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:38:03,718] INFO 45469[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.AsImpl.write(AsImpl.java:698) - Adding the PayloadData=TransferMessage: {6=RoutingContext rc=[100], 528=Protocol opc=1408 dpc=123 si=3 ni=1 sls=1} to PendingQueue for AS=testas
+[2019-08-19 11:38:03,719] INFO 45470[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=1, AspFactories=1
+[2019-08-19 11:38:03,731] INFO 45482[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/SgFSMTest_m3ua1.xml
+[2019-08-19 11:38:03,731] INFO 45482[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:38:06,233] INFO 47984[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=1, AspFactories=1
+[2019-08-19 11:38:06,237] INFO 47988[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/SgFSMTest_m3ua1.xml
+[2019-08-19 11:38:06,238] INFO 47989[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:38:08,739] INFO 50490[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=1, AspFactories=1
+[2019-08-19 11:38:08,743] INFO 50494[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/SgFSMTest_m3ua1.xml
+[2019-08-19 11:38:08,744] INFO 50495[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:38:11,752] INFO 53503[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=2, AspFactories=1
+[2019-08-19 11:38:11,757] INFO 53508[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/SgFSMTest_m3ua1.xml
+[2019-08-19 11:38:11,758] INFO 53509[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:38:17,259] INFO 59010[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=2, AspFactories=2
+[2019-08-19 11:38:17,267] INFO 59018[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/SgFSMTest_m3ua1.xml
+[2019-08-19 11:38:17,268] INFO 59019[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:38:22,770] INFO 64521[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=2, AspFactories=2
+[2019-08-19 11:38:22,776] INFO 64527[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/SgFSMTest_m3ua1.xml
+[2019-08-19 11:38:22,776] INFO 64527[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:38:22,809] INFO 64560[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=1, AspFactories=2
+[2019-08-19 11:38:22,816] INFO 64567[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:301) - M3UA configuration file path /root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/m3ua/impl/target/test-classes/SgFSMTest_m3ua1.xml
+[2019-08-19 11:38:22,817] INFO 64568[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.start(M3UAManagementImpl.java:324) - Started M3UAManagement
+[2019-08-19 11:38:22,821] INFO 64572[pool-7-thread-1] - org.restcomm.protocols.ss7.m3ua.impl.M3UAManagementImpl.removeAllResourses(M3UAManagementImpl.java:904) - Removing allocated resources: AppServers=1, AspFactories=2

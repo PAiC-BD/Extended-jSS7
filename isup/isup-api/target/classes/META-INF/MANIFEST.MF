@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Export-Package: org.restcomm.protocols.ss7.isup;uses:="org.restcomm.pr
+ otocols.ss7.isup.message,org.restcomm.protocols.ss7.isup.message.para
+ meter.accessTransport,org.restcomm.protocols.ss7.isup.message.paramet
+ er,org.restcomm.protocols.ss7.mtp",org.restcomm.protocols.ss7.isup.me
+ ssage;uses:="org.restcomm.protocols.ss7.isup.message.parameter,org.re
+ stcomm.protocols.ss7.isup.message.parameter.accessTransport,org.restc
+ omm.protocols.ss7.isup",org.restcomm.protocols.ss7.isup.message.param
+ eter;uses:="org.restcomm.protocols.ss7.isup",org.restcomm.protocols.s
+ s7.isup.message.parameter.accessTransport;uses:="org.restcomm.protoco
+ ls.ss7.isup.message.parameter"
+Implementation-Title: org.restcomm.protocols.ss7.isup:isup-api
+Implementation-Version: 8.0.0-170
+Built-By: root
+Tool: Bnd-1.15.0
+Bundle-Name: Restcomm jSS7 :: ISUP :: Api :: isup-api
+Created-By: Apache Maven Bundle Plugin
+Implementation-URL: http://www.restcomm.org
+Implementation-Vendor-Id: TeleStax, Inc.
+Build-Jdk: 1.7.0_80
+Bundle-Version: 8.0.0.170
+Bnd-LastModified: 1566929160320
+Bundle-ManifestVersion: 2
+Bundle-License: http://www.gnu.org/licenses/agpl-3.0.html
+Bundle-Description: Restcomm :: Parent pom for 2.x releases
+Import-Package: org.restcomm.protocols.ss7.mtp
+Bundle-SymbolicName: org.restcomm.protocols.ss7.isup.api
+

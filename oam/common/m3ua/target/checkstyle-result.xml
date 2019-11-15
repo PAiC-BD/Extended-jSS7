@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.5">
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/m3ua/src/main/java/org/restcomm/protocols/ss7/oam/common/m3ua/M3uaManagementJmxMBean.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/m3ua/src/main/java/org/restcomm/protocols/ss7/oam/common/m3ua/AspFactoryJmx.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/m3ua/src/main/java/org/restcomm/protocols/ss7/oam/common/m3ua/AspJmx.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/m3ua/src/main/java/org/restcomm/protocols/ss7/oam/common/m3ua/AsJmx.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/m3ua/src/main/java/org/restcomm/protocols/ss7/oam/common/m3ua/AspFactoryJmxMBean.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/m3ua/src/main/java/org/restcomm/protocols/ss7/oam/common/m3ua/AsJmxMBean.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/m3ua/src/main/java/org/restcomm/protocols/ss7/oam/common/m3ua/M3UAManagementType.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/m3ua/src/main/java/org/restcomm/protocols/ss7/oam/common/m3ua/AspJmxMBean.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/m3ua/src/main/java/org/restcomm/protocols/ss7/oam/common/m3ua/M3uaManagementJmx.java">
+</file>
+</checkstyle>

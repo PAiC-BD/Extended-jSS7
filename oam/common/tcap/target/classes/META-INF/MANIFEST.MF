@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Export-Package: org.restcomm.protocols.ss7.oam.common.tcap;uses:="org.
+ restcomm.protocols.ss7.oam.common.jmx,javolution.util,org.restcomm.pr
+ otocols.ss7.sccp,org.apache.log4j,org.restcomm.protocols.ss7.tcap.api
+ ,org.restcomm.protocols.ss7.oam.common.statistics,org.restcomm.protoc
+ ols.ss7.statistics.api,org.restcomm.protocols.ss7.oam.common.statisti
+ cs.api,org.restcomm.protocols.ss7.oam.common.jmxss7"
+Implementation-Title: org.restcomm.protocols.ss7.oam.common:tcap-oam
+Implementation-Version: 8.0.0-170
+Built-By: root
+Tool: Bnd-1.15.0
+Bundle-Name: Restcomm jSS7 :: Management-jmx :: tcap-oam
+Created-By: Apache Maven Bundle Plugin
+Implementation-URL: http://www.restcomm.org
+Implementation-Vendor-Id: TeleStax, Inc.
+Build-Jdk: 1.7.0_80
+Bundle-Version: 8.0.0.170
+Bnd-LastModified: 1566929207251
+Bundle-ManifestVersion: 2
+Bundle-License: http://www.gnu.org/licenses/agpl-3.0.html
+Bundle-Description: Restcomm :: Parent pom for 2.x releases
+Import-Package: javolution.util,org.apache.log4j,org.restcomm.protocol
+ s.ss7.oam.common.jmx,org.restcomm.protocols.ss7.oam.common.jmxss7,org
+ .restcomm.protocols.ss7.oam.common.statistics,org.restcomm.protocols.
+ ss7.oam.common.statistics.api,org.restcomm.protocols.ss7.sccp,org.res
+ tcomm.protocols.ss7.statistics.api,org.restcomm.protocols.ss7.tcap.ap
+ i
+Bundle-SymbolicName: org.restcomm.protocols.ss7.oam.common.tcap-oam
+

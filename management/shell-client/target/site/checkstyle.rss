@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rss version="0.91">
+  <channel>
+    <title>Restcomm jSS7 :: Management :: shell-client - Checkstyle report</title>
+    <link>http://www.restcomm.org/ss7-parent/management/shell-client</link>
+    <description>Restcomm jSS7 :: Management :: shell-client - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2019</copyright>
+    <item>
+      <title>File: 19,
+             Errors: 0,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>http://www.restcomm.org/ss7-parent/management/shell-client/checkstyle.html</link>
+      <description>
+        <p>Click <a href="http://www.restcomm.org/ss7-parent/management/shell-client/checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-client/checkstyle.html#org.restcomm.ss7.management.console.ConsoleImpl.java">org/restcomm/ss7/management/console/ConsoleImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-client/checkstyle.html#org.restcomm.ss7.management.console.CommandLineCompleter.java">org/restcomm/ss7/management/console/CommandLineCompleter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-client/checkstyle.html#org.restcomm.ss7.management.console.DisconnectHandler.java">org/restcomm/ss7/management/console/DisconnectHandler.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-client/checkstyle.html#org.restcomm.ss7.management.console.Client.java">org/restcomm/ss7/management/console/Client.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-client/checkstyle.html#org.restcomm.ss7.management.console.CommandContextImpl.java">org/restcomm/ss7/management/console/CommandContextImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-client/checkstyle.html#org.restcomm.ss7.management.console.ExitHandler.java">org/restcomm/ss7/management/console/ExitHandler.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-client/checkstyle.html#org.restcomm.ss7.management.console.Shell.java">org/restcomm/ss7/management/console/Shell.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-client/checkstyle.html#org.restcomm.ss7.management.console.Tree.java">org/restcomm/ss7/management/console/Tree.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-client/checkstyle.html#org.restcomm.ss7.management.console.CommandHandler.java">org/restcomm/ss7/management/console/CommandHandler.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-client/checkstyle.html#org.restcomm.ss7.management.console.AbstractCommandHandler.java">org/restcomm/ss7/management/console/AbstractCommandHandler.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-client/checkstyle.html#org.restcomm.ss7.management.console.Console.java">org/restcomm/ss7/management/console/Console.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-client/checkstyle.html#org.restcomm.ss7.management.console.CommandHistory.java">org/restcomm/ss7/management/console/CommandHistory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-client/checkstyle.html#org.restcomm.ss7.management.console.CommandHandlerWithHelp.java">org/restcomm/ss7/management/console/CommandHandlerWithHelp.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-client/checkstyle.html#org.restcomm.ss7.management.console.ConsoleListener.java">org/restcomm/ss7/management/console/ConsoleListener.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-client/checkstyle.html#org.restcomm.ss7.management.console.HistoryHandler.java">org/restcomm/ss7/management/console/HistoryHandler.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-client/checkstyle.html#org.restcomm.ss7.management.console.SecurityActions.java">org/restcomm/ss7/management/console/SecurityActions.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-client/checkstyle.html#org.restcomm.ss7.management.console.CommandContext.java">org/restcomm/ss7/management/console/CommandContext.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-client/checkstyle.html#org.restcomm.ss7.management.console.CommandLineException.java">org/restcomm/ss7/management/console/CommandLineException.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-client/checkstyle.html#org.restcomm.ss7.management.console.ConnectHandler.java">org/restcomm/ss7/management/console/ConnectHandler.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

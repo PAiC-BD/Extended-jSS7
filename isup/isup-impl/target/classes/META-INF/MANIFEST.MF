@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Export-Package: org.restcomm.protocols.ss7.isup.util;uses:="org.restco
+ mm.protocols.ss7.isup"
+Implementation-Title: org.restcomm.protocols.ss7.isup:isup-impl
+Implementation-Version: 8.0.0-170
+Built-By: root
+Tool: Bnd-1.15.0
+Bundle-Name: Restcomm jSS7 :: ISUP :: Impl :: isup-impl
+Created-By: Apache Maven Bundle Plugin
+Implementation-URL: http://www.restcomm.org
+Implementation-Vendor-Id: TeleStax, Inc.
+Build-Jdk: 1.7.0_80
+Bundle-Version: 8.0.0.170
+Bnd-LastModified: 1566929164553
+Bundle-ManifestVersion: 2
+Bundle-License: http://www.gnu.org/licenses/agpl-3.0.html
+Bundle-Description: Restcomm :: Parent pom for 2.x releases
+Import-Package: javax.xml.bind,javolution.util,javolution.xml,javoluti
+ on.xml.stream,org.apache.log4j,org.mobicents.protocols.asn,org.restco
+ mm.protocols.ss7.isup,org.restcomm.protocols.ss7.isup.message,org.res
+ tcomm.protocols.ss7.isup.message.parameter,org.restcomm.protocols.ss7
+ .isup.message.parameter.accessTransport,org.restcomm.protocols.ss7.mt
+ p,org.restcomm.protocols.ss7.scheduler
+Bundle-SymbolicName: org.restcomm.protocols.ss7.isup.impl
+

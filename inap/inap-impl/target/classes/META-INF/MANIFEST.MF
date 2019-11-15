@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+Export-Package: org.restcomm.protocols.ss7.inap.primitives;uses:="org.
+ mobicents.protocols.asn,org.restcomm.protocols.ss7.inap.api,javolutio
+ n.xml.stream,javolution.xml,org.restcomm.protocols.ss7.inap.api.primi
+ tives",org.restcomm.protocols.ss7.inap.isup;uses:="javolution.xml.str
+ eam,javolution.xml,org.restcomm.protocols.ss7.isup.message.parameter,
+ org.restcomm.protocols.ss7.isup.impl.message.parameter,org.restcomm.p
+ rotocols.ss7.inap.api,org.restcomm.protocols.ss7.inap.api.isup,org.re
+ stcomm.protocols.ss7.isup,org.mobicents.protocols.asn,org.restcomm.pr
+ otocols.ss7.inap.primitives,org.restcomm.protocols.ss7.inap.api.primi
+ tives"
+Implementation-Title: org.restcomm.protocols.ss7.inap:inap-impl
+Implementation-Version: 8.0.0-170
+Built-By: root
+Tool: Bnd-1.15.0
+Bundle-Name: Restcomm jSS7 :: INAP :: Impl :: inap-impl
+Created-By: Apache Maven Bundle Plugin
+Implementation-URL: http://www.restcomm.org
+Implementation-Vendor-Id: TeleStax, Inc.
+Build-Jdk: 1.7.0_80
+Bundle-Version: 8.0.0.170
+Bnd-LastModified: 1566929190909
+Bundle-ManifestVersion: 2
+Bundle-License: http://www.gnu.org/licenses/agpl-3.0.html
+Bundle-Description: Restcomm :: Parent pom for 2.x releases
+Import-Package: javolution.xml,javolution.xml.stream,org.mobicents.pro
+ tocols.asn,org.restcomm.protocols.ss7.inap.api,org.restcomm.protocols
+ .ss7.inap.api.isup,org.restcomm.protocols.ss7.inap.api.primitives,org
+ .restcomm.protocols.ss7.isup,org.restcomm.protocols.ss7.isup.impl.mes
+ sage.parameter,org.restcomm.protocols.ss7.isup.message.parameter
+Bundle-SymbolicName: org.restcomm.protocols.ss7.inap.impl
+

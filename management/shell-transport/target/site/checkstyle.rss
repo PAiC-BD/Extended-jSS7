@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rss version="0.91">
+  <channel>
+    <title>Restcomm jSS7 :: Management :: shell-transport - Checkstyle report</title>
+    <link>http://www.restcomm.org/ss7-parent/management/shell-transport</link>
+    <description>Restcomm jSS7 :: Management :: shell-transport - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2019</copyright>
+    <item>
+      <title>File: 12,
+             Errors: 0,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>http://www.restcomm.org/ss7-parent/management/shell-transport/checkstyle.html</link>
+      <description>
+        <p>Click <a href="http://www.restcomm.org/ss7-parent/management/shell-transport/checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-transport/checkstyle.html#org.restcomm.ss7.management.transceiver.ChannelException.java">org/restcomm/ss7/management/transceiver/ChannelException.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-transport/checkstyle.html#org.restcomm.ss7.management.transceiver.ChannelSelectionKey.java">org/restcomm/ss7/management/transceiver/ChannelSelectionKey.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-transport/checkstyle.html#org.restcomm.ss7.management.console.Version.java">org/restcomm/ss7/management/console/Version.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-transport/checkstyle.html#org.restcomm.ss7.management.console.SimplePrincipal.java">org/restcomm/ss7/management/console/SimplePrincipal.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-transport/checkstyle.html#org.restcomm.ss7.management.transceiver.ChannelProvider.java">org/restcomm/ss7/management/transceiver/ChannelProvider.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-transport/checkstyle.html#org.restcomm.ss7.management.transceiver.ShellServerChannel.java">org/restcomm/ss7/management/transceiver/ShellServerChannel.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-transport/checkstyle.html#org.restcomm.ss7.management.transceiver.ChannelSelector.java">org/restcomm/ss7/management/transceiver/ChannelSelector.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-transport/checkstyle.html#org.restcomm.ss7.management.transceiver.ShellChannel.java">org/restcomm/ss7/management/transceiver/ShellChannel.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-transport/checkstyle.html#org.restcomm.ss7.management.transceiver.ShellChannelExt.java">org/restcomm/ss7/management/transceiver/ShellChannelExt.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-transport/checkstyle.html#org.restcomm.ss7.management.transceiver.MessageFactory.java">org/restcomm/ss7/management/transceiver/MessageFactory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-transport/checkstyle.html#org.restcomm.ss7.management.transceiver.Message.java">org/restcomm/ss7/management/transceiver/Message.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.restcomm.org/ss7-parent/management/shell-transport/checkstyle.html#org.restcomm.ss7.management.transceiver.ShellSelectableChannel.java">org/restcomm/ss7/management/transceiver/ShellSelectableChannel.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

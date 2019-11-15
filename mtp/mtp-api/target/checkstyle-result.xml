@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.5">
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/mtp/mtp-api/src/main/java/org/restcomm/protocols/ss7/mtp/Mtp3TransferPrimitive.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/mtp/mtp-api/src/main/java/org/restcomm/protocols/ss7/mtp/Mtp3StatusPrimitive.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/mtp/mtp-api/src/main/java/org/restcomm/protocols/ss7/mtp/Mtp3UserPartListener.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/mtp/mtp-api/src/main/java/org/restcomm/protocols/ss7/mtp/Mtp3ResumePrimitive.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/mtp/mtp-api/src/main/java/org/restcomm/protocols/ss7/mtp/Mtp3TransferPrimitiveFactory.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/mtp/mtp-api/src/main/java/org/restcomm/protocols/ss7/mtp/Mtp3Primitive.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/mtp/mtp-api/src/main/java/org/restcomm/protocols/ss7/mtp/Mtp3EndCongestionPrimitive.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/mtp/mtp-api/src/main/java/org/restcomm/protocols/ss7/mtp/Mtp3StatusCause.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/mtp/mtp-api/src/main/java/org/restcomm/protocols/ss7/mtp/Mtp3PausePrimitive.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/mtp/mtp-api/src/main/java/org/restcomm/protocols/ss7/mtp/Mtp3UserPart.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/mtp/mtp-api/src/main/java/org/restcomm/protocols/ss7/mtp/RoutingLabelFormat.java">
+</file>
+</checkstyle>

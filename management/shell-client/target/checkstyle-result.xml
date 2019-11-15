@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.5">
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-client/src/main/java/org/restcomm/ss7/management/console/CommandContext.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-client/src/main/java/org/restcomm/ss7/management/console/Console.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-client/src/main/java/org/restcomm/ss7/management/console/CommandLineCompleter.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-client/src/main/java/org/restcomm/ss7/management/console/CommandContextImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-client/src/main/java/org/restcomm/ss7/management/console/DisconnectHandler.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-client/src/main/java/org/restcomm/ss7/management/console/CommandHandlerWithHelp.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-client/src/main/java/org/restcomm/ss7/management/console/CommandHistory.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-client/src/main/java/org/restcomm/ss7/management/console/Shell.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-client/src/main/java/org/restcomm/ss7/management/console/Tree.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-client/src/main/java/org/restcomm/ss7/management/console/AbstractCommandHandler.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-client/src/main/java/org/restcomm/ss7/management/console/ConnectHandler.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-client/src/main/java/org/restcomm/ss7/management/console/ExitHandler.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-client/src/main/java/org/restcomm/ss7/management/console/CommandLineException.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-client/src/main/java/org/restcomm/ss7/management/console/CommandHandler.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-client/src/main/java/org/restcomm/ss7/management/console/ConsoleListener.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-client/src/main/java/org/restcomm/ss7/management/console/SecurityActions.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-client/src/main/java/org/restcomm/ss7/management/console/HistoryHandler.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-client/src/main/java/org/restcomm/ss7/management/console/Client.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-client/src/main/java/org/restcomm/ss7/management/console/ConsoleImpl.java">
+</file>
+</checkstyle>

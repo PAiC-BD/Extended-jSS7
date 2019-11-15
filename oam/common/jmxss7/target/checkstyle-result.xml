@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.5">
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/jmxss7/src/main/java/org/restcomm/protocols/ss7/oam/common/jmxss7/Ss7Management.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/jmxss7/src/main/java/org/restcomm/protocols/ss7/oam/common/jmxss7/Ss7Layer.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/jmxss7/src/main/java/org/restcomm/protocols/ss7/oam/common/jmxss7/Ss7ManagementMBean.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/jmxss7/src/main/java/org/restcomm/protocols/ss7/oam/common/jmxss7/Ss7ManagementStandardMBean.java">
+</file>
+</checkstyle>

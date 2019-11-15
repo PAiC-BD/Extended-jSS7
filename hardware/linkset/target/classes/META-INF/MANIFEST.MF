@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Export-Package: org.mobicents.ss7.linkset.oam;uses:="javolution.xml.st
+ ream,javolution.xml,javolution.text,org.restcomm.protocols.ss7.schedu
+ ler,javolution.util,org.apache.log4j,org.restcomm.ss7.management.cons
+ ole,org.mobicents.protocols.stream.api"
+Implementation-Title: org.restcomm.protocols.ss7.hardware:linkset
+Implementation-Version: 8.0.0-170
+Built-By: root
+Tool: Bnd-1.15.0
+Bundle-Name: Restcomm jSS7 :: Hardware :: linkset
+Created-By: Apache Maven Bundle Plugin
+Implementation-URL: http://www.restcomm.org
+Implementation-Vendor-Id: TeleStax, Inc.
+Build-Jdk: 1.7.0_80
+Bundle-Version: 8.0.0.170
+Bnd-LastModified: 1566929214153
+Bundle-ManifestVersion: 2
+Bundle-License: http://www.gnu.org/licenses/agpl-3.0.html
+Bundle-Description: Restcomm :: Parent pom for 2.x releases
+Import-Package: javolution.text,javolution.util,javolution.xml,javolut
+ ion.xml.stream,org.apache.log4j,org.mobicents.protocols.stream.api,or
+ g.restcomm.protocols.ss7.scheduler,org.restcomm.ss7.management.consol
+ e
+Bundle-SymbolicName: org.restcomm.protocols.ss7.hardware.linkset
+

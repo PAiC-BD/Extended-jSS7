@@ -1,0 +1,15 @@
+[2019-09-26 13:42:32,194] WARN     0[main] - org.mobicents.protocols.sctp.netty.NettySctpManagementImpl.start(NettySctpManagementImpl.java:338) - Failed to load the SCTP configuration file. 
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/map/load/client/Client_sctp.xml (No such file or directory)
+[2019-09-26 13:42:32,347] WARN   153[main] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.start(SccpStackImpl.java:857) - Failed to load the Sccp Management configuration file. 
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/map/load/client/MapLoadClientSccpStack_management2.xml (No such file or directory)
+[2019-09-26 13:42:32,397] WARN   203[main] - org.restcomm.protocols.ss7.tcap.TCAPStackImpl.start(TCAPStackImpl.java:209) - Failed to load the TCAP Management configuration file. 
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/map/load/client/Test_management.xml (No such file or directory)
+[2019-09-26 13:42:32,540] WARN   346[main] - org.restcomm.protocols.ss7.sccp.impl.SccpProviderImpl.registerSccpListener(SccpProviderImpl.java:98) - Registering SccpListener=org.restcomm.protocols.ss7.tcap.TCAPProviderImpl@2f8541f5 for already existing SccpListnere=org.restcomm.protocols.ss7.tcap.TCAPProviderImpl@2f8541f5 for SSN=8
+[2019-09-26 13:42:42,650] WARN 10456[Mtp3-DeliveryExecutorSystem-21-1] - org.restcomm.protocols.ss7.sccp.impl.SccpStackImpl.onMtp3ResumeMessage(SccpStackImpl.java:1193) - Rx : MTP-RESUME: AffectedDpc=2
+[2019-09-26 13:42:52,861] WARN 20667[Mtp3-DeliveryExecutor-6-11-1] - org.restcomm.protocols.ss7.map.load.Client.onDialogRelease(Client.java:812) - Completed 2000 Dialogs, dlg per a sec: 333333.34
+[2019-09-26 13:43:12,537] WARN 40343[Mtp3-DeliveryExecutor-4-9-1] - org.restcomm.protocols.ss7.map.load.Client.onDialogRelease(Client.java:812) - Completed 2000 Dialogs, dlg per a sec: 101.646675
+[2019-09-26 13:43:32,537] WARN 60343[Mtp3-DeliveryExecutor-4-9-1] - org.restcomm.protocols.ss7.map.load.Client.onDialogRelease(Client.java:812) - Completed 2000 Dialogs, dlg per a sec: 100.0
+[2019-09-26 13:43:52,536] WARN 80342[Mtp3-DeliveryExecutor-4-9-1] - org.restcomm.protocols.ss7.map.load.Client.onDialogRelease(Client.java:818) - Start Time = 1569505372855
+[2019-09-26 13:43:52,537] WARN 80343[Mtp3-DeliveryExecutor-4-9-1] - org.restcomm.protocols.ss7.map.load.Client.onDialogRelease(Client.java:819) - Current Time = 1569505432536
+[2019-09-26 13:43:52,537] WARN 80343[Mtp3-DeliveryExecutor-4-9-1] - org.restcomm.protocols.ss7.map.load.Client.onDialogRelease(Client.java:822) - Total time in sec = 59.681
+[2019-09-26 13:43:52,537] WARN 80343[Mtp3-DeliveryExecutor-4-9-1] - org.restcomm.protocols.ss7.map.load.Client.onDialogRelease(Client.java:823) - Throughput = 100.53451

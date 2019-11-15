@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.5">
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/sctp/src/main/java/org/restcomm/protocols/ss7/oam/common/sctp/SctpAssociationJmx.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/sctp/src/main/java/org/restcomm/protocols/ss7/oam/common/sctp/SctpServerJmxMBean.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/sctp/src/main/java/org/restcomm/protocols/ss7/oam/common/sctp/SctpAssociationJmxMBean.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/sctp/src/main/java/org/restcomm/protocols/ss7/oam/common/sctp/SctpServerJmx.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/sctp/src/main/java/org/restcomm/protocols/ss7/oam/common/sctp/SctpManagementType.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/sctp/src/main/java/org/restcomm/protocols/ss7/oam/common/sctp/SctpManagementJmxMBean.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/oam/common/sctp/src/main/java/org/restcomm/protocols/ss7/oam/common/sctp/SctpManagementJmx.java">
+</file>
+</checkstyle>

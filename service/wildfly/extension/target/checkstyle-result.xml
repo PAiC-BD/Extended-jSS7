@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.5">
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/service/wildfly/extension/src/main/java/org/restcomm/ss7/extension/Constants.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/service/wildfly/extension/src/main/java/org/restcomm/ss7/extension/SS7MbeanRemove.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/service/wildfly/extension/src/main/java/org/restcomm/ss7/extension/Namespace.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/service/wildfly/extension/src/main/java/org/restcomm/ss7/extension/SS7MbeanPropertyEntryDefinition.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/service/wildfly/extension/src/main/java/org/restcomm/ss7/extension/SS7MbeanPropertyEntryRemove.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/service/wildfly/extension/src/main/java/org/restcomm/ss7/extension/SS7MbeanPropertyEntryAdd.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/service/wildfly/extension/src/main/java/org/restcomm/ss7/extension/SS7MbeanConstructorParameterDefinition.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/service/wildfly/extension/src/main/java/org/restcomm/ss7/extension/SS7MbeanConstructorParameterAdd.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/service/wildfly/extension/src/main/java/org/restcomm/ss7/extension/SS7MbeanConstructorRemove.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/service/wildfly/extension/src/main/java/org/restcomm/ss7/extension/SS7MbeanPropertyAdd.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/service/wildfly/extension/src/main/java/org/restcomm/ss7/extension/SS7MbeanConstructorParameterRemove.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/service/wildfly/extension/src/main/java/org/restcomm/ss7/extension/SubsystemDefinition.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/service/wildfly/extension/src/main/java/org/restcomm/ss7/extension/SS7MbeanPropertyRemove.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/service/wildfly/extension/src/main/java/org/restcomm/ss7/extension/SS7MbeanAdd.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/service/wildfly/extension/src/main/java/org/restcomm/ss7/extension/SS7MbeanPropertyDefinition.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/service/wildfly/extension/src/main/java/org/restcomm/ss7/extension/SubsystemAdd.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/service/wildfly/extension/src/main/java/org/restcomm/ss7/extension/SubsystemRemove.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/service/wildfly/extension/src/main/java/org/restcomm/ss7/extension/SS7SubsystemParser.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/service/wildfly/extension/src/main/java/org/restcomm/ss7/extension/SS7Extension.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/service/wildfly/extension/src/main/java/org/restcomm/ss7/extension/SS7MbeanConstructorDefinition.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/service/wildfly/extension/src/main/java/org/restcomm/ss7/extension/SS7MbeanConstructorAdd.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/service/wildfly/extension/src/main/java/org/restcomm/ss7/extension/SS7MbeanDefinition.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/service/wildfly/extension/src/main/java/org/restcomm/ss7/service/SS7ExtensionService.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/service/wildfly/extension/src/main/java/org/restcomm/ss7/service/SS7ServiceInterface.java">
+</file>
+</checkstyle>

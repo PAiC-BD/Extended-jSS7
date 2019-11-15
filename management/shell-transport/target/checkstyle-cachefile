@@ -1,0 +1,14 @@
+#Tue Aug 27 18:05:47 UTC 2019
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-transport/src/main/java/org/restcomm/ss7/management/transceiver/ShellSelectableChannel.java=1565800970000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-transport/src/main/java/org/restcomm/ss7/management/transceiver/ChannelSelector.java=1565800970000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-transport/src/main/java/org/restcomm/ss7/management/transceiver/ShellChannelExt.java=1565800970000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-transport/src/main/java/org/restcomm/ss7/management/transceiver/ChannelException.java=1565800970000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-transport/src/main/java/org/restcomm/ss7/management/console/SimplePrincipal.java=1565800970000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-transport/src/main/java/org/restcomm/ss7/management/transceiver/MessageFactory.java=1565800970000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-transport/src/main/java/org/restcomm/ss7/management/transceiver/ShellChannel.java=1565800970000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-transport/src/main/java/org/restcomm/ss7/management/transceiver/ChannelProvider.java=1565800970000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-transport/src/main/java/org/restcomm/ss7/management/transceiver/Message.java=1565800970000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-transport/src/main/java/org/restcomm/ss7/management/transceiver/ChannelSelectionKey.java=1565800970000
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-transport/src/main/java/org/restcomm/ss7/management/transceiver/ShellServerChannel.java=1565800970000
+configuration*?=77779D5F28679D93A9B004DE80207F94AC08EB2B
+/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/management/shell-transport/src/main/java/org/restcomm/ss7/management/console/Version.java=1565800970000

@@ -1,0 +1,1914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.5">
+<title>Installation Guide to Restcomm jSS7 8.0.0-170</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
+/* Remove comment around @import statement below when using as a custom stylesheet */
+/*@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}
+audio,canvas,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+[hidden],template{display:none}
+script{display:none!important}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+a{background:transparent}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+dfn{font-style:italic}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.center{margin-left:auto;margin-right:auto}
+.spread{width:100%}
+p.lead,.paragraph.lead>p,#preamble>.sectionbody>.paragraph:first-of-type p{font-size:1.21875em;line-height:1.6}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0;direction:ltr}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:none}
+p{font-family:inherit;font-weight:400;font-size:1em;line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #ddddd8;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em;height:0}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{font-size:1em;line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol,ul.no-bullet,ol.no-bullet{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0;font-size:1em}
+ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
+ul.square{list-style-type:square}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ul.no-bullet{list-style:none}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+abbr,acronym{text-transform:uppercase;font-size:90%;color:rgba(0,0,0,.8);border-bottom:1px dotted #ddd;cursor:help}
+abbr{text-transform:none}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote cite{display:block;font-size:.9375em;color:rgba(0,0,0,.6)}
+blockquote cite:before{content:"\2014 \0020"}
+blockquote cite a,blockquote cite a:visited{color:rgba(0,0,0,.6)}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media only screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede}
+table thead,table tfoot{background:#f7f8f7;font-weight:bold}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt,table tr:nth-of-type(even){background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.clearfix:before,.clearfix:after,.float-group:before,.float-group:after{content:" ";display:table}
+.clearfix:after,.float-group:after{clear:both}
+*:not(pre)>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background-color:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed;word-wrap:break-word}
+*:not(pre)>code.nobreak{word-wrap:normal}
+*:not(pre)>code.nowrap{white-space:nowrap}
+pre,pre>code{line-height:1.45;color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;text-rendering:optimizeSpeed}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background-color:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menu{color:rgba(0,0,0,.8)}
+b.button:before,b.button:after{position:relative;top:-1px;font-weight:400}
+b.button:before{content:"[";padding:0 3px 0 2px}
+b.button:after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin-left:auto;margin-right:auto;margin-top:0;margin-bottom:0;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header:before,#header:after,#content:before,#content:after,#footnotes:before,#footnotes:after,#footer:before,#footer:after{content:" ";display:table}
+#header:after,#content:after,#footnotes:after,#footer:after{clear:both}
+#content{margin-top:1.25em}
+#content:before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #ddddd8}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #ddddd8;padding-bottom:8px}
+#header .details{border-bottom:1px solid #ddddd8;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span:before{content:"\00a0\2013\00a0"}
+#header .details br+span.author:before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark:before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber:after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #ddddd8;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #efefed;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media only screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background-color:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #efefed;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #efefed;left:auto;right:0}}
+@media only screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:100%;background-color:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:rgba(255,255,255,.8);line-height:1.44}
+.sect1{padding-bottom:.625em}
+@media only screen and (min-width:768px){.sect1{padding-bottom:1.25em}}
+.sect1+.sect1{border-top:1px solid #efefed}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor:before,h2>a.anchor:before,h3>a.anchor:before,#toctitle>a.anchor:before,.sidebarblock>.content>.title>a.anchor:before,h4>a.anchor:before,h5>a.anchor:before,h6>a.anchor:before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock>caption.title{white-space:nowrap;overflow:visible;max-width:0}
+.paragraph.lead>p,#preamble>.sectionbody>.paragraph:first-of-type p{color:rgba(0,0,0,.85)}
+table.tableblock #preamble>.sectionbody>.paragraph:first-of-type p{font-size:inherit}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #ddddd8;color:rgba(0,0,0,.6)}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border-style:solid;border-width:1px;border-color:#e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;-webkit-border-radius:4px;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
+.sidebarblock{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock pre:not(.highlight),.listingblock pre[class="highlight"],.listingblock pre[class^="highlight "],.listingblock pre.CodeRay,.listingblock pre.prettyprint{background:#f7f7f8}
+.sidebarblock .literalblock pre,.sidebarblock .listingblock pre:not(.highlight),.sidebarblock .listingblock pre[class="highlight"],.sidebarblock .listingblock pre[class^="highlight "],.sidebarblock .listingblock pre.CodeRay,.sidebarblock .listingblock pre.prettyprint{background:#f2f1f1}
+.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{-webkit-border-radius:4px;border-radius:4px;word-wrap:break-word;padding:1em;font-size:.8125em}
+.literalblock pre.nowrap,.literalblock pre[class].nowrap,.listingblock pre.nowrap,.listingblock pre[class].nowrap{overflow-x:auto;white-space:pre;word-wrap:normal}
+@media only screen and (min-width:768px){.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{font-size:.90625em}}
+@media only screen and (min-width:1280px){.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{font-size:1em}}
+.literalblock.output pre{color:#f7f7f8;background-color:rgba(0,0,0,.9)}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;-webkit-border-radius:4px;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]:before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:#999}
+.listingblock:hover code[data-lang]:before{display:block}
+.listingblock.terminal pre .command:before{content:attr(data-prompt);padding-right:.5em;color:#999}
+.listingblock.terminal pre .command:not([data-prompt]):before{content:"$"}
+table.pyhltable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.pyhltable td{vertical-align:top;padding-top:0;padding-bottom:0;line-height:1.45}
+table.pyhltable td.code{padding-left:.75em;padding-right:0}
+pre.pygments .lineno,table.pyhltable td:not(.code){color:#999;padding-left:0;padding-right:.5em;border-right:1px solid #ddddd8}
+pre.pygments .lineno{display:inline-block;margin-right:.25em}
+table.pyhltable .linenodiv{background:none!important;padding-right:0!important}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock blockquote p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote:before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.5em;margin-right:.5ex;text-align:right}
+.quoteblock .quoteblock{margin-left:0;margin-right:0;padding:.5em 0;border-left:3px solid rgba(0,0,0,.6)}
+.quoteblock .quoteblock blockquote{padding:0 0 0 .75em}
+.quoteblock .quoteblock blockquote:before{display:none}
+.verseblock{margin:0 1em 1.25em 1em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract{margin:0 0 1.25em 0;display:block}
+.quoteblock.abstract blockquote,.quoteblock.abstract blockquote p{text-align:left;word-spacing:0}
+.quoteblock.abstract blockquote:before,.quoteblock.abstract blockquote p:first-of-type:before{display:none}
+table.tableblock{max-width:100%;border-collapse:separate}
+table.tableblock td>.paragraph:last-child p>p:last-child,table.tableblock th>p:last-child,table.tableblock td>p:last-child{margin-bottom:0}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all th.tableblock,table.grid-all td.tableblock{border-width:0 1px 1px 0}
+table.grid-all tfoot>tr>th.tableblock,table.grid-all tfoot>tr>td.tableblock{border-width:1px 1px 0 0}
+table.grid-cols th.tableblock,table.grid-cols td.tableblock{border-width:0 1px 0 0}
+table.grid-all *>tr>.tableblock:last-child,table.grid-cols *>tr>.tableblock:last-child{border-right-width:0}
+table.grid-rows th.tableblock,table.grid-rows td.tableblock{border-width:0 0 1px 0}
+table.grid-all tbody>tr:last-child>th.tableblock,table.grid-all tbody>tr:last-child>td.tableblock,table.grid-all thead:last-child>tr>th.tableblock,table.grid-rows tbody>tr:last-child>th.tableblock,table.grid-rows tbody>tr:last-child>td.tableblock,table.grid-rows thead:last-child>tr>th.tableblock{border-bottom-width:0}
+table.grid-rows tfoot>tr>th.tableblock,table.grid-rows tfoot>tr>td.tableblock{border-width:1px 0 0 0}
+table.frame-all{border-width:1px}
+table.frame-sides{border-width:0 1px}
+table.frame-topbot{border-width:1px 0}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{display:table-cell;line-height:1.6;background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+td>div.verse{white-space:pre}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.unstyled,ol.unnumbered,ul.checklist,ul.none{list-style-type:none}
+ul.unstyled,ol.unnumbered,ul.checklist{margin-left:.625em}
+ul.checklist li>p:first-child>.fa-square-o:first-child,ul.checklist li>p:first-child>.fa-check-square-o:first-child{width:1em;font-size:.85em}
+ul.checklist li>p:first-child>input[type="checkbox"]:first-child{width:1em;position:relative;top:1px}
+ul.inline{margin:0 auto .625em auto;margin-left:-1.375em;margin-right:0;padding:0;list-style:none;overflow:hidden}
+ul.inline>li{list-style:none;float:left;margin-left:1.375em;display:block}
+ul.inline>li>*{display:block}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist>table tr>td:first-of-type{padding:0 .75em;line-height:1}
+.colist>table tr>td:last-of-type{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:solid 4px #fff;-webkit-box-shadow:0 0 0 1px #ddd;box-shadow:0 0 0 1px #ddd}
+.imageblock.left,.imageblock[style*="float: left"]{margin:.25em .625em 1.25em 0}
+.imageblock.right,.imageblock[style*="float: right"]{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em 0;border-width:1px 0 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;text-indent:-1.05em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+.gist .file-data>table{border:0;background:#fff;width:100%;margin-bottom:0}
+.gist .file-data>table td.line-data{width:99%}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background-color:#00fafa}
+.black{color:#000}
+.black-background{background-color:#000}
+.blue{color:#0000bf}
+.blue-background{background-color:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background-color:#fa00fa}
+.gray{color:#606060}
+.gray-background{background-color:#7d7d7d}
+.green{color:#006000}
+.green-background{background-color:#007d00}
+.lime{color:#00bf00}
+.lime-background{background-color:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background-color:#7d0000}
+.navy{color:#000060}
+.navy-background{background-color:#00007d}
+.olive{color:#606000}
+.olive-background{background-color:#7d7d00}
+.purple{color:#600060}
+.purple-background{background-color:#7d007d}
+.red{color:#bf0000}
+.red-background{background-color:#fa0000}
+.silver{color:#909090}
+.silver-background{background-color:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background-color:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background-color:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background-color:#fafa00}
+span.icon>.fa{cursor:default}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note:before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip:before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning:before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution:before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important:before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background-color:rgba(0,0,0,.8);-webkit-border-radius:100px;border-radius:100px;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]:after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,span.alt{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background-color:#fffef7;border-color:#e0e0dc;-webkit-box-shadow:0 1px 4px #e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@media print{@page{margin:1.25cm .75cm}
+*{-webkit-box-shadow:none!important;box-shadow:none!important;text-shadow:none!important}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare):after,a[href^="https:"]:not(.bare):after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]:after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #ddddd8!important;padding-bottom:0!important}
+.sect1{padding-bottom:0!important}
+.sect1+.sect1{border:0!important}
+#header>h1:first-child{margin-top:1.25rem}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em 0}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span:before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]:before{display:block}
+#footer{background:none!important;padding:0 .9375em}
+#footer-text{color:rgba(0,0,0,.6)!important;font-size:.9em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body class="book">
+<div id="header">
+<h1>Installation Guide to Restcomm jSS7 8.0.0-170</h1>
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#preface">Preface</a></li>
+<li><a href="#document-conventions">Document Conventions</a>
+<ul class="sectlevel2">
+<li><a href="#typographic-conventions">Typographic Conventions</a></li>
+<li><a href="#pull-quote-conventions">Pull-quote Conventions</a></li>
+<li><a href="#notes-and-warnings">Notes and Warnings</a></li>
+</ul>
+</li>
+<li><a href="#provide-feedback-to-the-authors">Provide feedback to the authors!</a></li>
+<li><a href="#introduction">1. Introduction</a></li>
+<li><a href="#pre-requisites">2. Pre-Requisites</a></li>
+<li><a href="#_setup_hardware">3. Hardware Setup</a></li>
+<li><a href="#_setup_downloading">4. Downloading</a>
+<ul class="sectlevel2">
+<li><a href="#_downloading_binary">4.1. Binary Download</a></li>
+<li><a href="#_source_code">4.2. Setup from Source</a></li>
+</ul>
+</li>
+<li><a href="#_setup_running">5. Installing Restcomm jSS7</a>
+<ul class="sectlevel2">
+<li><a href="#installation-options">5.1. Installation Options</a></li>
+<li><a href="#_restcomm_ss7_install_hardware_libraries">5.2. Installing of hardware native libraries.</a></li>
+<li><a href="#_setup_configuration">5.3. Post Installation Configuration</a></li>
+</ul>
+</li>
+<li><a href="#_setup_uninstalling">6. Uninstalling</a></li>
+<li><a href="#_jdk_installing_configuring_and_running">Appendix A: Java Development Kit (): Installing, Configuring and Running</a></li>
+<li><a href="#_jboss_home_setup">Appendix B: Setting the JBOSS_HOME Environment Variable</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="preface"><a class="anchor" href="#preface"></a>Preface</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="document-conventions"><a class="anchor" href="#document-conventions"></a>Document Conventions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This manual uses several conventions to highlight certain words and phrases and draw attention to specific pieces of information.</p>
+</div>
+<div class="paragraph">
+<p>In PDF and paper editions, this manual uses typefaces drawn from the <a href="https://fedorahosted.org/liberation-fonts/">Liberation Fonts</a> set.
+The Liberation Fonts set is also used in HTML editions if the set is installed on your system.
+If not, alternative but equivalent typefaces are displayed.
+Note: Red Hat Enterprise Linux 5 and later includes the Liberation Fonts set by default.</p>
+</div>
+<div class="sect2">
+<h3 id="typographic-conventions"><a class="anchor" href="#typographic-conventions"></a>Typographic Conventions</h3>
+<div class="paragraph">
+<p>Four typographic conventions are used to call attention to specific words and phrases.
+These conventions, and the circumstances they apply to, are as follows.</p>
+</div>
+<div class="paragraph">
+<p><code>Mono-spaced Bold</code></p>
+</div>
+<div class="paragraph">
+<p>Used to highlight system input, including shell commands, file names and paths.
+Also used to highlight key caps and key-combinations.
+For example:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+To see the contents of the file <em class="path">my_next_bestselling_novel</em> in your current working directory, enter the <code>cat my_next_bestselling_novel</code> command at the shell prompt and press <kbd>Enter</kbd> to execute the command.
+</blockquote>
+</div>
+<div class="paragraph">
+<p>The above includes a file name, a shell command and a key cap, all presented in Mono-spaced Bold and all distinguishable thanks to context.</p>
+</div>
+<div class="paragraph">
+<p>Key-combinations can be distinguished from key caps by the hyphen connecting each part of a key-combination.
+For example:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Press <kbd>Enter</kbd> to execute the command.</p>
+</div>
+<div class="paragraph">
+<p>Press  to switch to the first virtual terminal.
+Press  to return to your X-Windows session.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>The first sentence highlights the particular key cap to press.
+The second highlights two sets of three key caps, each set pressed simultaneously.</p>
+</div>
+<div class="paragraph">
+<p>If source code is discussed, class names, methods, functions, variable names and returned values mentioned within a paragraph will be presented as above, in <code>Mono-spaced Bold</code>.
+For example:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+File-related classes include <code class="class">filesystem</code> for file systems, <code class="class">file</code> for files, and <code class="class">dir</code> for directories.
+Each class has its own associated set of permissions.
+</blockquote>
+</div>
+<div class="paragraph">
+<p><code class="app">Proportional Bold</code></p>
+</div>
+<div class="paragraph">
+<p>This denotes words or phrases encountered on a system, including application names; dialogue box text; labelled buttons; check-box and radio button labels; menu titles and sub-menu titles.
+For example:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Choose <span class="menu">System &gt; Preferences &gt; Mouse</span> from the main menu bar to launch <code class="app">Mouse Preferences</code>.
+In the <span class="label">Buttons</span> tab, click the <span class="label">Left-handed mouse</span> check box and click <b class="button">Close</b> to switch the primary mouse button from the left to the right (making the mouse suitable for use in the left hand).</p>
+</div>
+<div class="paragraph">
+<p>To insert a special character into a <code class="app">gedit</code> file, choose <span class="menu">Applications &gt; Accessories &gt; Character Map</span> from the main menu bar.
+Next, choose <span class="menu">Search &gt; Find</span> from the <code class="app">Character Map</code> menu bar, type the name of the character in the <span class="label">Search</span> field and click <b class="button">Next</b>.
+The character you sought will be highlighted in the <span class="label">Character Table</span>.
+Double-click this highlighted character to place it in the <span class="label">Text to copy</span> field and then click the <b class="button">Copy</b> button.
+Now switch back to your document and choose <span class="menu">Edit &gt; Paste</span> from the <code class="app">gedit</code> menu bar.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>The above text includes application names; system-wide menu names and items; application-specific menu names; and buttons and text found within a GUI interface, all presented in Proportional Bold and all distinguishable by context.</p>
+</div>
+<div class="paragraph">
+<p>Note the menu:&gt;[] shorthand used to indicate traversal through a menu and its sub-menus.
+This is to avoid the difficult-to-follow 'Select  from the <span class="menuseq"><span class="menu">Preferences</span>&#160;&#9656; <span class="menuitem">] sub-menu in the menu:System[</span></span> menu of the main menu bar' approach.</p>
+</div>
+<div class="paragraph">
+<p><code>Mono-spaced Bold Italic</code> or <code class="app">Proportional Bold Italic</code></p>
+</div>
+<div class="paragraph">
+<p>Whether Mono-spaced Bold or Proportional Bold, the addition of Italics indicates replaceable or variable text.
+Italics denotes text you do not input literally or displayed text that changes depending on circumstance.
+For example:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>To connect to a remote machine using ssh, type <code>ssh <a href="mailto:username@domain.name">username@domain.name</a></code> at a shell prompt.
+If the remote machine is <em class="path">example.com</em> and your username on that machine is john, type <code>ssh <a href="mailto:john@example.com">john@example.com</a></code>.</p>
+</div>
+<div class="paragraph">
+<p>The <code>mount -o remount file-system</code> command remounts the named file system.
+For example, to remount the <em class="path">/home</em> file system, the command is <code>mount -o remount /home</code>.</p>
+</div>
+<div class="paragraph">
+<p>To see the version of a currently installed package, use the <code>rpm -q package</code> command.
+It will return a result as follows: <code>package-version-release</code>.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>Note the words in bold italics above &mdash;username, domain.name, file-system, package, version and release.
+Each word is a placeholder, either for text you enter when issuing a command or for text displayed by the system.</p>
+</div>
+<div class="paragraph">
+<p>Aside from standard usage for presenting the title of a work, italics denotes the first use of a new and important term.
+For example:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+When the Apache HTTP Server accepts requests, it dispatches child processes or threads to handle them.
+This group of child processes or threads is known as a <em class="term">server-pool</em>.
+Under Apache HTTP Server 2.0, the responsibility for creating and maintaining these server-pools has been abstracted to a group of modules called <em class="term">Multi-Processing Modules</em> (<em class="term">MPMs</em>). Unlike other modules, only one module from the MPM group can be loaded by the Apache HTTP Server.
+</blockquote>
+</div>
+</div>
+<div class="sect2">
+<h3 id="pull-quote-conventions"><a class="anchor" href="#pull-quote-conventions"></a>Pull-quote Conventions</h3>
+<div class="paragraph">
+<p>Two, commonly multi-line, data types are set off visually from the surrounding text.</p>
+</div>
+<div class="paragraph">
+<p>Output sent to a terminal is set in <code>Mono-spaced Roman</code> and presented thus:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>books        Desktop   documentation  drafts  mss    photos   stuff  svn
+books_tests  Desktop1  downloads      images  notes  scripts  svgs</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Source-code listings are also set in <code>Mono-spaced Roman</code> but are presented and highlighted as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">package org.jboss.book.jca.ex1;
+
+import javax.naming.InitialContext;
+
+public class ExClient
+{
+   public static void main(String args[])
+       throws Exception
+   {
+      InitialContext iniCtx = new InitialContext();
+      Object         ref    = iniCtx.lookup("EchoBean");
+      EchoHome       home   = (EchoHome) ref;
+      Echo           echo   = home.create();
+
+      System.out.println("Created Echo");
+
+      System.out.println("Echo.echo('Hello') = " + echo.echo("Hello"));
+   }
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="notes-and-warnings"><a class="anchor" href="#notes-and-warnings"></a>Notes and Warnings</h3>
+<div class="paragraph">
+<p>Finally, we use three visual styles to draw attention to information that might otherwise be overlooked.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="title">Note</div>
+<div class="paragraph">
+<p>A note is a tip or shortcut or alternative approach to the task at hand.
+Ignoring a note should have no negative consequences, but you might miss out on a trick that makes your life easier.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="title">Important</div>
+<div class="paragraph">
+<p>Important boxes detail things that are easily missed: configuration changes that only apply to the current session, or services that need restarting before an update will apply.
+Ignoring Important boxes won&#8217;t cause data loss but may cause irritation and frustration.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="title">Warning</div>
+<div class="paragraph">
+<p>A Warning should not be ignored.
+Ignoring warnings will most likely cause data loss.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="provide-feedback-to-the-authors"><a class="anchor" href="#provide-feedback-to-the-authors"></a>Provide feedback to the authors!</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p></p>
+</div>
+<div class="paragraph">
+<p>If you find a typographical error in this manual, or if you have thought of a way to make this manual better, we would love to hear from you! Please submit a report in the the {this-issue.tracker.ur}, against the product Restcomm jSS7`   `, or contact the authors.</p>
+</div>
+<div class="paragraph">
+<p>When submitting a bug report, be sure to mention the manual&#8217;s identifier: Restcomm jSS7</p>
+</div>
+<div class="paragraph">
+<p>If you have a suggestion for improving the documentation, try to be as specific as possible when describing it.
+If you have found an error, please include the section number and some of the surrounding text so we can find it easily.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="introduction"><a class="anchor" href="#introduction"></a>1. Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Restcomm jSS7 is the only Open Source Java based implementation of the SS7 protocol stack.
+It provides implementation for <code>MTP2</code>, <code>MTP3</code>, <code>ISUP</code>, <code>SCCP</code>, <code>TCAP</code>, <code>CAMEL (Phase I, Phase II, Phase III and Phase IV)</code> and <code>MAP</code> protocols for a dedicated equipment.
+It also has in-built support for <code>SIGTRAN (M3UA)</code> over IP and strictly adheres to the standards and specifications defined by the International Telecommunications Union (ITU) and American National Standards Institute (ANSI). The platform offers developers with a flexible API set that hides the lower layer details (legacy SS7 links or SIGTRAN) and therefore makes it simple and easy to develop SS7 applications as well as to migrate your applications from TDM equipments to M3UA. Restcomm  jSS7  is based on an easily scalable and configurable load-balancing architecture.</p>
+</div>
+<div class="paragraph">
+<p>The platform offers developers with a flexible API set that hides the lower layer details (legacy SS7 links or SIGTRAN) and therefore makes it simple and easy to develop SS7 applications as well as to  migrate your applications from TDM equipments to M3UA. Restcomm jSS7 is based on an easily scalable and configurable load-balancing architecture.</p>
+</div>
+<div class="paragraph">
+<p>Restcomm jSS7 supports TDM hardware offered by major vendors in the market, namely Intel family boards (Dialogic) and  Zaptel/Dahdi (Digium, Sangoma). Though for production we recommend Dialogic boards with MTP2 and MTP3 on-board only.</p>
+</div>
+<div class="paragraph">
+<p>If you intend to use only <code>M3UA</code> you can install the jSS7  on any Operating System that supports Java and SCTP protocol.
+However if you wish to use SS7 cards, the native libaries for these are only  compiled for Linux at the moment.</p>
+</div>
+<div class="paragraph">
+<p>Restcomm jSS7 comes with JSLEE TCAP, MAP, CAP and ISUP Resource Adaptors (RA) that enable developers to build SS7  applications with ease.
+Developers only require an understanding of Resource Adaptors and can focus on building applications quickly and efficiently rather than worry about the SS7 stack.
+If you wish to use JSLEE Resource Adapters, the Command Line Interface (CLI - Shell Management tool) or the GUI for run-time configuration, then you must have JBoss Application Server installed and running.
+However if you do not wish to use the Resource Adaptors or CLI then Restcomm jSS7 can work as a standalone library.</p>
+</div>
+<div class="paragraph">
+<p>The Open Source Software gives you the flexibility to understand the readily available source code and customise the product for your Enterprise needs.</p>
+</div>
+<div class="paragraph">
+<p>This guide will assist you in installing Restcomm jSS7 .
+For more details on configuring and using the platform or for information regarding the supported protocols and compliant standards, please refer to the Restcomm jSS7 User Guide.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="pre-requisites"><a class="anchor" href="#pre-requisites"></a>2. Pre-Requisites</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Restcomm jSS7 's core requirement is Java.
+The following table details the Hardware, Operating System and Software requirements for a clean installation of Restcomm jSS7 .</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 1. Installation Pre-Requisites</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Component</th>
+<th class="tableblock halign-left valign-top">Requirement</th>
+<th class="tableblock halign-left valign-top">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">System Requirements</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intel Pentium 1 GHz or faster for simple applications. Hard disk space of at least 20MB. RAM of at least 1.5 GB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Higher the RAM and processing power, better is the throughput</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TDM Hardware</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For legacy SS7 links, you must have dahdi or dialogic cards installed along with their native libraries.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">You do not require any specific hardware for SIGTRAN (M3UA)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Operating System</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The platform can be installed on any OS that supports Java and SCTP. But native libraries for SS7 cards are compiled only for Linux at the moment and therefore supported only on Linux Operating System.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The libraries will be compiled for Windows in future releases.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Java</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">You must have a working Java Runtime Environment (JRE) or Java Development Kit (JDK) installed on your system and it must be version 5 or higher. If you intend to use SIGTRAN (M3UA) then you must have JDK 7 installed. M3UA uses Java SCTP which is available only from JDK 7 onwards. JAVA 8 is not supported now.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If you are using M3UA, then you must use JDK 7 to run the stack as well as to compile the source code. For TDM cards JDK 7 is also recommended.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JBoss Application Server</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Restcomm jSS7 Stack can work as a standalone library if you do not require JSLEE Resource Adaptors and the Shell Management Tool (Command Line Interface) for run-time configuration of the platform. But if you wish to avail of these, then you must have JBoss Application Server (version 5.1.0.GA) installed on your machine.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refer to the appendix section for more details.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SCTP libraries</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If you intend to use SIGTRAN (M3UA), you must have the lksctp library installed. The Linux Kernel Stream Control Transmission Protocol (lksctp) library provides SCTP implementation.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For more details on downloading and installing lksctp, please refer to <a href="http://lksctp.sourceforge.net/" class="bare">http://lksctp.sourceforge.net/</a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+You must ensure that the <code>JAVA_HOME</code> and <code>JBOSS_HOME</code> Environment variables are set properly for the user account(s) that will run the server.
+For more details on setting these variables, please refer to the sections <a href="#_jdk_installing_configuring_and_running">Java Development Kit (): Installing, Configuring and Running</a> and <a href="#_jboss_home_setup">Setting the JBOSS_HOME Environment Variable</a>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_setup_hardware"><a class="anchor" href="#_setup_hardware"></a>3. Hardware Setup</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You do not require any specific hardware if you intend to use only SIGTRAN (M3UA). But if you wish to use legacy SS7 links, then you must have relevant SS7 cards installed along with their native libraries.</p>
+</div>
+<div class="paragraph">
+<p>Restcomm jSS7 supports <code>dahdi</code> based SS7 cards like <code>diguim</code> and <code>sangoma</code> as well as <code>dialogic</code> cards.
+Since <code>dahdi</code> based SS7 cards do not have MTP2/MTP3 support on board they rely on external software to provide these services.
+But <code>dialogic</code> based SS7 cards have on board support for MTP2/MTP3 and recommended.</p>
+</div>
+<div class="paragraph">
+<p>This guide does not provide installation instructions for SS7 hardware.
+You must refer to respective vendor documentation for installing and configuring the hardware cards.
+The following external links point to information that will assist you in setting up the hardware.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Sangoma: <a href="http://wiki.sangoma.com/" class="bare">http://wiki.sangoma.com/</a></p>
+</li>
+<li>
+<p>Diguim: <a href="http://www.digium.com/en/products/digital/" class="bare">http://www.digium.com/en/products/digital/</a></p>
+</li>
+<li>
+<p>Dialogic: <a href="http://www.dialogic.com/" class="bare">http://www.dialogic.com/</a></p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Before JSS7 stack can interoperate with an installed card you need to provide extra native libs for both Dialogic and dahdi cards. The way where you can obtain native libs is explained in <a href="#_restcomm_ss7_install_hardware_libraries">Installing of hardware native libraries.</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_setup_downloading"><a class="anchor" href="#_setup_downloading"></a>4. Downloading</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Installing Restcomm jSS7 is easy and quick with the binary download.
+You can either download the binary release or download the source code and set up from source.</p>
+</div>
+<div class="sect2">
+<h3 id="_downloading_binary"><a class="anchor" href="#_downloading_binary"></a>4.1. Binary Download</h3>
+<div class="paragraph">
+<p>The binary release is available for download at the following link: <a href="https://github.com/RestComm/jss7/releases/latest" class="bare">https://github.com/RestComm/jss7/releases/latest</a></p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure: Binary Download</div>
+<ol class="arabic">
+<li>
+<p>Download the zip file <em>restcomm-jSS7-8.0.0-170.zip</em> to any folder of your choice.</p>
+</li>
+<li>
+<p>Extract the contents of the zip file.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>Downloads]$ unzip restcomm-jSS7-8.0.0-170.zip</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Verify the contents of the newly created directory.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>When you download the binary release, you will notice that the top level directory is named <em>restcomm-jSS7-8.0.0-170</em> and immediately below this are 7 sub-directories named <em>asn</em>, <em>_docs</em>, <em>oam</em>, <em>sctp</em>, <em>ss7</em>, <em>ss7-jboss</em> and <em>ss7-wildfly</em> encompassing the major services and libraries that make up Restcomm  jSS7 .
+For details on what is included in the sub-directories, please refer to the Restcomm  jSS7  User Guide.</p>
+</div>
+<div class="paragraph">
+<p>The major functional modules of the jSS7 are:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>SS7 Service [dir: <em>restcomm-ss7-service</em>]</p>
+</li>
+<li>
+<p>Signaling Gateway [dir: <em>restcomm-ss7-sgw</em>]</p>
+</li>
+<li>
+<p>Shell [dir: <em>shell</em>]</p>
+</li>
+<li>
+<p>SS7 Simulator [dir: <em>restcomm-ss7-simulator</em>]</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>|- restcomm-jss7-8.0.0-170
+		|- asn
+
+		|- _docs
+
+		|- oam
+
+		|- sctp
+
+		|- ss7
+				|+ protocols
+				|+ shell
+				|+ restcomm-ss7-simulator
+				|+ restcomm-ss7-trace-parser
+
+		|- ss7-jboss
+				|+ restcomm-ss7-service
+				|+ restcomm-ss7-sgw
+				|+ template
+
+		|- ss7-wildfly
+                |+ restcomm-ss7-service
+                |+ template</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_source_code"><a class="anchor" href="#_source_code"></a>4.2. Setup from Source</h3>
+<div class="paragraph">
+<p>Restcomm jSS7 is an open source project and you have the freedom to build from source.
+Building from source means you can stay on top with the latest features.
+Whilst aspects of Restcomm jSS7 are quite  complicated, you may find ways to become contributors.</p>
+</div>
+<div class="paragraph">
+<p>Restcomm jSS7 works with JDK1.7 or above.
+In addition you must have the following tools installed.</p>
+</div>
+<div class="ulist">
+<div class="title">Pre-Requisites for Building from Source</div>
+<ul>
+<li>
+<p><code>Git Client</code> : Instructions for using GIT, including install, can be found at <a href="http://git-scm.com/book" class="bare">http://git-scm.com/book</a></p>
+</li>
+<li>
+<p><code>Maven 3.2.X</code> : Instructions for using Maven, including install, can be found at <a href="http://maven.apache.org/" class="bare">http://maven.apache.org/</a></p>
+</li>
+<li>
+<p><code>Ant 1.9.X</code> : Instructions for using Ant, including install, can be found at <a href="http://ant.apache.org" class="bare">http://ant.apache.org</a></p>
+</li>
+<li>
+<p><code>jmxtools:jar</code> :  This library is required to build the Simulator source code. The library com.sun.jdmk:jmxtools:jar:1.2.1 must be downloaded manually and placed in your maven repository. Instructions are provided below.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Instructions to Download <code>jmxtools:jar</code> for building Simulator source code are as follows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The file can be downloaded from Oracle&#8217;s website.
+The link is: <a href="http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-java-plat-419418.html#7657-jmx-1.2.1-oth-JPR&amp;usg=AFQjCNGOqUaCB1ULVG7cMULio9u70MKocA" class="bare">http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-java-plat-419418.html#7657-jmx-1.2.1-oth-JPR&amp;usg=AFQjCNGOqUaCB1ULVG7cMULio9u70MKocA</a>.</p>
+</li>
+<li>
+<p>The webpage will display a list of Java Platform Technology Downloads.
+From the list, select "Java Management Extension (JMX) 1.2.1"</p>
+</li>
+<li>
+<p>Read and understand the License Agreement and then press "Accept License Agreement".</p>
+</li>
+<li>
+<p>Download the <em>jmx-1_2_1-ri.zip</em> file.</p>
+</li>
+<li>
+<p>Extract <em>lib/jmxtools:jar</em></p>
+</li>
+<li>
+<p>Once extracted, place this file in your maven repository as <em>.m2/repository/com/sun/jdmk/jmxtools/1.2.1/jmxtools-1.2.1.jar</em> file if <em>.m2/repository</em> is a root of this repository.
+Alternatively you can register it.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_source_building"><a class="anchor" href="#_source_building"></a>4.2.1. Release Source Code Building</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Downloading the source code</p>
+<div class="paragraph">
+<p>Checkout a specific release source using GIT.
+The base URL to clone from is <a href="https://github.com/Restcomm/jss7" class="bare">https://github.com/Restcomm/jss7</a>.
+Then add the specific release version, in the below example we are downloading the version 8.0.0-170.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>[usr]$ git clone https://github.com/Restcomm/jss7 jss7
+[usr]$ cd jss7
+[usr]$ git checkout <version></code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Building the source code</p>
+<div class="paragraph">
+<p>Now that we have the source code, the next step is to build and install the source. Restcomm jSS7 uses Maven 3 to build the system.
+There are two build profiles namely default and dahdilinux.
+The Default profile builds only the java source code.
+The profile "dahdilinux" compile relevant native modules in addition to building the java source.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+At the moment, native modules are supported only for Linux OS.
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Building using "default" Build profile</p>
+<div class="paragraph">
+<p>To build Restcomm jSS7 without building any native libraries use the default profile as shown below.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>[usr]$ cd jss7
+[usr]$ mvn install</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If you are using Restcomm jSS7 without any native dependencies, Restcomm jSS7 can run on any OS.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Building using "dahdilinux" profile</p>
+<div class="paragraph">
+<p>Use this profile only if the linux server on which this code is built has <code>dahdi</code> module installed.
+Make sure you pass the "include.zap" system property with a value pointing to the directory where <code>dahdi</code> is installed</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>[usr]$ cd jss7
+[usr]$ mvn install -Pdahdilinux -Dinclude.zap=/usr/include/dahdi</code></pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Use Ant to build the binary.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>[usr]$ cd jss7/release
+[usr]$ ant</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_trunk_source_building"><a class="anchor" href="#_trunk_source_building"></a>4.2.2. Development Trunk Source Building</h4>
+<div class="paragraph">
+<p>To build from development trunk source, follow the same procedure as above but at the time of checkout do not switch to the specific release tag.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>[usr]$ git clone https://github.com/Restcomm/jss7 jss7
+[usr]$ cd jss7
+[usr]$ git checkout</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The rest of the steps are as outlined in the above section <a href="#_source_building">Release Source Code Building</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_setup_running"><a class="anchor" href="#_setup_running"></a>5. Installing Restcomm jSS7</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="installation-options"><a class="anchor" href="#installation-options"></a>5.1. Installation Options</h3>
+<div class="paragraph">
+<p>The Restcomm jSS7 is logically divided into two sections - lower and upper.
+The lower section provides implementation for SS7 Level 2 and Level 3 and is therefore influenced by the type of SS7 hardware (Level 1) used.
+The upper section provides implementation for SS7 Level 4 and above. Restcomm jSS7 gives you the flexibility to install and use the Levels 2,3 and 4 in the same JVM and machine where SS7 Hardware (Level 1) is installed.
+Alternately, you can also install Level 1,2 and 3 in one machine and install Level 4 on a separate machine.
+In the second scenario, <code>M3UA</code> over <code>SCTP</code> is used for communication between Level 3 and Level 4 (on different machines) and this is referred to as Restcomm  Signaling Gateway.</p>
+</div>
+<div class="paragraph">
+<p>Restcomm jSS7 can be installed to function as a standalone component if you do not wish to use JBoss Application Server.
+However if you intend to use JSLEE Resource Adaptors or Shell (CLI), then you must deploy it as a JBoss AS Service.
+The sections below provide instructions for installing the Stack for use with JBoss AS or as a standalone component.</p>
+</div>
+<div class="sect3">
+<h4 id="_running_with_jboss"><a class="anchor" href="#_running_with_jboss"></a>5.1.1. Restcomm jSS7  as a JBoss AS Service</h4>
+<div class="paragraph">
+<p>Restcomm SS7 Service can be deployed in any container that supports <code>JMX</code> and exposes <code>JNDI</code>.
+By using the Restcomm  SS7 Service you will be able to configure the SS7 stack using CLI (Command Line Interface) commands.
+The SS7 Service wraps SS7 Level 4 (i.e., MAP, CAP and ISUP) and the lower layers and exposes via JNDI, such that the layer above can perform the look-up and use it in any application.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure: Installing Restcomm SS7 Service to JBoss 5.1.0.GA</div>
+<ol class="arabic">
+<li>
+<p>Pre-Requisites:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>The Restcomm SS7 Service binary requires that you have JBoss Application Server installed and <code>JBOSS_HOME</code> Environment variable set properly. The latest binaries of JBoss Application Server can by obtained from <a href="https://github.com/RestComm/jain-slee/releases/tag/2.8.0.FINAL" class="bare">https://github.com/RestComm/jain-slee/releases/tag/2.8.0.FINAL</a>. For more details on setting the <code>JBOSS_HOME</code> variable, please refer to the section <a href="#_jboss_home_setup">Setting the JBOSS_HOME Environment Variable</a>.</p>
+</li>
+<li>
+<p><code>Ant 1.9</code> (or higher) must be used to install the binary.
+Instructions for using Ant, including install, can be found at <a href="http://ant.apache.org/" class="bare">http://ant.apache.org/</a>.</p>
+</li>
+<li>
+<p>If you are using the SS7 board on server, you must ensure that the <code>java.library.path</code> variable is set to point to the directory containing the native component.
+Alternatively you can copy it to the JBoss native library path manually.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Deploying the SS7 Service:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>You can now deploy the service using the <code>ant deploy</code> command as shown below:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>[usr1]$ cd restcomm-jSS7-8.0.0-170/ss7-jboss
+[usr1]$ ant deploy</code></pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Result:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If the service has been deployed successfully, you will find the below message appear on screen:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>Buildfile: ../restcomm-jSS7-8.0.0-170/ss7-jboss/build.xml
+
+deploy:
+     [copy] Copying 47 files to JBOSS_HOME/server/default/deploy/restcomm-ss7-service
+     [copy] Copying 2 files to JBOSS_HOME/bin
+     [copy] Copying 11 files to JBOSS_HOME/lib
+     [copy] Copying 2 files to JBOSS_HOME/server/default/deploy
+
+BUILD SUCCESSFUL</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>You have now deployed Restcomm SS7 Service successfully.
+Note that this procedure will also install the Shell Components (shell scripts and libraries) on this machine.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure: Installing Restcomm SS7 Service to WildFly 10.1.0.Final</div>
+<ol class="arabic">
+<li>
+<p>Pre-Requisites:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>The Restcomm SS7 Service binary requires that you have WildFly installed and <code>JBOSS_HOME</code> Environment variable set properly. The latest binaries of WildFly can by obtained from <a href="https://github.com/RestComm/jain-slee/releases/latest" class="bare">https://github.com/RestComm/jain-slee/releases/latest</a>. For more details on setting the <code>JBOSS_HOME</code> variable, please refer to the section <a href="#_jboss_home_setup">Setting the JBOSS_HOME Environment Variable</a>.</p>
+</li>
+<li>
+<p><code>Ant 1.9</code> (or higher) must be used to install the binary.
+Instructions for using Ant, including install, can be found at <a href="http://ant.apache.org/" class="bare">http://ant.apache.org/</a>.</p>
+</li>
+<li>
+<p>If you are using the SS7 board on server, you must ensure that the <code>java.library.path</code> variable is set to point to the directory containing the native component.
+Alternatively you can copy it to the JBoss native library path manually.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Deploying the SS7 Service:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>You can now deploy the service using the <code>ant deploy</code> command as shown below:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>[usr1]$ cd restcomm-jSS7-8.0.0-170/ss7-wildfly
+[usr1]$ ant deploy</code></pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Result:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If the service has been deployed successfully, you will find the below message appear on screen:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>Buildfile: ../restcomm-jSS7-8.0.0-170/ss7-wildfly/build.xml
+
+deploy:
+     [copy] Copying 48 files to JBOSS_HOME/modules/system/layers/base/org/mobicents/ss7
+     [copy] Copying 2 files to JBOSS_HOME/bin
+     [copy] Copying 11 files to JBOSS_HOME/lib
+     [copy] Copying 2 files to JBOSS_HOME/standalone/deployments
+
+BUILD SUCCESSFUL</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>You have now deployed Restcomm SS7 Service successfully.
+Note that this procedure will also install the Shell Components (shell scripts and libraries) on this machine.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_restcomm_ss7_sgw"><a class="anchor" href="#_restcomm_ss7_sgw"></a>5.1.2. Restcomm jSS7  as a Signaling Gateway</h4>
+<div class="paragraph">
+<p>Restcomm jSS7 can function as a standalone Signaling Gateway installed on any machine.
+It acts as a signaling agent that receives/sends Switched Circuit Network (SCN) native signaling at the edge of an IP network.
+Installing the Signaling Gateway is straightforward.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure: Installing Signaling Gateway</div>
+<ol class="arabic">
+<li>
+<p>Pre-Requisites:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>You must have JDK 1.7 and lksctp library installed on your machine.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Copy <em class="path">Restcomm-jSS7-8.0.0-170/ss7/restcomm-ss7-sgw</em> to any folder of your choice in any machine that supports the requirements specified.
+Your Signaling Gateway is now ready to be used.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_restcomm_ss7_shell"><a class="anchor" href="#_restcomm_ss7_shell"></a>5.1.3. Shell - Command Line Interface (CLI)</h4>
+<div class="paragraph">
+<p>Once you have installed Restcomm SS7 Service and the Signaling Gateway, you can configure and manage them both using Shell commands. Restcomm jSS7 comes with a Shell Management Interface that enables easy run-time configuration.
+You can install the Shell (CLI) Component on any machine (usually remote) and easily connect to and manage the Stack on a remote machine with simple commands.
+For more details on using the Shell and the commands available, please refer to the Restcomm jSS7 User Guide.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure: Installing CLI</div>
+<ol class="arabic">
+<li>
+<p>Pre-Requisites</p>
+<div class="ulist">
+<ul>
+<li>
+<p>You must have JBoss Application Server installed and <code>JBOSS_HOME</code> Environment variable set properly.
+For more details on setting the <code>JBOSS_HOME</code> variable, please refer to the section <a href="#_jboss_home_setup">Setting the JBOSS_HOME Environment Variable</a>.</p>
+</li>
+<li>
+<p><code>Ant 1.9</code> (or higher) must be used to install the binary.
+Instructions for using Ant, including install, can be found at <a href="http://ant.apache.org/" class="bare">http://ant.apache.org/</a>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Copy <em class="path">Restcomm-jSS7-8.0.0-170/ss7</em> to any folder of your choice in any machine that supports the requirements specified.</p>
+</li>
+<li>
+<p>You can now deploy using the <code>ant deploy</code> command as shown below:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>[usr1]$ cd -/ss7
+[usr1]$ ant deploy</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Result:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If the Shell has been deployed successfully, you will find the below message appear on screen:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>Buildfile: /home/vinu/Downloads/restcomm-jss7-3.0.0/ss7/build.xml
+
+deploy:
+     [copy] Copying 38 files to /home/vinu/Downloads/restcomm-jss7-3.0.0/ss7/${system.JBOSS_HOME}/server/default/deploy/restcomm-ss7-service
+     [copy] Copying 2 files to /home/vinu/Downloads/restcomm-jss7-3.0.0/ss7/${system.JBOSS_HOME}/bin
+     [copy] Copying 9 files to /home/vinu/Downloads/restcomm-jss7-3.0.0/ss7/${system.JBOSS_HOME}/lib
+
+BUILD SUCCESSFUL</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>You have now deployed the Shell Components (shell scripts and libraries) successfully on this machine.
+You can now Start the Shell and connect it to any SS7 service instance and manage the Stack from the Command Line.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_restcomm_ss7_simulator"><a class="anchor" href="#_restcomm_ss7_simulator"></a>5.1.4. Installing the Restcomm jSS7  Simulator</h4>
+<div class="paragraph">
+<p>Restcomm jSS7 Simulator can function as a standalone component installed on any machine.
+The Simulator module will enable you to test and understand the functionality of the Stack.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure: Installing Simulator</div>
+<ol class="arabic">
+<li>
+<p>Pre-Requisites:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>You must have JDK 1.7 installed on your machine.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Copy <em class="path">Restcomm-jSS7-8.0.0-170/ss7/restcomm-ss7-simulator</em>  to any folder of your choice in any machine that supports the requirements specified.
+Your Simulator is now ready to be used.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_running_without_jboss"><a class="anchor" href="#_running_without_jboss"></a>5.1.5. Restcomm jSS7  as a Standalone Component</h4>
+<div class="paragraph">
+<p>Restcomm jSS7 can be installed as a standalone Java library without any dependency on JBoss, Restcomm JSLEE or any other container.
+The Restcomm jSS7 User Guide will assist you in implemeting this and also give some details of how jSS7 layers can be configured.
+If you do not intend to use it with JBoss AS, then you must follow the regular way of initializing jSS7 Stack, which is to build each of the protocols, configure individually and bind them together.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_restcomm_ss7_install_hardware_libraries"><a class="anchor" href="#_restcomm_ss7_install_hardware_libraries"></a>5.2. Installing of hardware native libraries.</h3>
+<div class="paragraph">
+<p>If you use hardware SS7 cards you need to make extra actions for installing of hardware native libraries. A hardware SS7 card must be already installed (refer to the section <a href="#_setup_hardware">Hardware Setup</a>).</p>
+</div>
+<div class="sect3">
+<h4 id="_restcomm_ss7_install_hardware_libraries_dahdi"><a class="anchor" href="#_restcomm_ss7_install_hardware_libraries_dahdi"></a>5.2.1. Installing of hardware native libraries for dahdi cards.</h4>
+<div class="paragraph">
+<p>Follow steps for installing of native libraries dahdi cards:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>We have the driver only for 32-bit JAVA for linux. Other OS and 64-bit is not supported.</p>
+</li>
+<li>
+<p>We need to have <code>JAVA 7</code> and <code>GCC</code> compiler installed</p>
+</li>
+<li>
+<p>Download latest dahdi complete from their site
+<a href="http://downloads.asterisk.org/pub/telephony/dahdi-linux-complete/" class="bare">http://downloads.asterisk.org/pub/telephony/dahdi-linux-complete/</a>
+and unzip it</p>
+</li>
+<li>
+<p>Copy "dahdi_config.h" and "user.h"
+from the unzipped folder like: <code>dahdi-linux-complete-&lt;version&gt;/linux/include/dahdi/</code>
+to the linux "include" folder: <code>/usr/include/dahdi</code> (in case when linux "include" files are located in <code>/usr/include</code> folder)</p>
+</li>
+<li>
+<p>Compile dahdi native lib - run from the folder of downloaded jss7 sources (how to download source code - check <a href="#_source_code">Setup from Source</a>) <code>jss7/hardware/dahdi</code> by the command:
+<code>mvn install -Pdahdilinux -Dinclude.zap=/usr/include/dahdi</code></p>
+</li>
+<li>
+<p>Copy the compiled native lib "libmobicents-dialogic-linux.so" from <code>jss7/hardware/dahdi/native/linux/target</code> folder to</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>jboss-5.1.0.GA/bin/META-INF/lib/linux2/x86</code> folder if you run JSS7 under jboss</p>
+</li>
+<li>
+<p>other folder where JSS7 will search a native lib in case of a stand-alone usage</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>in JBOSS case by default "jboss-beans.xml" config file in the jboss deploy folder (the folder like <code>jboss-5.1.0.GA/server/default/deploy/Restcomm-ss7-service/META-INF</code>)
+is configured to use m3ua stack by default. If you want to use SS7 hardware cards you need to update it - update the definition of bean "Mtp3UserPart" to the corresponded hardware depended bean.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_restcomm_ss7_install_hardware_libraries_dialogic"><a class="anchor" href="#_restcomm_ss7_install_hardware_libraries_dialogic"></a>5.2.2. Installing of hardware native libraries for dialogic cards.</h4>
+<div class="paragraph">
+<p>Follow steps for installing of native libraries dialogic cards:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Download latest DSI Software from <a href="https://www.dialogic.com/en/products/signaling-and-ss7-components/download/dsi-interface-protocol-stacks.aspx" class="bare">https://www.dialogic.com/en/products/signaling-and-ss7-components/download/dsi-interface-protocol-stacks.aspx</a> and unzip it (it may be already done during the hardware installation procedure)</p>
+</li>
+<li>
+<p>copy the native library "libgctjni.so"</p>
+<div class="ulist">
+<ul>
+<li>
+<p>for 32-bit JAVA: from subfolder <code>32</code> to jboss folder <code>jboss-5.1.0.GA/bin/META-INF/lib/linux2/x86</code> or other folder where JSS7 will search a native lib in case of a stand-alone usage</p>
+</li>
+<li>
+<p>for 64-bit JAVA: from subfolder <code>64</code> to jboss folder <code>jboss-5.1.0.GA/bin/META-INF/lib/linux2/x64</code> or other folder where JSS7 will search a native lib in case of a stand-alone usage</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>copy the gctApi library "gctApi.jar" from subfolder <code>JAVA</code> to the folder where JSS7 stack jar files are deployed.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>In JBOSS case the target folder may be folder <code>jboss-5.1.0.GA/server/default/deploy/Restcomm-ss7-service/lib</code> for the default profile and <code>jboss-5.1.0.GA/server/simulator/deploy/Restcomm-ss7-service/lib</code> for the simulator profile.</p>
+</li>
+<li>
+<p>For products like SMSC GW, USSD GW, CAMEL GW, GMLC the target folder will be the folders like <code>jboss-5.1.0.GA/server/default/deploy/Restcomm-smsc-server/lib</code> for the default profile and <code>jboss-5.1.0.GA/server/simulator/deploy/Restcomm-smsc-server/lib</code> for the simulator profile.</p>
+</li>
+<li>
+<p>For stand-alone installation the target folder is where SS7 stack jars are deployed</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>in JBOSS case by default "jboss-beans.xml" config file in the jboss deploy folder (the folder like <code>jboss-5.1.0.GA/server/default/deploy/Restcomm-ss7-service/META-INF</code>)
+is configured to use m3ua stack by default. If you want to use SS7 hardware cards you need to update it - update the definition of bean "Mtp3UserPart" to the corresponded hardware depended bean. Examples of jboss-beans.xml you can find in the following folders (you can just these files to <code>META-INF</code> folder):</p>
+<div class="ulist">
+<ul>
+<li>
+<p>for usage only a Dialogic board without m3ua (sigtran) - <code>ss7/template/META-INF-dialogic</code></p>
+</li>
+<li>
+<p>for usage a Dialogic board together with m3ua (sigtran) - <code>ss7/template/META-INF-m3ua-dialogic</code></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_setup_configuration"><a class="anchor" href="#_setup_configuration"></a>5.3. Post Installation Configuration</h3>
+<div class="paragraph">
+<p>Now that you have installed Restcomm jSS7 to suit your needs, you can go ahead and configure the Stack to meet your requirements.
+The User Guide (available along with this Installation Guide) in the <em class="path">Restcomm-jSS7-8.0.0-170/docs</em> folder will assist you in configuring and managing the Stack.
+The Shell Management module will enable you to easily configure the Stack using the Command Line Interface (CLI) tool.</p>
+</div>
+<div class="sect3">
+<h4 id="memory-settings"><a class="anchor" href="#memory-settings"></a>5.3.1. Memory Settings</h4>
+<div class="paragraph">
+<p>You should fine tune the JVM memory settings based on your needs but we recommend you allocate a minimum of 3 GB for initial and maximum heap size.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">-Xms3072m</dt>
+<dd>
+<p>Initial heap size, set in megabytes</p>
+</dd>
+<dt class="hdlist1">-Xmx3072m</dt>
+<dd>
+<p>Maximum heap size, set in megabytes</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_setup_uninstalling"><a class="anchor" href="#_setup_uninstalling"></a>6. Uninstalling</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you wish to remove Restcomm jSS7 you can do so by deleting the installation directory.
+If you installed it as a JBoss Service then you must remember to clean up the SS7 Service files within the JBoss directory by undeploying the service as shown below.
+The procedure below can be ignored if you installed the Stack as a standalone component.</p>
+</div>
+<div class="paragraph">
+<div class="title">Procedure: Uninstalling Restcomm SS7 Service from JBoss 5.1.0.GA</div>
+<p>Undeploy:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>[usr1]$ cd restcomm-jSS7-8.0.0-170/ss7-jboss
+[usr1]$ ant undeploy</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Result:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>Buildfile: ../restcomm-jSS7-8.0.0-170/ss7-jboss/build.xml
+
+undeploy:
+   [delete] Deleting directory JBOSS_HOME/server/default/deploy/restcomm-ss7-service
+   [delete] Deleting: JBOSS_HOME/server/default/deploy/jss7-management-console.war
+   [delete] Deleting: JBOSS_HOME/server/default/deploy/jolokia.war
+   [delete] Deleting: JBOSS_HOME/bin/ss7-cli.sh
+   [delete] Deleting: JBOSS_HOME/bin/ss7-cli.bat
+
+BUILD SUCCESSFUL
+Total time: 0 seconds</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<div class="title">Procedure: Uninstalling Restcomm SS7 Service from WildFly 10.1.0.Final</div>
+<p>Undeploy:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>[usr1]$ cd restcomm-jSS7-8.0.0-170/ss7-wildfly
+[usr1]$ ant undeploy</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Result:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>Buildfile: ../restcomm-jSS7-8.0.0-170/ss7-wildfly/build.xml
+
+undeploy:
+   [delete] Deleting directory JBOSS_HOME/modules/system/layers/base/org/mobicents/ss7
+   [delete] Deleting: JBOSS_HOME/standalone/deployments/jss7-management-console.war
+   [delete] Deleting: JBOSS_HOME/standalone/deployments/jolokia.war
+   [delete] Deleting: JBOSS_HOME/bin/ss7-cli.sh
+   [delete] Deleting: JBOSS_HOME/bin/ss7-cli.bat
+   [delete] Deleting JBOSS_HOME/lib/jansi-1.8.jar
+   [delete] Deleting JBOSS_HOME/lib/javolution-5.5.1.jar
+   [delete] Deleting JBOSS_HOME/lib/jreadline-0.17.jar
+   [delete] Deleting JBOSS_HOME/lib/shell-transport-8.0.84.jar
+   [delete] Deleting: JBOSS_HOME/lib/linkset-cli.jar
+   [delete] Deleting: JBOSS_HOME/lib/m3ua-cli-m3ua.jar
+   [delete] Deleting: JBOSS_HOME/lib/m3ua-cli-sctp.jar
+   [delete] Deleting: JBOSS_HOME/lib/restcomm-ss7-shell.jar
+   [delete] Deleting: JBOSS_HOME/lib/sccp-cli.jar
+   [delete] Deleting: JBOSS_HOME/lib/tcap-ansi-cli.jar
+   [delete] Deleting: JBOSS_HOME/lib/tcap-cli.jar
+   [delete] Deleting: JBOSS_HOME/standalone/configuration/jmx-roles.properties
+   [delete] Deleting: JBOSS_HOME/standalone/configuration/jmx-users.properties
+
+BUILD SUCCESSFUL
+Total time: 0 seconds</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_jdk_installing_configuring_and_running"><a class="anchor" href="#_jdk_installing_configuring_and_running"></a>Appendix A: Java Development Kit (): Installing, Configuring and Running</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The [app]` Platform` is written in Java; therefore, before running any <code class="app"> server, you must have a working Java Runtime Environment () or Java Development Kit () installed on your system.
+In addition, the JRE or JDK you are using to run [app]</code> must be version 7 (version 8 is not supported now, Oracle JDK 64-bit is recommended).</p>
+</div>
+<div class="paragraph">
+<div class="title">Should I Install the JRE or JDK?</div>
+<p>Although you can run <code class="app"> servers using the Java Runtime Environment, we assume that most users are developers interested in developing Java-based, [app]</code>-driven solutions.
+Therefore, in this guide we take the tact of showing how to install the full Java Development Kit.</p>
+</div>
+<div class="paragraph">
+<div class="title">Should I Install the 32-Bit or the 64-Bit JDK, and Does It Matter?</div>
+<p>Briefly stated: if you are running on a 64-Bit Linux or Windows platform, you should consider installing and running the 64-bit JDK over the 32-bit one.
+Here are some heuristics for determining whether you would rather run the 64-bit Java Virtual Machine (JVM) over its 32-bit cousin for your application:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Wider datapath: the pipe between RAM and CPU is doubled, which improves the performance of memory-bound applications when using a 64-bit JVM.</p>
+</li>
+<li>
+<p>64-bit memory addressing gives virtually unlimited (1 exabyte) heap allocation.
+However large heaps affect garbage collection.</p>
+</li>
+<li>
+<p>Applications that run with more than 1.5 GB of RAM (including free space for garbage collection optimization) should utilize the 64-bit JVM.</p>
+</li>
+<li>
+<p>Applications that run on a 32-bit JVM and do not require more than minimal heap sizes will gain nothing from a 64-bit JVM.
+Barring memory issues, 64-bit hardware with the same relative clock speed and architecture is not likely to run Java applications faster than their 32-bit cousin.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Note that the following instructions detail how to download and install the 32-bit JDK, although the steps are nearly identical for installing the 64-bit version.</p>
+</div>
+<div class="paragraph">
+<div class="title">Downloading</div>
+<p>You can download the Oracle JDK 7 (Java Development Kit) from Oracle&#8217;s website: <a href="http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase7-521261.html" class="bare">http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase7-521261.html</a>.
+Click on the <span class="label">Download</span> link next to "Java SE Development Kit <code class="replaceable">&lt;version&gt;`" (where [replaceable]</code>&lt;version&gt;` is the latest release number). On the next page, select your language and platform (both architecture - whether 32- or 64-bit - and operating system), read and agree to the <code>Oracle Binary Code License Agreement for Java</code> , and proceed to the download page.</p>
+</div>
+<div class="paragraph">
+<p>The Oracle website will present two download alternatives to you: one is an RPM inside a self-extracting file (for example, <em class="path">jdk-&lt;version&gt;-linux-i586.rpm</em>), and the other is merely a self-extracting file (e.g. <em class="path">jdk-&lt;version&gt;-linux-i586.tar.gz</em>). If you are installing the JDK on Red Hat Enterprise Linux, Fedora, or another RPM-based Linux system, we suggest that you download the self-extracting file containing the RPM package, which will set up and use the SysV service scripts in addition to installing the JDK.
+We also suggest installing the self-extracting RPM file if you will be running jSS7 in a production environment.</p>
+</div>
+<div class="paragraph">
+<div class="title">Installing</div>
+<p>The following procedures detail how to install the Java Development Kit on both Linux and Windows.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure: Installing the JDK on Linux</div>
+<ol class="arabic">
+<li>
+<p>Regardless of which file you downloaded, you can install it on Linux by simply making sure the file is executable and then running it:</p>
+<div class="listingblock">
+<div class="content">
+<pre>~]$ chmod +x "jdk-&lt;version&gt;-linux-&lt;architecture&gt;-rpm.bin"
+~]$ ./"jdk-&lt;version&gt;-linux-&lt;architecture&gt;-rpm.bin"</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="title">You Installed Using the Non-RPM Installer, but Want the SysV Service Scripts</div>
+<div class="paragraph">
+<p>If you download the non-RPM self-extracting file (and installed it), and you are running on an RPM-based system, you can still set up the SysV service scripts by downloading and installing one of the <code>-compat</code> packages from the JPackage project.
+Remember to download the <code>-compat</code> package which corresponds correctly to the minor release number of the JDK you installed.
+The compat packages are available from link:ftp://jpackage.hmdc.harvard.edu/JPackage/1.7/generic/RPMS.non-free/.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+You do not need to install a <code>-compat</code> package in addition to the JDK if you installed the self-extracting RPM file! The <code>-compat</code> package merely performs the same SysV service script set up that the RPM version of the JDK installer does.
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure: Installing the JDK on Windows</div>
+<ol class="arabic">
+<li>
+<p>Using Explorer, simply double-click the downloaded self-extracting installer and follow the instructions to install the JDK.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">Configuring</div>
+<p>Configuring your system for the JDK consists in two tasks: setting the <code class="var">JAVA_HOME</code> environment variable, and ensuring that the system is using the proper JDK (or JRE) using the <code>alternatives</code> command.
+Setting <code class="var">JAVA_HOME</code> usually overrides the values for <code>java</code>, <code>javac</code> and <code>java_sdk_1.7.0</code> in <code>alternatives</code>, but we will set them all just to be safe and consistent.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Setting the <code class="var">JAVA_HOME</code> Environment Variable on Generic Linux</dt>
+<dd>
+<p>After installing the JDK, you must ensure that the <code class="var">JAVA_HOME</code> environment variable exists and points to the location of your JDK installation.</p>
+</dd>
+<dt class="hdlist1">Setting <code class="var">java</code>, <code class="var">javac</code> and <code class="var">java_sdk_1.7.0</code> Using the <code>alternatives</code> command </dt>
+<dd>
+<p><em>As the root user</em>, call <code>/usr/sbin/alternatives</code> with the <code class="option">--config java</code> option to select between JDKs and JREs installed on your system:</p>
+</dd>
+<dt class="hdlist1">Setting the <code class="var">JAVA_HOME</code> Environment Variable on Windows</dt>
+<dd>
+<p>For information on how to set environment variables in Windows, refer to <a href="http://support.microsoft.com/kb/931715" class="bare">http://support.microsoft.com/kb/931715</a>.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<div class="title">Testing</div>
+<p>Finally, to make sure that you are using the correct JDK or Java version (7), and that the java executable is in your <code class="var">PATH</code>, run the <code>java -version</code> command in the terminal from your home directory:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>~]$ java -version
+java version "1.7.0_16"
+Java(TM) 2 Runtime Environment, Standard Edition (build 1.7.0_16-b03)
+Java HotSpot(TM) Client VM (build 1.7.0_16-b03, mixed mode, sharing)</pre>
+</div>
+</div>
+<div class="paragraph">
+<div class="title">Uninstalling</div>
+<p>There is usually no reason (other than space concerns) to remove a particular JDK from your system, given that you can switch between JDKs and JREs easily using <code>alternatives</code>, and/or by setting <code class="var">JAVA_HOME</code>.</p>
+</div>
+<div class="paragraph">
+<div class="title">Uninstalling the JDK on Linux</div>
+<p>On RPM-based systems, you can uninstall the JDK using the <code>yum remove &lt;jdk_rpm_name&gt;</code> command.</p>
+</div>
+<div class="paragraph">
+<div class="title">Uninstalling the JDK on Windows</div>
+<p>On Windows systems, check the JDK entry in the <code>Start</code> menu for an uninstall command, or use <code>Add/Remove Programs</code>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_jboss_home_setup"><a class="anchor" href="#_jboss_home_setup"></a>Appendix B: Setting the JBOSS_HOME Environment Variable</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Restcomm Platform (<code>Restcomm</code>) is built on top of the JBoss Application Server. You do not need to set the <code class="var">JBOSS_HOME</code> environment variable to run any of the Restcomm Platform servers unless <code class="var">JBOSS_HOME</code> is already set.</p>
+</div>
+<div class="paragraph">
+<p>The best way to know for sure whether <code class="var">JBOSS_HOME</code> was set previously or not is to perform a simple check which may save you time and frustration.</p>
+</div>
+<div class="paragraph">
+<div class="title">Checking to See If JBOSS_HOME is Set on Unix</div>
+<p>At the command line, <code>echo $JBOSS_HOME</code> to see if it is currently defined in your environment:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>~]$ echo $JBOSS_HOME</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The Restcomm Platform or most of Restcomm servers are built on top of the JBoss Application Server (<code>JBoss Application Server</code>). When the Restcomm Platform or Restcomm servers are built on top of the JBoss Application Server (<code>JBoss Application Server</code>), then <code class="var">JBOSS_HOME</code> <em>must</em> be set, because the <code>Restcomm</code> files are installed into (or &#8220;over top of&#8221; if you prefer) a clean JBoss Application Server installation, and the build process assumes that the location pointed to by the <code class="var">JBOSS_HOME</code> environment variable at the time of building is the JBoss Application Server installation into which you want it to install the <code>Restcomm</code> files.</p>
+</div>
+<div class="paragraph">
+<p>This guide does not detail building the <code class="app">Restcomm</code> or any <code>Restcomm</code> servers from source. It is nevertheless useful to understand the role played by <code class="app">JBoss Application Server</code> and <code class="var">JBOSS_HOME</code> in the <code>jSS7</code> ecosystem.</p>
+</div>
+<div class="paragraph">
+<p>The immediately-following section considers whether you need to set <code class="var">JBOSS_HOME</code> at all and, if so, when. The subsequent sections detail how to set <code class="var">JBOSS_HOME</code> on Unix and Windows</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Even if you fall into the category below of <em>not needing</em> to set <code class="var">JBOSS_HOME</code>, you may want to for various reasons anyway.
+Also, even if you are instructed that you do <em>not need</em> to set <code class="var">JBOSS_HOME</code>, it is good practice nonetheless to check and make sure that <code class="var">JBOSS_HOME</code> actually <em>isn&#8217;t</em> set or defined on your system for some reason.
+This can save you both time and frustration.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>You <em>DO NOT NEED</em> to set <code class="var">JBOSS_HOME</code> if&#8230;&#8203;</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>&#8230;&#8203;you have installed the <code class="app">Restcomm</code> binary distribution.</p>
+</li>
+<li>
+<p>&#8230;&#8203;you have installed a Restcomm server binary distribution <em>which bundles <code class="app">JBoss Application Server</code>.</em></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You <em>MUST</em> set <code class="var">JBOSS_HOME</code> if&#8230;&#8203;</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>&#8230;&#8203;you are installing the <code class="app">Restcomm</code> or any of the Restcomm servers <em>from source</em>.</p>
+</li>
+<li>
+<p>&#8230;&#8203;you are installing the <code class="app">Restcomm</code> binary distribution, or one of the Restcomm server binary distributions, which <em>do not</em> bundle <code class="app">JBoss Application Server</code>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Naturally, if you installed the <code class="app">Restcomm</code> or one of the Restcomm server binary releases which <em>do not</em> bundle <code class="app">JBoss Application Server</code>, yet requires it to run, then you should install before setting <code class="var">JBOSS_HOME</code> or proceeding with anything else.</p>
+</div>
+<div class="paragraph">
+<div class="title">Setting the JBOSS_HOME Environment Variable on Unix</div>
+<p>The <code class="var">JBOSS_HOME</code> environment variable must point to the directory which contains all of the files for the <code class="app">Restcomm</code> or individual Restcomm; server that you installed.
+As another hint, this topmost directory contains a <em class="path">bin</em> subdirectory.</p>
+</div>
+<div class="paragraph">
+<p>Setting <code class="var">JBOSS_HOME</code> in your personal <em class="path">~/.bashrc</em> startup script carries the advantage of retaining effect over reboots.
+Each time you log in, the environment variable is sure to be set for you, as a user.
+On Unix, it is possible to set <code class="var">JBOSS_HOME</code> as a system-wide environment variable, by defining it in <em class="path">/etc/bashrc</em>, but this method is neither recommended nor detailed in these instructions.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure: To Set JBOSS_HOME on Unix&#8230;&#8203;</div>
+<ol class="arabic">
+<li>
+<p>Open the <em class="path">~/.bashrc</em> startup script, which is a hidden file in your home directory, in a text editor, and insert the following line on its own line while substituting for the actual install location on your system:</p>
+<div class="listingblock">
+<div class="content">
+<pre>export JBOSS_HOME="/home/&lt;username&gt;/&lt;path&gt;/&lt;to&gt;/&lt;install_directory&gt;"</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Save and close the <em class="path">.bashrc</em> startup script.</p>
+</li>
+<li>
+<p>You should <code>source</code> the <em class="path">.bashrc</em> script to force your change to take effect, so that <code class="var">JBOSS_HOME</code> becomes set for the current session<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnote_1" title="View footnote.">1</a>]</sup>.</p>
+<div class="listingblock">
+<div class="content">
+<pre>~]$ source ~/.bashrc</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Finally, ensure that <code class="var">JBOSS_HOME</code> is set in the current session, and actually points to the correct location:</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The command line usage below is based upon a binary installation of the <code class="app">Restcomm</code>.
+In this sample output, <code class="var">JBOSS_HOME</code> has been set correctly to the <code class="replaceable">topmost_directory</code> of the <code class="app">Restcomm</code> installation.
+Note that if you are installing one of the standalone <code class="app">Restcomm</code> servers (with <code class="app">JBoss Application Server</code> bundled!), then <code class="var">JBOSS_HOME</code> would point to the <code class="replaceable">topmost_directory</code> of your server installation.
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>~]$ echo $JBOSS_HOME
+/home/silas/&lt;path&gt;/&lt;to&gt;/&lt;install_directory&gt;</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">Setting the JBOSS_HOME Environment Variable on Windows</div>
+<p>The <code class="var">JBOSS_HOME</code> environment variable must point to the directory which contains all of the files for the jSS7 Platform or individual jSS7 server that you installed.
+As another hint, this topmost directory contains a <em class="path">bin</em> subdirectory.</p>
+</div>
+<div class="paragraph">
+<p>For information on how to set environment variables in recent versions of Windows, refer to <a href="http://support.microsoft.com/kb/931715" class="bare">http://support.microsoft.com/kb/931715</a>.</p>
+</div>
+<div class="paragraph">
+<p>Unresolved directive in SS7_Stack_Installation_Guide.adoc - include::Revision_History.adoc[]</p>
+</div>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<hr>
+<div class="footnote" id="_footnote_1">
+<a href="#_footnoteref_1">1</a>. Note that any other terminals which were opened prior to your having altered .bashrc will need to source ~/.bashrc as well should they require access to JBOSS_HOME.
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2019-08-14 16:42:49 UTC
+</div>
+</div>
+</body>
+</html>

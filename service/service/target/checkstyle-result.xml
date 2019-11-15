@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.5">
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/service/service/src/main/java/org/restcomm/ss7/SS7Service.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/service/service/src/main/java/org/restcomm/ss7/Version.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/service/service/src/main/java/org/restcomm/ss7/SS7ServiceMBean.java">
+</file>
+</checkstyle>

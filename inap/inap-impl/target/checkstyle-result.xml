@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.5">
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-impl/src/main/java/org/restcomm/protocols/ss7/inap/primitives/MiscCallInfoImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-impl/src/main/java/org/restcomm/protocols/ss7/inap/primitives/LegIDImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-impl/src/main/java/org/restcomm/protocols/ss7/inap/primitives/INAPAsnPrimitive.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-impl/src/main/java/org/restcomm/protocols/ss7/inap/isup/CallingPartysCategoryInapImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-impl/src/main/java/org/restcomm/protocols/ss7/inap/isup/HighLayerCompatibilityInapImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-impl/src/main/java/org/restcomm/protocols/ss7/inap/isup/INAPParameterFactoryImpl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-impl/src/main/java/org/restcomm/protocols/ss7/inap/isup/RedirectionInformationInapImpl.java">
+</file>
+</checkstyle>

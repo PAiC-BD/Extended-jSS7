@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Implementation-Title: org.restcomm.protocols.ss7.m3ua:m3ua-impl
+Implementation-Version: 8.0.0-170
+Built-By: root
+Tool: Bnd-1.15.0
+Bundle-Name: Restcomm jSS7 :: M3UA :: Impl :: m3ua-impl
+Created-By: Apache Maven Bundle Plugin
+Implementation-URL: http://www.restcomm.org
+Implementation-Vendor-Id: TeleStax, Inc.
+Build-Jdk: 1.7.0_80
+Bundle-Version: 8.0.0.170
+Bnd-LastModified: 1566929157703
+Bundle-ManifestVersion: 2
+Bundle-License: http://www.gnu.org/licenses/agpl-3.0.html
+Bundle-Description: Restcomm :: Parent pom for 2.x releases
+Import-Package: com.telscale.licensing,io.netty.buffer,io.netty.util,j
+ avolution.text,javolution.util,javolution.xml,javolution.xml.stream,o
+ rg.apache.log4j,org.mobicents.commons,org.mobicents.protocols.api,org
+ .restcomm.protocols.ss7.m3ua,org.restcomm.protocols.ss7.m3ua.message,
+ org.restcomm.protocols.ss7.m3ua.message.aspsm,org.restcomm.protocols.
+ ss7.m3ua.message.asptm,org.restcomm.protocols.ss7.m3ua.message.mgmt,o
+ rg.restcomm.protocols.ss7.m3ua.message.rkm,org.restcomm.protocols.ss7
+ .m3ua.message.ssnm,org.restcomm.protocols.ss7.m3ua.message.transfer,o
+ rg.restcomm.protocols.ss7.m3ua.parameter,org.restcomm.protocols.ss7.m
+ tp,org.restcomm.protocols.ss7.ss7ext,org.restcomm.protocols.ss7.stati
+ stics,org.restcomm.protocols.ss7.statistics.api,org.restcomm.ss7.mana
+ gement.console
+Bundle-SymbolicName: org.restcomm.protocols.ss7.m3ua.impl
+

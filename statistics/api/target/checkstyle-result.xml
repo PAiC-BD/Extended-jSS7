@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.5">
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/statistics/api/src/main/java/org/restcomm/protocols/ss7/statistics/api/LongValue.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/statistics/api/src/main/java/org/restcomm/protocols/ss7/statistics/api/StatCounterCollection.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/statistics/api/src/main/java/org/restcomm/protocols/ss7/statistics/api/StatDataCollection.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/statistics/api/src/main/java/org/restcomm/protocols/ss7/statistics/api/StatResult.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/statistics/api/src/main/java/org/restcomm/protocols/ss7/statistics/api/StatDataCollectorType.java">
+</file>
+</checkstyle>

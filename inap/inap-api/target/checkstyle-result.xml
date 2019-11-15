@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.5">
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/EsiBcsm/OAnswerSpecificInfo.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/EsiBcsm/TerminationAttemptAuthorized.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/EsiBcsm/OSuspended.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/EsiBcsm/TMidCallSpecificInfo.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/EsiBcsm/CallAccepted.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/EsiBcsm/AnalysedInfoSpecificInfo.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/EsiBcsm/OAbandon.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/EsiBcsm/ODisconnectSpecificInfo.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/EsiBcsm/OMidCallSpecificInfo.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/EsiBcsm/MidCallInfo.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/EsiBcsm/TDisconnectSpecificInfo.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/EsiBcsm/OCalledPartyBusySpecificInfo.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/EsiBcsm/RouteSelectFailureSpecificInfo.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/EsiBcsm/FacilitySelectedAndAvailable.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/EsiBcsm/CollectedInfoSpecificInfo.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/EsiBcsm/OTermSeizedSpecificInfo.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/EsiBcsm/TNoAnswerSpecificInfo.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/EsiBcsm/OReAnswer.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/EsiBcsm/TBusySpecificInfo.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/EsiBcsm/TReAnswer.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/EsiBcsm/ONoAnswerSpecificInfo.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/EsiBcsm/TAbandon.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/EsiBcsm/TSuspended.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/EsiBcsm/OrigAttemptAuthorized.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/EsiBcsm/TAnswerSpecificInfo.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/charging/TariffSwitchCurrency.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/charging/AddOncharge.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/charging/TariffSwitchPulse.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/charging/ChargingControlIndicators.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/charging/Currency.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/charging/PulseUnits.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/charging/TariffPulse.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/charging/AddOnChargingInformation.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/charging/SubTariffControl.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/charging/ChargingTariff.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/charging/ChargingReferenceIdentification.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/charging/CurrencyFactorScale.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/charging/TariffPulseFormat.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/charging/CommunicationChargeCurrency.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/charging/ChargingTariffInformation.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/charging/TariffControlIndicators.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/charging/ChargeUnitTimeInterval.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/charging/TariffDuration.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/charging/TariffCurrency.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/charging/TariffSwitchoverTime.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/charging/CommunicationChargePulse.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/charging/TariffCurrencyFormat.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/INAPParameterFactory.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/INAPParsingComponentException.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/primitives/CriticalityType.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/primitives/MonitorMode.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/primitives/LegID.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/primitives/BothwayThroughConnectionInd.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/primitives/EventTypeBCSM.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/primitives/MiscCallInfoMessageType.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/primitives/TerminalType.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/primitives/BearerCapability.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/primitives/MiscCallInfo.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/primitives/BCSMEvent.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/primitives/INAPExtensions.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/primitives/LegType.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/primitives/MiscCallInfoDpAssignment.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/primitives/ExtensionField.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/INAPException.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/INAPParsingComponentExceptionReason.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/isup/HighLayerCompatibilityInap.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/isup/CalledPartyNumberInap.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/isup/Digits.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/isup/BearerInap.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/isup/CallingPartyNumberInap.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/isup/CallingPartysCategoryInap.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/isup/ForwardCallIndicatorsInap.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/isup/RedirectingPartyIDInap.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/isup/OriginalCalledPartyIDInap.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/isup/CauseInap.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/isup/GenericNumberInap.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/isup/TmrInap.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/isup/LocationNumberInap.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/isup/ISDNAccessRelatedInformationInap.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/isup/BackwardGVNSInap.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/isup/RedirectionInformationInap.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/isup/ForwardGVNSInap.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/InitialDPRequest.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/ConnectRequest.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/FurnishChargingInformationRequest.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/ForwardServiceInteractionInd.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/INServiceCompatibilityIndication.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/ConnectedNumberTreatmentInd.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/USIInformation.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/MidCallInfoType.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/ServiceInteractionIndicatorsTwo.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/GenericNumbers.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/EventSpecificInformationBCSM.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/ConferenceTreatmentIndicator.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/ServiceInteractionIndicators.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/FCIBCC.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/CGEncountered.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/MidCallReportType.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/MidCallControlInfoItem.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/BackwardServiceInteractionInd.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/USIServiceIndicator.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/FCIBCCsequencecs2.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/CallingPartyBusinessGroupID.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/Tariff.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/DpSpecificCriteria.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/Entry.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/MidCallControlInfo.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/FCIBCCcs1.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/DisplayInformation.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/CallDiversionTreatmentIndicator.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/ScfID.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/IPSSPCapabilities.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/CallOfferingTreatmentIndicator.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/DestinationRoutingAddress.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/IPAvailable.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/CalledPartyBCDNumber.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/CallCompletionTreatmentIndicator.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/Carrier.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/CallingPartyRestrictionIndicator.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/primitive/RouteList.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/RequestReportBCSMEventRequest.java">
+</file>
+<file name="/root/sources/jss7/PAiC_Extended/extended_jss7_2.0/extended-jss7-refactor/inap/inap-api/src/main/java/org/restcomm/protocols/ss7/inap/api/service/circuitSwitchedCall/EventReportBCSMRequest.java">
+</file>
+</checkstyle>

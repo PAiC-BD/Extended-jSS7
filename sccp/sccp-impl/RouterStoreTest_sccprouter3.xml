@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<longMessageRule>
+	<id value="5"/>
+	<value firstSpc="201" lastSpc="202" ruleType="XUDT_ENABLED"/>
+</longMessageRule>
+<sap>
+	<id value="1"/>
+	<value mtp3Id="2" opc="11" ni="3" networkId="4" localGtDigits="44445555">
+		<mtp3DestinationMap>
+			<id value="2"/>
+			<value firstDpc="101" lastDpc="102" firstSls="0" lastSls="15" slsMask="255"/>
+		</mtp3DestinationMap>
+	</value>
+</sap>

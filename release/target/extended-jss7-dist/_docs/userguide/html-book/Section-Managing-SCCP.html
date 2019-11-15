@@ -1,0 +1,4731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.5">
+<title>SCCP Management</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
+/* Remove comment around @import statement below when using as a custom stylesheet */
+/*@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}
+audio,canvas,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+[hidden],template{display:none}
+script{display:none!important}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+a{background:transparent}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+dfn{font-style:italic}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.center{margin-left:auto;margin-right:auto}
+.spread{width:100%}
+p.lead,.paragraph.lead>p,#preamble>.sectionbody>.paragraph:first-of-type p{font-size:1.21875em;line-height:1.6}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0;direction:ltr}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:none}
+p{font-family:inherit;font-weight:400;font-size:1em;line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #ddddd8;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em;height:0}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{font-size:1em;line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol,ul.no-bullet,ol.no-bullet{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0;font-size:1em}
+ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
+ul.square{list-style-type:square}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ul.no-bullet{list-style:none}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+abbr,acronym{text-transform:uppercase;font-size:90%;color:rgba(0,0,0,.8);border-bottom:1px dotted #ddd;cursor:help}
+abbr{text-transform:none}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote cite{display:block;font-size:.9375em;color:rgba(0,0,0,.6)}
+blockquote cite:before{content:"\2014 \0020"}
+blockquote cite a,blockquote cite a:visited{color:rgba(0,0,0,.6)}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media only screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede}
+table thead,table tfoot{background:#f7f8f7;font-weight:bold}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt,table tr:nth-of-type(even){background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.clearfix:before,.clearfix:after,.float-group:before,.float-group:after{content:" ";display:table}
+.clearfix:after,.float-group:after{clear:both}
+*:not(pre)>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background-color:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed;word-wrap:break-word}
+*:not(pre)>code.nobreak{word-wrap:normal}
+*:not(pre)>code.nowrap{white-space:nowrap}
+pre,pre>code{line-height:1.45;color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;text-rendering:optimizeSpeed}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background-color:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menu{color:rgba(0,0,0,.8)}
+b.button:before,b.button:after{position:relative;top:-1px;font-weight:400}
+b.button:before{content:"[";padding:0 3px 0 2px}
+b.button:after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin-left:auto;margin-right:auto;margin-top:0;margin-bottom:0;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header:before,#header:after,#content:before,#content:after,#footnotes:before,#footnotes:after,#footer:before,#footer:after{content:" ";display:table}
+#header:after,#content:after,#footnotes:after,#footer:after{clear:both}
+#content{margin-top:1.25em}
+#content:before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #ddddd8}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #ddddd8;padding-bottom:8px}
+#header .details{border-bottom:1px solid #ddddd8;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span:before{content:"\00a0\2013\00a0"}
+#header .details br+span.author:before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark:before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber:after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #ddddd8;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #efefed;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media only screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background-color:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #efefed;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #efefed;left:auto;right:0}}
+@media only screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:100%;background-color:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:rgba(255,255,255,.8);line-height:1.44}
+.sect1{padding-bottom:.625em}
+@media only screen and (min-width:768px){.sect1{padding-bottom:1.25em}}
+.sect1+.sect1{border-top:1px solid #efefed}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor:before,h2>a.anchor:before,h3>a.anchor:before,#toctitle>a.anchor:before,.sidebarblock>.content>.title>a.anchor:before,h4>a.anchor:before,h5>a.anchor:before,h6>a.anchor:before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock>caption.title{white-space:nowrap;overflow:visible;max-width:0}
+.paragraph.lead>p,#preamble>.sectionbody>.paragraph:first-of-type p{color:rgba(0,0,0,.85)}
+table.tableblock #preamble>.sectionbody>.paragraph:first-of-type p{font-size:inherit}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #ddddd8;color:rgba(0,0,0,.6)}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border-style:solid;border-width:1px;border-color:#e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;-webkit-border-radius:4px;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
+.sidebarblock{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock pre:not(.highlight),.listingblock pre[class="highlight"],.listingblock pre[class^="highlight "],.listingblock pre.CodeRay,.listingblock pre.prettyprint{background:#f7f7f8}
+.sidebarblock .literalblock pre,.sidebarblock .listingblock pre:not(.highlight),.sidebarblock .listingblock pre[class="highlight"],.sidebarblock .listingblock pre[class^="highlight "],.sidebarblock .listingblock pre.CodeRay,.sidebarblock .listingblock pre.prettyprint{background:#f2f1f1}
+.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{-webkit-border-radius:4px;border-radius:4px;word-wrap:break-word;padding:1em;font-size:.8125em}
+.literalblock pre.nowrap,.literalblock pre[class].nowrap,.listingblock pre.nowrap,.listingblock pre[class].nowrap{overflow-x:auto;white-space:pre;word-wrap:normal}
+@media only screen and (min-width:768px){.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{font-size:.90625em}}
+@media only screen and (min-width:1280px){.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{font-size:1em}}
+.literalblock.output pre{color:#f7f7f8;background-color:rgba(0,0,0,.9)}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;-webkit-border-radius:4px;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]:before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:#999}
+.listingblock:hover code[data-lang]:before{display:block}
+.listingblock.terminal pre .command:before{content:attr(data-prompt);padding-right:.5em;color:#999}
+.listingblock.terminal pre .command:not([data-prompt]):before{content:"$"}
+table.pyhltable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.pyhltable td{vertical-align:top;padding-top:0;padding-bottom:0;line-height:1.45}
+table.pyhltable td.code{padding-left:.75em;padding-right:0}
+pre.pygments .lineno,table.pyhltable td:not(.code){color:#999;padding-left:0;padding-right:.5em;border-right:1px solid #ddddd8}
+pre.pygments .lineno{display:inline-block;margin-right:.25em}
+table.pyhltable .linenodiv{background:none!important;padding-right:0!important}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock blockquote p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote:before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.5em;margin-right:.5ex;text-align:right}
+.quoteblock .quoteblock{margin-left:0;margin-right:0;padding:.5em 0;border-left:3px solid rgba(0,0,0,.6)}
+.quoteblock .quoteblock blockquote{padding:0 0 0 .75em}
+.quoteblock .quoteblock blockquote:before{display:none}
+.verseblock{margin:0 1em 1.25em 1em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract{margin:0 0 1.25em 0;display:block}
+.quoteblock.abstract blockquote,.quoteblock.abstract blockquote p{text-align:left;word-spacing:0}
+.quoteblock.abstract blockquote:before,.quoteblock.abstract blockquote p:first-of-type:before{display:none}
+table.tableblock{max-width:100%;border-collapse:separate}
+table.tableblock td>.paragraph:last-child p>p:last-child,table.tableblock th>p:last-child,table.tableblock td>p:last-child{margin-bottom:0}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all th.tableblock,table.grid-all td.tableblock{border-width:0 1px 1px 0}
+table.grid-all tfoot>tr>th.tableblock,table.grid-all tfoot>tr>td.tableblock{border-width:1px 1px 0 0}
+table.grid-cols th.tableblock,table.grid-cols td.tableblock{border-width:0 1px 0 0}
+table.grid-all *>tr>.tableblock:last-child,table.grid-cols *>tr>.tableblock:last-child{border-right-width:0}
+table.grid-rows th.tableblock,table.grid-rows td.tableblock{border-width:0 0 1px 0}
+table.grid-all tbody>tr:last-child>th.tableblock,table.grid-all tbody>tr:last-child>td.tableblock,table.grid-all thead:last-child>tr>th.tableblock,table.grid-rows tbody>tr:last-child>th.tableblock,table.grid-rows tbody>tr:last-child>td.tableblock,table.grid-rows thead:last-child>tr>th.tableblock{border-bottom-width:0}
+table.grid-rows tfoot>tr>th.tableblock,table.grid-rows tfoot>tr>td.tableblock{border-width:1px 0 0 0}
+table.frame-all{border-width:1px}
+table.frame-sides{border-width:0 1px}
+table.frame-topbot{border-width:1px 0}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{display:table-cell;line-height:1.6;background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+td>div.verse{white-space:pre}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.unstyled,ol.unnumbered,ul.checklist,ul.none{list-style-type:none}
+ul.unstyled,ol.unnumbered,ul.checklist{margin-left:.625em}
+ul.checklist li>p:first-child>.fa-square-o:first-child,ul.checklist li>p:first-child>.fa-check-square-o:first-child{width:1em;font-size:.85em}
+ul.checklist li>p:first-child>input[type="checkbox"]:first-child{width:1em;position:relative;top:1px}
+ul.inline{margin:0 auto .625em auto;margin-left:-1.375em;margin-right:0;padding:0;list-style:none;overflow:hidden}
+ul.inline>li{list-style:none;float:left;margin-left:1.375em;display:block}
+ul.inline>li>*{display:block}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist>table tr>td:first-of-type{padding:0 .75em;line-height:1}
+.colist>table tr>td:last-of-type{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:solid 4px #fff;-webkit-box-shadow:0 0 0 1px #ddd;box-shadow:0 0 0 1px #ddd}
+.imageblock.left,.imageblock[style*="float: left"]{margin:.25em .625em 1.25em 0}
+.imageblock.right,.imageblock[style*="float: right"]{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em 0;border-width:1px 0 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;text-indent:-1.05em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+.gist .file-data>table{border:0;background:#fff;width:100%;margin-bottom:0}
+.gist .file-data>table td.line-data{width:99%}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background-color:#00fafa}
+.black{color:#000}
+.black-background{background-color:#000}
+.blue{color:#0000bf}
+.blue-background{background-color:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background-color:#fa00fa}
+.gray{color:#606060}
+.gray-background{background-color:#7d7d7d}
+.green{color:#006000}
+.green-background{background-color:#007d00}
+.lime{color:#00bf00}
+.lime-background{background-color:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background-color:#7d0000}
+.navy{color:#000060}
+.navy-background{background-color:#00007d}
+.olive{color:#606000}
+.olive-background{background-color:#7d7d00}
+.purple{color:#600060}
+.purple-background{background-color:#7d007d}
+.red{color:#bf0000}
+.red-background{background-color:#fa0000}
+.silver{color:#909090}
+.silver-background{background-color:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background-color:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background-color:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background-color:#fafa00}
+span.icon>.fa{cursor:default}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note:before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip:before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning:before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution:before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important:before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background-color:rgba(0,0,0,.8);-webkit-border-radius:100px;border-radius:100px;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]:after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,span.alt{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background-color:#fffef7;border-color:#e0e0dc;-webkit-box-shadow:0 1px 4px #e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@media print{@page{margin:1.25cm .75cm}
+*{-webkit-box-shadow:none!important;box-shadow:none!important;text-shadow:none!important}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare):after,a[href^="https:"]:not(.bare):after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]:after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #ddddd8!important;padding-bottom:0!important}
+.sect1{padding-bottom:0!important}
+.sect1+.sect1{border:0!important}
+#header>h1:first-child{margin-top:1.25rem}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em 0}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span:before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]:before{display:block}
+#footer{background:none!important;padding:0 .9375em}
+#footer-text{color:rgba(0,0,0,.6)!important;font-size:.9em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body id="_managing_sccp" class="article">
+<div id="header">
+<h1>SCCP Management</h1>
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_managing_sccp_using_cli">Using CLI</a></li>
+<li><a href="#_managing_sccp_using_gui">Using GUI</a></li>
+<li><a href="#_sccp_properties">SCCP stack properties</a>
+<ul class="sectlevel2">
+<li><a href="#_sccp_property_sccpprotocolversion">SCCP protocol version</a></li>
+<li><a href="#_sccp_property_periodoflogging">Period of logging</a></li>
+<li><a href="#_sccp_property_maxdatamessage">Maximum Data Message</a></li>
+<li><a href="#_sccp_property_previewmode">Preview Mode</a></li>
+<li><a href="#_sccp_property_reassemblytimerdelay">Reassembly Timer Delay</a></li>
+<li><a href="#_sccp_property_removespc">Remove Signaling Point Code</a></li>
+<li><a href="#_sccp_property_respectpc">Respect Point Code</a></li>
+<li><a href="#_sccp_property_ssttimerduration_increasefactor">SST Timer Duration Increase Factor</a></li>
+<li><a href="#_sccp_property_ssttimerduration_max">SST Timer Duration Max</a></li>
+<li><a href="#_sccp_property_ssttimerduration_min">SST Timer Duration Min</a></li>
+<li><a href="#_sccp_property_zmarginxudtmessage">ZMargin XUDT Message</a></li>
+<li><a href="#_sccp_property_cc_timer_a">Timer A value for the congestion control</a></li>
+<li><a href="#_sccp_property_cc_timer_d">Timer D value for the congestion control</a></li>
+<li><a href="#can-relay-value">Can relay value</a></li>
+<li><a href="#connection-establishing-timer-delay-value">Connection establishing timer delay value</a></li>
+<li><a href="#connection-it-send-timer-delay-value">Connection IT send timer delay value</a></li>
+<li><a href="#connection-message-receive-timer-delay-value">Connection message receive timer delay value</a></li>
+<li><a href="#connection-release-complete-message-timer-delay-value">Connection release complete message timer delay value</a></li>
+<li><a href="#connection-released-message-repeat-timer-delay-value">Connection released message repeat timer delay value</a></li>
+<li><a href="#connection-resources-release-timer-delay-value">Connection resources release timer delay value</a></li>
+<li><a href="#connection-work-resume-after-restart-time-delay-value">Connection work resume after restart time delay value</a></li>
+<li><a href="#connection-release-after-reset-delay-value">Connection release after reset delay value</a></li>
+<li><a href="#thread-count-in-connections-timers-thread-pool-value">Thread count in connections timers thread pool value</a></li>
+<li><a href="#_sccp_property_cc_algo">Algorithm of the congestion control at SCCP level</a></li>
+<li><a href="#_sccp_property_cc_blockingoutgoungsccpmessages">Blocking of outgoing messages in case of the congestion</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_sap_show">View all Service Access Points (SAP)</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_sap_show_cli">Using CLI</a></li>
+<li><a href="#_managing_sccp_sap_show_gui">Using GUI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_sap_create">Create a new Service Access Point</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_sap_create_cli">Using CLI</a></li>
+<li><a href="#_managing_sccp_sap_create_gui">Using GUI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_sap_modify">Modify a Service Access Point</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_sap_modify_cli">Using CLI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_sap_delete">Delete a Service Access Point</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_sap_delete_cli">Using CLI</a></li>
+<li><a href="#_managing_sccp_sap_delete_gui">Using GUI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_dest_show">View all Destinations specified for a SAP</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_dest_show_cli">Using CLI</a></li>
+<li><a href="#_managing_sccp_dest_show_gui">Using GUI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_dest_create">Define a new Destination for a SAP</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_dest_create_cli">Using CLI</a></li>
+<li><a href="#_managing_sccp_dest_create_gui">Using GUI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_dest_modify">Modify a Destination defined for a SAP</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_dest_modify_cli">Using CLI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_dest_delete">Delete a Destination defined for a SAP</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_dest_delete_cli">Using CLI</a></li>
+<li><a href="#_managing_sccp_dest_delete_gui">Using GUI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_addr_show">View all configured SCCP Addresses</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_addr_show_cli">Using CLI</a></li>
+<li><a href="#_managing_sccp_addr_show_gui">Using GUI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_addr_create">Create a new Primary/Backup address</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_addr_create_cli">Using CLI</a></li>
+<li><a href="#_managing_sccp_addr_create_gui">Using GUI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_addr_modify">Modify a Primary/Backup Address</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_addr_modify_cli">Using CLI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_addr_delete">Delete a Primary/Backup Address</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_addr_delete_cli">Using CLI</a></li>
+<li><a href="#_managing_sccp_addr_delete_gui">Using GUI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_rule_show">View all configured SCCP Rules</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_rule_show_cli">Using CLI</a></li>
+<li><a href="#_managing_sccp_rule_show_gui">Using GUI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_rule_create">Create a new SCCP Rule</a>
+<ul class="sectlevel2">
+<li><a href="#sorting-algorithm">Sorting Algorithm</a></li>
+<li><a href="#_managing_sccp_rule_create_cli">Using CLI</a></li>
+<li><a href="#_managing_sccp_rule_create_gui">Using GUI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_rule_modify">Modify a SCCP Rule</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_rule_modify_cli">Using CLI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_rule_delete">Delete a Rule</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_rule_delete_cli">Using CLI</a></li>
+<li><a href="#_managing_sccp_rule_delete_gui">Using GUI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_rsp_show">View all configured Remote Signaling Points (RSP)</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_rsp_show_cli">Using CLI</a></li>
+<li><a href="#_managing_sccp_rsp_show_gui">Using GUI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_rsp_create">Create a new Remote Signaling Pointcode</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_rsp_create_cli">Using CLI</a></li>
+<li><a href="#_managing_sccp_rsp_create_gui">Using GUI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_rsp_modify">Modify a Remote Signaling Pointcode</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_rsp_modify_cli">Using CLI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_rsp_delete">Delete a Remote Signaling Pointcode</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_rsp_delete_cli">Using CLI</a></li>
+<li><a href="#_managing_sccp_rsp_delete_gui">Using GUI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_rss_show">View all configured Remote Sub-Systems (RSS)</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_rss_show_cli">Using CLI</a></li>
+<li><a href="#_managing_sccp_rss_show_gui">Using GUI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_rss_create">Create a new Remote Sub-System</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_rss_create_cli">Using CLI</a></li>
+<li><a href="#_managing_sccp_rss_create_gui">Using GUI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_rss_modify">Modify a Remote Signaling Sub-System</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_rss_modify_cli">Using CLI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_rss_delete">Delete a Remote Signaling Sub-System</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_rss_delete_cli">Using CLI</a></li>
+<li><a href="#_managing_sccp_rss_delete_gui">Using GUI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_lmr_show">View all configured Long Message Rules (LMR)</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_lmr_show_cli">Using CLI</a></li>
+<li><a href="#_managing_sccp_lmr_show_gui">Using GUI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_lmr_create">Create a new Long Message Rule</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_lmr_create_cli">Using CLI</a></li>
+<li><a href="#_managing_sccp_lmr_create_gui">Using GUI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_lmr_modify">Modify a Long Message Rule</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_lmr_modify_cli">Using CLI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_lmr_delete">Delete a Long Message Rule</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_lmr_delete_cli">Using CLI</a></li>
+<li><a href="#_managing_sccp_lmr_delete_gui">Using GUI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_csp_show">View all configured Concerned Signaling Point Codes (CSP)</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_csp_show_cli">Using CLI</a></li>
+<li><a href="#_managing_sccp_csp_show_gui">Using GUI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_csp_create">Create a new Concerned Signaling Point Code</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_csp_create_cli">Using CLI</a></li>
+<li><a href="#_managing_sccp_csp_create_gui">Using GUI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_csp_modify">Modify a Concerned Signaling Point Code</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_csp_modify_cli">Using CLI</a></li>
+</ul>
+</li>
+<li><a href="#_managing_sccp_csp_delete">Delete a Concerned Signaling Point Code</a>
+<ul class="sectlevel2">
+<li><a href="#_managing_sccp_csp_delete_cli">Using CLI</a></li>
+<li><a href="#_managing_sccp_csp_delete_gui">Using GUI</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>SCCP provides connectionless and connection-oriented network services.
+This includes address(GTT) translation and routing, flow control, segmentation and reassembly.
+A global title is an address (e.g., a dialed 800 number, calling card number, or mobile subscriber identification number) which is translated by SCCP into a destination  point code and subsystem number.
+A subsystem number uniquely identifies an application at the destination signaling point.  is used as the  transport layer for -based services.</p>
+</div>
+<div class="paragraph">
+<p>The first step in configuring SCCP is defining service access points (sap). This step is mandatory.
+Each SCCP stack can use one or more Mtp3UserPart  (Refer <a href="#_configuring_sccp">[_configuring_sccp]</a> about Mtp3UserPart settings). A sap is a logical definition of the Mtp3UserPart [corresponding local SPC,  network indicator (NI) and a set of destinations (remote SPC list)].</p>
+</div>
+<div class="paragraph">
+<p>The second step is the definition of a list of available remote signaling pointcodes (SPC - rsp) and  a list of available remote Sub-Systems (SNN - rss). This step is also mandatory.
+If routing only by GlobalTitle is used then it is not required to configure remote Sub-Systems.</p>
+</div>
+<div class="paragraph">
+<p>Since  acts as a message router, it is required to configure routing information.
+Rules (rule), primary and backup (address) (if backup addresses are available)  addresses should be configured.
+If XUDT and LUDT messages are available in the SS7 network, you should configure a set of long message rules (lmr) that will allow long messages.
+This step is not mandatory.
+If no long message rules are configured only UDT messages will be used.</p>
+</div>
+<div class="paragraph">
+<p>The last step is optional.
+You can configure a set of concerned signaling point codes (csp). Each point code will be announced when local SCCP user becomes unavailable.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_using_cli"><a class="anchor" href="#_managing_sccp_using_cli"></a>Using CLI</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can manage all SCCP related configurations through the Command Line Interface by using the <code>sccp</code> command with appropriate parameters.
+You can create, modify, delete  and view SCCP Service Access Points (sap) and Destinations (dest), Remote Signaling Point Codes (rsp), Remote Sub Systems (rss), Concerned Signaling Point Codes (csp),  Routing information (rules, primary and backup addresses) and Long Message Rules (lmr). You can also set and get values for general parameters using this command.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_using_gui"><a class="anchor" href="#_managing_sccp_using_gui"></a>Using GUI</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The GUI will allow you to manage your SCCP configurations efficiently using a user-friendly interface.
+Open a Web Browser and navigate to <a href="http://localhost:8080/jss7-management-console/" class="bare">http://localhost:8080/jss7-management-console/</a>.  Click on the 'SCCP' link in the left panel.
+The main panel will display the names of all configured SCCP Management units.
+To configure or view the settings of a particular SCCP Management  Unit you must click on the name of that unit.
+The GUI will look similar to the figure below and is divided into tabs.</p>
+</div>
+<div class="paragraph">
+<p>The first tab will display the properties of the SCCP Management unit.
+These details displayed here are fetched from the XML descriptor file <em class="path">jboss-beans.xml</em>, which is  located at <em class="path">$JBOSS_HOME/server/profile_name/deploy/restcomm-ss7-service/META-INF</em>, where <code class="app">profile_name</code> is the server profile name.
+These properties can be modified here in the GUI.
+To modify them you must click on pencil, make changes and save.
+The GUI will then display the modified values.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/GUI_SCCP_Management.png" alt="GUI SCCP Management">
+</div>
+<div class="title">Figure 1. GUI - SCCP Management</div>
+</div>
+<div class="paragraph">
+<p>The other seven tabs will allow you to manage all SCCP configurations within this SCCP Management unit.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sccp_properties"><a class="anchor" href="#_sccp_properties"></a>SCCP stack properties</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_sccp_property_sccpprotocolversion"><a class="anchor" href="#_sccp_property_sccpprotocolversion"></a>SCCP protocol version</h3>
+<div class="sect3">
+<h4 id="_sccp_property_sccpprotocolversion_cli"><a class="anchor" href="#_sccp_property_sccpprotocolversion_cli"></a>Using CLI</h4>
+<div class="paragraph">
+<p>We can specify which protocol specification will use SCCP stack (ITU-T or ANSI).</p>
+</div>
+<div class="paragraph">
+<p>You can set the 'sccpprotocolversion' by issuing the command <code>sccp set sccpprotocolversion</code> with appropriate parameters as described below.
+You can verify this by issuing the command <code>sccp get sccpprotocolversion</code> which will display the value set for this property.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+    sccp set sccpprotocolversion
+
+SYNOPSIS
+    sccp set sccpprotocolversion &lt;ITU | ANSI&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+    Sets the value for sccpprotocolversion property ITU or ANSI.
+    Default value is ITU.
+
+PARAMETERS
+
+    Optional Parameters
+
+    &lt;stack-name&gt;    -   Name of the stack on which this command is executed.
+                    If not passed, the first stack configured in ShellExecutor
+                    will be used.
+
+EXAMPLES
+    sccp set sccpprotocolversion ITU</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_sccp_property_sccpprotocolversion_min_gui"><a class="anchor" href="#_sccp_property_sccpprotocolversion_min_gui"></a>Using GUI</h4>
+<div class="paragraph">
+<p>On SCCP management page, click on pencil against the 'ReservedForNationalUseValue of AddressIndicator' property and text box becomes editable.
+Change value and save.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sccp_property_periodoflogging"><a class="anchor" href="#_sccp_property_periodoflogging"></a>Period of logging</h3>
+<div class="sect3">
+<h4 id="_sccp_property_periodoflogging_cli"><a class="anchor" href="#_sccp_property_periodoflogging_cli"></a>Using CLI</h4>
+<div class="paragraph">
+<p>You can set the 'periodoflogging' by issuing the command <code>sccp set periodoflogging</code> with appropriate parameters as described below.
+You can verify this by issuing the command <code>sccp get periodoflogging</code> which will display the value set for this property.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp set periodoflogging
+
+SYNOPSIS
+	sccp set periodoflogging &lt;periodoflogging&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	Sets period of logging warning messages in ms. Default value is 10000.
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;periodoflogging&gt;	-	Period in ms.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp set periodoflogging 10000</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_sccp_property_periodoflogging_gui"><a class="anchor" href="#_sccp_property_periodoflogging_gui"></a>Using GUI</h4>
+<div class="paragraph">
+<p>On SCCP management page, click on pencil against the 'PeriodOfLogging' property and text box becomes editable.
+Change value and save.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sccp_property_maxdatamessage"><a class="anchor" href="#_sccp_property_maxdatamessage"></a>Maximum Data Message</h3>
+<div class="sect3">
+<h4 id="_sccp_property_maxdatamessage_cli"><a class="anchor" href="#_sccp_property_maxdatamessage_cli"></a>Using CLI</h4>
+<div class="paragraph">
+<p>You can set the 'maxdatamessage' by issuing the command <code>sccp set maxdatamessage</code> with appropriate parameters as described below.
+You can verify this by issuing the command <code>sccp get maxdatamessage</code> which will display the value set for this property.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp set maxdatamessage
+
+SYNOPSIS
+	sccp set maxdatamessage &lt;maxdatamessage&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	Sets Max available SCCP message data for all message types. Range is 2560 to 3952.
+    If passed value is less than 2560, it sets to 2560 and if passed value is greater
+    than 3952, it sets to 3952.
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;maxdatamessage&gt;	-	Maximum data message size.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp set maxdatamessage 30000</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_sccp_property_maxdatamessage_gui"><a class="anchor" href="#_sccp_property_maxdatamessage_gui"></a>Using GUI</h4>
+<div class="paragraph">
+<p>On SCCP management page, click on pencil against the 'PreviewMode' property and text box becomes editable.
+Change value and save.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sccp_property_previewmode"><a class="anchor" href="#_sccp_property_previewmode"></a>Preview Mode</h3>
+<div class="sect3">
+<h4 id="_sccp_property_previewmode_cli"><a class="anchor" href="#_sccp_property_previewmode_cli"></a>Using CLI</h4>
+<div class="paragraph">
+<p>You can set the 'previewmode' by issuing the command <code>sccp set previewmode</code> with appropriate parameters as described below.
+You can verify this by issuing the command <code>sccp get previewmode</code> which will display the value set for this property.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp set previewmode
+
+SYNOPSIS
+	sccp set previewmode &lt;true | false&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	If set to true, stack only listens for incoming messages and does not
+	send anything out of stack. Messages are silently dropped.
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;previewmode&gt;	-	Set preview mode to true or false.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp set previewmode false</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_sccp_property_previewmode_gui"><a class="anchor" href="#_sccp_property_previewmode_gui"></a>Using GUI</h4>
+<div class="paragraph">
+<p>On SCCP management page, click on pencil against the 'PreviewMode' property and text box becomes editable.
+Change value and save.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sccp_property_reassemblytimerdelay"><a class="anchor" href="#_sccp_property_reassemblytimerdelay"></a>Reassembly Timer Delay</h3>
+<div class="sect3">
+<h4 id="_sccp_property_reassemblytimerdelay_cli"><a class="anchor" href="#_sccp_property_reassemblytimerdelay_cli"></a>Using CLI</h4>
+<div class="paragraph">
+<p>You can set the 'reassemblytimerdelay' by issuing the command <code>sccp set reassemblytimerdelay</code> with appropriate parameters as described below.
+You can verify this by issuing the command <code>sccp get reassemblytimerdelay</code> which will display the value set for this property.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp set reassemblytimerdelay
+
+SYNOPSIS
+	sccp set reassemblytimerdelay &lt;reassemblytimerdelay&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	Sets SCCP segmented message reassembling timeout (in milliseconds).
+    Range is 10000 to 20000. If passed value is less than 10000, it sets to 10000 and
+    if passed value is greater than 20000, it sets to 20000
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;reassemblytimerdelay&gt;	-	Re-assembly time delay in milliseconds
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp set reassemblytimerdelay 20000</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_sccp_property_reassemblytimerdelay_gui"><a class="anchor" href="#_sccp_property_reassemblytimerdelay_gui"></a>Using GUI</h4>
+<div class="paragraph">
+<p>On SCCP management page, click on pencil against the 'ReassemblyTimerDelay' property and text box becomes editable.
+Change value and save.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sccp_property_removespc"><a class="anchor" href="#_sccp_property_removespc"></a>Remove Signaling Point Code</h3>
+<div class="sect3">
+<h4 id="_sccp_property_removespc_cli"><a class="anchor" href="#_sccp_property_removespc_cli"></a>Using CLI</h4>
+<div class="paragraph">
+<p>You can set the 'removespc' by issuing the command <code>sccp set removespc</code> with appropriate parameters as described below.
+You can verify this by issuing the command <code>sccp get removespc</code> which will display the value set for this property.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp set removespc
+
+SYNOPSIS
+	sccp set removespc &lt;false | true&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	If set, the signaling point code from SCCP called/calling address will
+	be removed if corresponding routing is based on GT
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;removespc&gt;	-	true or false value.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp set removespc true</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_sccp_property_removespc_gui"><a class="anchor" href="#_sccp_property_removespc_gui"></a>Using GUI</h4>
+<div class="paragraph">
+<p>On SCCP management page, click on pencil against the 'RemoveSpc' property and text box becomes editable.
+Change value and save.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sccp_property_respectpc"><a class="anchor" href="#_sccp_property_respectpc"></a>Respect Point Code</h3>
+<div class="sect3">
+<h4 id="_sccp_property_respectpc_cli"><a class="anchor" href="#_sccp_property_respectpc_cli"></a>Using CLI</h4>
+<div class="paragraph">
+<p>You can set the 'respectpc' by issuing the command <code>sccp set respectpc</code> with appropriate parameters as described below.
+You can verify this by issuing the command <code>sccp get respectpc</code> which will display the value set for this property.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp set respectpc
+
+SYNOPSIS
+	sccp set respectpc &lt;false | true&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	If set, the PC will be used for choosing primary or secondary address
+	for outgoing messages if corresponding routing is based on GT
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;respectpc&gt;	-	true or false value.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp set respectpc true</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_sccp_property_respectpc_gui"><a class="anchor" href="#_sccp_property_respectpc_gui"></a>Using GUI</h4>
+<div class="paragraph">
+<p>On SCCP management page, click on pencil against the 'RespectPc' property and text box becomes editable.
+Change value and save.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sccp_property_ssttimerduration_increasefactor"><a class="anchor" href="#_sccp_property_ssttimerduration_increasefactor"></a>SST Timer Duration Increase Factor</h3>
+<div class="sect3">
+<h4 id="_sccp_property_ssttimerduration_increasefactor_cli"><a class="anchor" href="#_sccp_property_ssttimerduration_increasefactor_cli"></a>Using CLI</h4>
+<div class="paragraph">
+<p>You can set the 'ssttimerduration_increasefactor' by issuing the command <code>sccp set ssttimerduration_increasefactor</code> with appropriate parameters as described below.
+You can verify this by issuing the command <code>sccp get ssttimerduration_increasefactor</code> which will display the value set for this property.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp set ssttimerduration_increasefactor
+
+SYNOPSIS
+	sccp set ssttimerduration_increasefactor &lt;ssttimerduration_increasefactor&gt;
+	stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	Set multiplicator of SST sending interval (next interval will be greater then
+	the current by sstTimerDuration_IncreaseFactor). Range is 1 to 4. If passed
+	value is less than 1, it sets to 1 and if passed value is greater than 4,
+	it sets to 4
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;ssttimerduration_increasefactor&gt;	-	values from 1 to 4 for SST duration increase
+										factor.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp set ssttimerduration_increasefactor 1</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_sccp_property_ssttimerduration_increasefactor_gui"><a class="anchor" href="#_sccp_property_ssttimerduration_increasefactor_gui"></a>Using GUI</h4>
+<div class="paragraph">
+<p>On SCCP management page, click on pencil against the 'SstTimerDuration_IncreaseFactor' property and text box becomes editable.
+Change value and save.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sccp_property_ssttimerduration_max"><a class="anchor" href="#_sccp_property_ssttimerduration_max"></a>SST Timer Duration Max</h3>
+<div class="sect3">
+<h4 id="_sccp_property_ssttimerduration_max_cli"><a class="anchor" href="#_sccp_property_ssttimerduration_max_cli"></a>Using CLI</h4>
+<div class="paragraph">
+<p>You can set the 'ssttimerduration_max' by issuing the command <code>sccp set ssttimerduration_max</code> with appropriate parameters as described below.
+You can verify this by issuing the command <code>sccp get ssttimerduration_max</code> which will display the value set for this property.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp set ssttimerduration_max
+
+SYNOPSIS
+	sccp set ssttimerduration_max &lt;ssttimerduration_max&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	Sets Max (after increasing) SST sending interval (in 600000 - 1200000 milliseconds).
+	Value can be from 600000 to 1200000. If value passed is less than 600000, it sets to
+	600000 and if value passed is greater than 1200000, it sets to 1200000
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;ssttimerduration_max&gt;	-	values from 600000 - 1200000 milliseconds.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp set ssttimerduration_max 600000</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_sccp_property_ssttimerduration_max_gui"><a class="anchor" href="#_sccp_property_ssttimerduration_max_gui"></a>Using GUI</h4>
+<div class="paragraph">
+<p>On SCCP management page, click on pencil against the 'SstTimerDuration_Max' property and text box becomes editable.
+Change value and save.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sccp_property_ssttimerduration_min"><a class="anchor" href="#_sccp_property_ssttimerduration_min"></a>SST Timer Duration Min</h3>
+<div class="sect3">
+<h4 id="_sccp_property_ssttimerduration_min_cli"><a class="anchor" href="#_sccp_property_ssttimerduration_min_cli"></a>Using CLI</h4>
+<div class="paragraph">
+<p>You can set the 'ssttimerduration_min' by issuing the command <code>sccp set ssttimerduration_min</code> with appropriate parameters as described below.
+You can verify this by issuing the command <code>sccp get ssttimerduration_min</code> which will display the value set for this property.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp set ssttimerduration_min
+
+SYNOPSIS
+	sccp set ssttimerduration_min &lt;ssttimerduration_min&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	Set's min (starting) SST sending interval (in milliseconds). Value can be
+	from 5000 to 10000.If value passed is less than 5000, it sets to 5000 and
+	if value passed is greater than 10000, its set to 10000
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;ssttimerduration_min&gt;	-	values from 5000 to 10000.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp set ssttimerduration_min 10000</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_sccp_property_ssttimerduration_min_gui"><a class="anchor" href="#_sccp_property_ssttimerduration_min_gui"></a>Using GUI</h4>
+<div class="paragraph">
+<p>On SCCP management page, click on pencil against the 'SstTimerDuration_Max' property and text box becomes editable.
+Change value and save.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sccp_property_zmarginxudtmessage"><a class="anchor" href="#_sccp_property_zmarginxudtmessage"></a>ZMargin XUDT Message</h3>
+<div class="sect3">
+<h4 id="_sccp_property_zmarginxudtmessage_cli"><a class="anchor" href="#_sccp_property_zmarginxudtmessage_cli"></a>Using CLI</h4>
+<div class="paragraph">
+<p>You can set the 'zmarginxudtmessage' by issuing the command <code>sccp set zmarginxudtmessage</code> with appropriate parameters as described below.
+You can verify this by issuing the command <code>sccp get zmarginxudtmessage</code> which will display the value set for this property.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp set ssttimerduration_min
+
+SYNOPSIS
+	sccp set zmarginxudtmessage &lt;zmarginxudtmessage&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	Sets segmentation length. If the XUDT message data length greater this value,
+    segmentation is processed. Otherwise no segmentation.
+    Range is 160 to 255. If passed value is less than 160, it sets to 160 and
+    if passed value is greater than 255, it sets to 255.
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;zmarginxudtmessage&gt;	-	values from 160 to 255.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp set zmarginxudtmessage 255</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_sccp_property_zmarginxudtmessage_min_gui"><a class="anchor" href="#_sccp_property_zmarginxudtmessage_min_gui"></a>Using GUI</h4>
+<div class="paragraph">
+<p>On SCCP management page, click on pencil against the 'ZMarginXudtMessage' property and text box becomes editable.
+Change value and save.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sccp_property_cc_timer_a"><a class="anchor" href="#_sccp_property_cc_timer_a"></a>Timer A value for the congestion control</h3>
+<div class="sect3">
+<h4 id="_sccp_property_cc_timer_a_cli"><a class="anchor" href="#_sccp_property_cc_timer_a_cli"></a>Using CLI</h4>
+<div class="paragraph">
+<p>You can set the 'cc_timer_a' by issuing the command <code>sccp set cc_timer_a</code> with appropriate parameters as described below.
+You can verify this by issuing the command <code>sccp get cc_timer_a</code> which will display the value set for this property.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp get cc_timer_a
+
+SYNOPSIS
+	sccp get cc_timer_a stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	Sets the Timer A value in milliseconds.
+	This timer starts at next MTP-STATUS(cong) primitive coming.
+	During this timer no more MTP-STATUS(cong) are accepted.
+
+	Default value is 400.
+	Possible values are between 60 and 1000.
+
+PARAMETERS
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp set cc_timer_a 400</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_sccp_property_cc_timer_a_gui"><a class="anchor" href="#_sccp_property_cc_timer_a_gui"></a>Using GUI</h4>
+<div class="paragraph">
+<p>On SCCP management page, click on pencil against the 'Congestion control: Timer A' property and text box becomes editable.
+Change value and save.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sccp_property_cc_timer_d"><a class="anchor" href="#_sccp_property_cc_timer_d"></a>Timer D value for the congestion control</h3>
+<div class="sect3">
+<h4 id="_sccp_property_cc_timer_d_cli"><a class="anchor" href="#_sccp_property_cc_timer_d_cli"></a>Using CLI</h4>
+<div class="paragraph">
+<p>You can set the 'cc_timer_d' by issuing the command <code>sccp set cc_timer_d</code> with appropriate parameters as described below.
+You can verify this by issuing the command <code>sccp get cc_timer_d</code> which will display the value set for this property.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp get cc_timer_d
+
+SYNOPSIS
+	sccp get cc_timer_d stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	Sets the Timer D value in milliseconds.
+	This timer starts after last MTP-STATUS(cong) primitive coming.
+	After end of this timer (without new coming MTP-STATUS(cong))
+	RSLM (the congestion level) will be reduced.
+
+	Default value is 2000.
+	Possible values are between 500 and 10000.
+
+PARAMETERS
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp set cc_timer_d 2000</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_sccp_property_cc_timer_d_min_gui"><a class="anchor" href="#_sccp_property_cc_timer_d_min_gui"></a>Using GUI</h4>
+<div class="paragraph">
+<p>On SCCP management page, click on pencil against the 'Congestion control: Timer A' property and text box becomes editable.
+Change value and save.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="can-relay-value"><a class="anchor" href="#can-relay-value"></a>Can relay value</h3>
+<div class="sect3">
+<h4 id="_sccp_property_canrelay_cli"><a class="anchor" href="#_sccp_property_canrelay_cli"></a>Using CLI</h4>
+<div class="paragraph">
+<p>You can set the 'canrelay' by issuing the command <code>sccp set canrelay</code> with appropriate parameters as described below.
+You can verify this by issuing the command <code>sccp get canrelay</code> which will display the value set for this property.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp set canrelay
+
+SYNOPSIS
+	sccp set canrelay &lt;canrelay&gt;
+	stackname &lt;stack-name&gt;
+
+DESCRIPTION
+    Enable (true) or disable (false) ability to be relay node with coupling
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;canrelay&gt;	-	boolean values true or false.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp set canrelay true</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="connection-establishing-timer-delay-value"><a class="anchor" href="#connection-establishing-timer-delay-value"></a>Connection establishing timer delay value</h3>
+<div class="sect3">
+<h4 id="_sccp_property_connesttimerdelay_cli"><a class="anchor" href="#_sccp_property_connesttimerdelay_cli"></a>Using CLI</h4>
+<div class="paragraph">
+<p>You can set the 'connesttimerdelay' by issuing the command <code>sccp set connesttimerdelay</code> with appropriate parameters as described below.
+You can verify this by issuing the command <code>sccp get connesttimerdelay</code> which will display the value set for this property.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp set connesttimerdelay
+
+SYNOPSIS
+	sccp set connesttimerdelay &lt;connesttimerdelay&gt;
+	stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	Set T(conn est) timer delay (for how long connection waits for connection
+	confirm message). Range is 60000 to 120000. If passed value is less than
+	60000, it sets to 60000 and if passed value is greater than 120000,
+	it sets to 120000
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;connesttimerdelay&gt;	-	values from 60000 to 120000 for timer delay.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp set connesttimerdelay 60000</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="connection-it-send-timer-delay-value"><a class="anchor" href="#connection-it-send-timer-delay-value"></a>Connection IT send timer delay value</h3>
+<div class="sect3">
+<h4 id="_sccp_property_iastimerdelay_cli"><a class="anchor" href="#_sccp_property_iastimerdelay_cli"></a>Using CLI</h4>
+<div class="paragraph">
+<p>You can set the 'iastimerdelay' by issuing the command <code>sccp set iastimerdelay</code> with appropriate parameters as described below.
+You can verify this by issuing the command <code>sccp get iastimerdelay</code> which will display the value set for this property.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp set iastimerdelay
+
+SYNOPSIS
+	sccp set iastimerdelay &lt;iastimerdelay&gt;
+	stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	Set T(ias) timer delay (after what period of time IT message will be sent
+	if no messages was sent). Range is 300000 to 600000. If passed value is less
+	than 300000, it sets to 300000 and if passed value is greater than 600000,
+	it sets to 600000
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;iastimerdelay&gt;	-	values from 300000 to 600000 for timer delay.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp set iastimerdelay 300000</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="connection-message-receive-timer-delay-value"><a class="anchor" href="#connection-message-receive-timer-delay-value"></a>Connection message receive timer delay value</h3>
+<div class="sect3">
+<h4 id="_sccp_property_iartimerdelay_cli"><a class="anchor" href="#_sccp_property_iartimerdelay_cli"></a>Using CLI</h4>
+<div class="paragraph">
+<p>You can set the 'iartimerdelay' by issuing the command <code>sccp set iartimerdelay</code> with appropriate parameters as described below.
+You can verify this by issuing the command <code>sccp get iartimerdelay</code> which will display the value set for this property.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp set iartimerdelay
+
+SYNOPSIS
+	sccp set iartimerdelay &lt;iartimerdelay&gt;
+	stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	Set T(iar) timer delay (for how long connection waits to receive a message).
+	Range is 660000 to 1260000. If passed value is less than 660000, it sets to
+	660000 and if passed value is greater than 1260000, it sets to 1260000
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;iartimerdelay&gt;	-	values from 660000 to 1260000 for timer delay.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp set iartimerdelay 660000</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="connection-release-complete-message-timer-delay-value"><a class="anchor" href="#connection-release-complete-message-timer-delay-value"></a>Connection release complete message timer delay value</h3>
+<div class="sect3">
+<h4 id="_sccp_property_reltimerdelay_cli"><a class="anchor" href="#_sccp_property_reltimerdelay_cli"></a>Using CLI</h4>
+<div class="paragraph">
+<p>You can set the 'reltimerdelay' by issuing the command <code>sccp set reltimerdelay</code> with appropriate parameters as described below.
+You can verify this by issuing the command <code>sccp get reltimerdelay</code> which will display the value set for this property.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp set reltimerdelay
+
+SYNOPSIS
+	sccp set reltimerdelay &lt;iartimerdelay&gt;
+	stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	Set T(rel) timer delay (for how long connection waits for release complete
+	message). Range is 10000 to 20000. If passed value is less than 10000, it
+	sets to 10000 and if passed value is greater than 20000, it sets to 20000
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;reltimerdelay&gt;	-	values from 10000 to 20000 for timer delay.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp set reltimerdelay 10000</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="connection-released-message-repeat-timer-delay-value"><a class="anchor" href="#connection-released-message-repeat-timer-delay-value"></a>Connection released message repeat timer delay value</h3>
+<div class="sect3">
+<h4 id="_sccp_property_repeatreltimerdelay_cli"><a class="anchor" href="#_sccp_property_repeatreltimerdelay_cli"></a>Using CLI</h4>
+<div class="paragraph">
+<p>You can set the 'repeatreltimerdelay' by issuing the command <code>sccp set repeatreltimerdelay</code> with appropriate parameters as described below.
+You can verify this by issuing the command <code>sccp get repeatreltimerdelay</code> which will display the value set for this property.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp set repeatreltimerdelay
+
+SYNOPSIS
+	sccp set repeatreltimerdelay &lt;repeatreltimerdelay&gt;
+	stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	Set T(repeat rel) timer delay (for how long connection waits for release complete
+	message or to repeat sending release message after T(rel) timer fire). Range is
+	10000 to 20000. If passed value is less than 10000, it sets to 10000 and if passed
+	value is greater than 20000, it sets to 20000
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;repeatreltimerdelay&gt;	-	values from 10000 to 20000 for timer delay.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp set repeatreltimerdelay 10000</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="connection-resources-release-timer-delay-value"><a class="anchor" href="#connection-resources-release-timer-delay-value"></a>Connection resources release timer delay value</h3>
+<div class="sect3">
+<h4 id="_sccp_property_inttimerdelay_cli"><a class="anchor" href="#_sccp_property_inttimerdelay_cli"></a>Using CLI</h4>
+<div class="paragraph">
+<p>You can set the 'inttimerdelay' by issuing the command <code>sccp set inttimerdelay</code> with appropriate parameters as described below.
+You can verify this by issuing the command <code>sccp get inttimerdelay</code> which will display the value set for this property.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp set inttimerdelay
+
+SYNOPSIS
+	sccp set inttimerdelay &lt;inttimerdelay&gt;
+	stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	Set T(int) timer delay (for how long connection waits for release complete
+	message or to release connection resources). Range is 0 to 60000. If passed
+	value is less than 0, it sets to 0 and if passed value is greater than
+	60000, it sets to 60000
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;inttimerdelay&gt;	-	values from 0 to 60000 for timer delay.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp set inttimerdelay 0</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="connection-work-resume-after-restart-time-delay-value"><a class="anchor" href="#connection-work-resume-after-restart-time-delay-value"></a>Connection work resume after restart time delay value</h3>
+<div class="sect3">
+<h4 id="_sccp_property_guardtimerdelay_cli"><a class="anchor" href="#_sccp_property_guardtimerdelay_cli"></a>Using CLI</h4>
+<div class="paragraph">
+<p>You can set the 'guardtimerdelay' by issuing the command <code>sccp set guardtimerdelay</code> with appropriate parameters as described below.
+You can verify this by issuing the command <code>sccp get guardtimerdelay</code> which will display the value set for this property.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp set guardtimerdelay
+
+SYNOPSIS
+	sccp set guardtimerdelay &lt;guardtimerdelay&gt;
+	stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	Set T(guard) timer delay (for how long connection waits to resume work
+	after restart). Range is 1380000 to 1500000. If passed value is less
+	than 1380000, it sets to 1380000 and if passed value is greater than
+	1500000, it sets to 1500000
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;guardtimerdelay&gt;	-	values from 1380000 to 1500000 for timer delay.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp set guardtimerdelay 1380000</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="connection-release-after-reset-delay-value"><a class="anchor" href="#connection-release-after-reset-delay-value"></a>Connection release after reset delay value</h3>
+<div class="sect3">
+<h4 id="_sccp_property_resettimerdelay_cli"><a class="anchor" href="#_sccp_property_resettimerdelay_cli"></a>Using CLI</h4>
+<div class="paragraph">
+<p>You can set the 'resettimerdelay' by issuing the command <code>sccp set resettimerdelay</code> with appropriate parameters as described below.
+You can verify this by issuing the command <code>sccp get resettimerdelay</code> which will display the value set for this property.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp set resettimerdelay
+
+SYNOPSIS
+	sccp set resettimerdelay &lt;resettimerdelay&gt;
+	stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	Set T(reset) timer delay (for how long connection waits to release after
+	sending reset message). Range is 10000 to 20000. If passed value is less
+	than 10000, it sets to 10000 and if passed value is greater than 20000,
+	it sets to 20000
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;resettimerdelay&gt;	-	values from 10000 to 20000 for timer delay.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp set resettimerdelay 10000</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="thread-count-in-connections-timers-thread-pool-value"><a class="anchor" href="#thread-count-in-connections-timers-thread-pool-value"></a>Thread count in connections timers thread pool value</h3>
+<div class="sect3">
+<h4 id="_sccp_property_timerexecutors_threadcount_cli"><a class="anchor" href="#_sccp_property_timerexecutors_threadcount_cli"></a>Using CLI</h4>
+<div class="paragraph">
+<p>You can set the 'timerexecutors_threadcount' by issuing the command <code>sccp set timerexecutors_threadcount</code> with appropriate parameters as described below.
+You can verify this by issuing the command <code>sccp get timerexecutors_threadcount</code> which will display the value set for this property.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp set timerexecutors_threadcount
+
+SYNOPSIS
+	sccp set timerexecutors_threadcount &lt;timerexecutors_threadcount&gt;
+	stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	Set number of threads in thread pool for connections timers. Range is from 1
+	to 100. If passed value is less than 1, it sets to 1 and if passed
+	value is greater than 1000, it sets to 1000
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;timerexecutors_threadcount&gt;	-	values from 1 to 1000.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp set timerexecutors_threadcount 10</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sccp_property_cc_algo"><a class="anchor" href="#_sccp_property_cc_algo"></a>Algorithm of the congestion control at SCCP level</h3>
+<div class="sect3">
+<h4 id="_sccp_property_cc_algo_cli"><a class="anchor" href="#_sccp_property_cc_algo_cli"></a>Using CLI</h4>
+<div class="paragraph">
+<p>You can set the 'cc_algo' by issuing the command <code>sccp set cc_algo</code> with appropriate parameters as described below.
+You can verify this by issuing the command <code>sccp get cc_algo</code> which will display the value set for this property.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp set cc_algo
+
+SYNOPSIS
+	sccp set cc_algo &lt;international | levelDepended&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	Sets the algorithm of the congestion control at SCCP level for outgoing
+	messages.
+	Possible values are international or levelDepended.
+	international algorithm - only one level is provided by MTP3 level
+	(in MTP-STATUS primitive). Each MTP-STATUS increases N / M levels.
+	international algorithm - MTP3 level (MTP-STATUS primitive) provides
+	3 levels of a congestion (1-3) and SCCP congestion will increase to
+	the next level after MTP-STATUS next level increase (MTP-STATUS 1
+	to N up to 3, MTP-STATUS 2 to N up to 5, MTP-STATUS 3 to N up to 7).
+
+	Default value is international.
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;cc_algo&gt;	-	international | levelDepended.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp set cc_algo international</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_sccp_property_cc_algo_gui"><a class="anchor" href="#_sccp_property_cc_algo_gui"></a>Using GUI</h4>
+<div class="paragraph">
+<p>On SCCP management page, click on pencil against the 'Congestion control: algorithm' property and text box becomes editable.
+Change value and save.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sccp_property_cc_blockingoutgoungsccpmessages"><a class="anchor" href="#_sccp_property_cc_blockingoutgoungsccpmessages"></a>Blocking of outgoing messages in case of the congestion</h3>
+<div class="sect3">
+<h4 id="_sccp_property_blockingoutgoungsccpmessages_cli"><a class="anchor" href="#_sccp_property_blockingoutgoungsccpmessages_cli"></a>Using CLI</h4>
+<div class="paragraph">
+<p>You can set the 'cc_blockingoutgoungsccpmessages' by issuing the command <code>sccp set cc_blockingoutgoungsccpmessages</code> with appropriate parameters as described below.
+You can verify this by issuing the command <code>sccp get cc_blockingoutgoungsccpmessages</code> which will display the value set for this property.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp set cc_blockingoutgoungsccpmessages
+
+SYNOPSIS
+	sccp set cc_blockingoutgoungsccpmessages &lt;false | true&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	Sets the value of if outgoing SCCP messages will be blocked in congestion.
+	(depending on message type, UDP messages from level N=6).
+	true means that message will be blocken in the congestion case,
+	false means not.
+
+	Default value is false.
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;cc_blockingoutgoungsccpmessages&gt;	-	false or true.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp set cc_blockingoutgoungsccpmessages false</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_sccp_property_blockingoutgoungsccpmessages_gui"><a class="anchor" href="#_sccp_property_blockingoutgoungsccpmessages_gui"></a>Using GUI</h4>
+<div class="paragraph">
+<p>On SCCP management page, click on pencil against the 'Congestion control: blocking of outgoing messages' property and text box becomes editable.
+Change value and save.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_sap_show"><a class="anchor" href="#_managing_sccp_sap_show"></a>View all Service Access Points (SAP)</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_sap_show_cli"><a class="anchor" href="#_managing_sccp_sap_show_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can view the details of all configured Service Access Points by issuing the command <code>sccp sap show</code> as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp sap show
+
+SYNOPSIS
+	sccp sap show &lt;id&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	This command is used to view the details of all Service Access Points. If an &lt;id&gt;
+	is specified, the command will only display the details of the SAP identified by
+	the value of the 'id' specified.
+
+PARAMETERS
+
+	Optional Parameters
+
+	&lt;id&gt;			-	The id of the SAP whose details are to be displayed. If
+					this parameter is not specified, the details of all
+					defined SAPs will be displayed.
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_managing_sccp_sap_show_gui"><a class="anchor" href="#_managing_sccp_sap_show_gui"></a>Using GUI</h3>
+<div class="paragraph">
+<p>Navigate to the specific SCCP Management unit and switch to the 'SAP' tab.
+Here you can view a list of all the Service Access Points created.
+Every correctly configured Service Access Point will be displayed in a row with their defined values.
+The last column 'Action' will allow you to delete the Service Access Point.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_sap_create"><a class="anchor" href="#_managing_sccp_sap_create"></a>Create a new Service Access Point</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_sap_create_cli"><a class="anchor" href="#_managing_sccp_sap_create_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can create a new Service Access Point by issuing the command <code>sccp sap create</code> with appropriate parameters as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp sap create
+
+SYNOPSIS
+	sccp sap create &lt;id&gt; &lt;mtp3-id&gt; &lt;opc&gt; &lt;ni&gt; stackname &lt;stack-name&gt; networkid &lt;networkId&gt;
+	localgtdigits &lt;localGtDigits&gt;
+
+DESCRIPTION
+	This command is used to define a new Service Access Point.
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;id&gt;			-	The newly defined SAP will be identified using this 'id'.
+					This must be a unique number.
+
+	&lt;mtp3-id&gt;		-	Mtp3UserPart index - used as an index of 'mtp3UserPart'
+					property of the SccpStack Bean. For each Mtp3UserPart,
+					a sap must be configured.
+
+	&lt;opc&gt;			-	MTP Point code of the local signaling point. Takes an
+					Integer Value.
+
+	&lt;ni&gt;			-	Network indicator that forms part of the
+					Service Information Octet (SIO).
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+    &lt;networkId&gt;     - A digital parameter that means to which virtual SS7 network
+                    belongs Service Access Point (SAP). If this parameter is
+                    skipped - networkId will be set to "0" when SAP creation.
+                    Refer &lt;xref linkend="design_multitenancy"/&gt;.
+
+    &lt;localGtDigits&gt; - Local GT digits. An incoming message will be brought to this
+                    sap if GT digits of callePartyAddress matches to this value.
+                    "null" value matches to any incoming message. If this parameter
+                    is skipped - networkId will be set to "null" by default.
+
+
+EXAMPLES
+	sccp sap create 1 1 101 2 networkid 2 localgtdigits 999888777
+
+	The above command will create a new Service Access Point identified by the
+	number '1'. The values for 'mtp3-id', 'opc' and 'ni' are 1, 101 and 2 respectively.</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_managing_sccp_sap_create_gui"><a class="anchor" href="#_managing_sccp_sap_create_gui"></a>Using GUI</h3>
+<div class="olist arabic">
+<div class="title">Procedure: Create a new Service Access Point using GUI</div>
+<ol class="arabic">
+<li>
+<p>Navigate to the 'SAP' tab in the SCCP Management window and click on the 'Create SAP' button.
+This will launch a pop-up 'Create SAP'.</p>
+</li>
+<li>
+<p>In the 'Create SAP' pop-up, add details of the new Service Access Point.
+You must ensure that you fill in all the mandatory parameters (Id, MTP3 Id, OPC, NI). For definition of these parameters, please refer to the description of the CLI command for the same in the preceding section.</p>
+</li>
+<li>
+<p>Verify the details entered and then click on the 'Create' button.
+A new SAP will be created with parameters as specified.
+If there is an error in creating the SAP then you will find the details of the error in the Management Console Log section below.</p>
+</li>
+<li>
+<p>Click on the 'Close' button to close the 'Create SAP' pop-up.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_sap_modify"><a class="anchor" href="#_managing_sccp_sap_modify"></a>Modify a Service Access Point</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_sap_modify_cli"><a class="anchor" href="#_managing_sccp_sap_modify_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can modify the values of a Service Access Point by issuing the command <code>sccp sap modify</code> with appropriate parameters as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp sap modify
+
+SYNOPSIS
+	sccp sap modify &lt;id&gt; mtp3-id &lt;mtp3-id&gt; opc &lt;opc&gt; ni &lt;ni&gt; stackname &lt;stack-name&gt; networkid &lt;networkId&gt;
+	localgtdigits &lt;localGtDigits&gt;
+
+DESCRIPTION
+	This command is used to modify a previously defined Service Access Point.
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;id&gt;			-	The id of the SAP whose values are being modified.
+
+	Optional Parameters
+
+	&lt;mtp3-id&gt;		-	Mtp3UserPart index - used as an index of 'mtp3UserPart'
+					property of the SccpStack Bean. For each Mtp3UserPart, a
+					sap must be configured.
+
+	&lt;opc&gt;			-	MTP Point code of the local signaling point. Takes an
+					Integer Value.
+
+	&lt;ni&gt;			-	Network indicator that forms part of the Service
+					Information Octet (SIO).
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+    &lt;networkId&gt;     - A digital parameter that means to which virtual SS7 network
+                    belongs Service Access Point (SAP). If this parameter is
+                    skipped - networkId will be set to "0" when SAP creation.
+                    Refer &lt;xref linkend="design_multitenancy"/&gt;.
+
+    &lt;localGtDigits&gt; - Local GT digits. An incoming message will be brought to this
+                    sap if GT digits of callePartyAddress matches to this value.
+                    "null" value matches to any incoming message. If this parameter
+                    is skipped - networkId will be set to "null" by default.
+
+
+EXAMPLES
+	sccp sap modify 1 mtp3-id 2 opc 102 ni 2
+
+	The above command will modify the values of the Service Access Point identified
+	by the number '1'. The new values for 'mtp3-id', 'opc' and 'ni' are 2, 102 and 2
+	respectively.</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_sap_delete"><a class="anchor" href="#_managing_sccp_sap_delete"></a>Delete a Service Access Point</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_sap_delete_cli"><a class="anchor" href="#_managing_sccp_sap_delete_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can delete a SAP by issuing the command <code>sccp sap delete</code> with appropriate parameters as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp sap delete
+
+SYNOPSIS
+	sccp sap delete &lt;id&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	This command is used to delete a previously defined Service Access Point.
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;id&gt;			-	The id of the SAP that is being deleted.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp sap delete 1
+
+	The above command will delete the SAP identified by the number '1'.</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_managing_sccp_sap_delete_gui"><a class="anchor" href="#_managing_sccp_sap_delete_gui"></a>Using GUI</h3>
+<div class="olist arabic">
+<div class="title">Procedure: Delete a SAP using GUI</div>
+<ol class="arabic">
+<li>
+<p>Navigate to the 'SAP' tab in the SCCP Management Unit window and locate the row corresponding to the SAP you wish to delete.</p>
+</li>
+<li>
+<p>The last column for 'Delete' action will display a 'x' button in red and will be enabled.</p>
+</li>
+<li>
+<p>Click on the red 'x' button to delete the corresponding SAP.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_dest_show"><a class="anchor" href="#_managing_sccp_dest_show"></a>View all Destinations specified for a SAP</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_dest_show_cli"><a class="anchor" href="#_managing_sccp_dest_show_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can view the details of all Destinations specified for a  Service Access Point by issuing the command <code>sccp dest show</code> as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp dest show
+
+SYNOPSIS
+	sccp dest show &lt;sap-id&gt; &lt;id&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	This command is used to view the details of all Destinations specified for a
+	Service Access Point. If an &lt;id&gt; is specified in the command, it will only display
+	the details of the Destination identified by the value of the 'id' specified.
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;sap-id&gt;	-	The id of the SAP whose Destination details are to be
+				displayed.
+
+
+	Optional Parameters
+
+	&lt;id&gt;			-	The id of the Destination whose details are to be
+					displayed. If this parameter is not specified, the details
+					of all Destinations defined within the SAP 'sap-id' will
+					be displayed.
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_managing_sccp_dest_show_gui"><a class="anchor" href="#_managing_sccp_dest_show_gui"></a>Using GUI</h3>
+<div class="paragraph">
+<p>Navigate to the specific SCCP Management unit and switch to the 'SAP' tab.
+Here you can view a list of all the Service Access Points created.
+Every correctly configured Service Access Point will be displayed in a row with their defined values.
+To view the Destination details of a specific SAP, click on the row corresponding to the SAP.
+The row will expand below to display the details of all configured Destinations.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_dest_create"><a class="anchor" href="#_managing_sccp_dest_create"></a>Define a new Destination for a SAP</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_dest_create_cli"><a class="anchor" href="#_managing_sccp_dest_create_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can define a new Destination for a Service Access Point by issuing the command <code>sccp dest create</code> with appropriate parameters as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp dest create
+
+SYNOPSIS
+	sccp dest create &lt;sap-id&gt; &lt;id&gt; &lt;first-dpc&gt; &lt;last-dpc&gt; &lt;first-sls&gt; &lt;last-sls&gt;
+	&lt;sls-mask&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	This command is used to define a new Destination for a Service Access Point.
+	For every SAP in the system, you should configure one or more Destinations.
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;sap-id&gt;	-	The identifier of the SAP for which this new Destination
+				is being defined. You must ensure that the SAP has been
+				created prior to issuing this command.
+
+	&lt;id&gt;		-	An identifier for this newly created Destination.
+				The number must be unique within each SAP.
+
+	&lt;first-dpc&gt;	-	The first value of the remote signaling point codes range.
+
+	&lt;last-dpc&gt;	-	The last value of the remote signaling point codes range.
+				If the Destination specifies only a single Signaling
+				Point Code, this value must be equal to the value
+				specified for 'first-dpc'.
+
+	&lt;first-sls&gt;	-	The first value of the SLS range.
+				SLS value range is from 0 to 255.
+
+	&lt;last-sls&gt;	-	The last value of the SLS range.
+
+	&lt;sls-mask&gt;	-	The mask value. SLS of a message will be exposed by
+				performing a bitwise AND operation with this mask prior to
+				comparing it with first-sls and last-sls values.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+
+EXAMPLES
+	sccp dest create 1 1 201 201 0 7 7
+
+	The above command will create a new Destination (identified by number '1') for
+	a Service Access Point identified by the number '1'. The values for 'first-dpc',
+	'last-dpc', 'first-sls', 'last-sls' and 'sls-mask' are 201, 201, 0, 7 and 7
+	respectively.
+
+	sccp dest create 2 1 300 399 0 255 255
+
+	The above command will create a new Destination (identified by number '2') for
+	a Service Access Point identified by the number '1'. The values for 'first-dpc',
+	'last-dpc', 'first-sls', 'last-sls' and 'sls-mask' are 300, 399, 0, 255 and 255
+	respectively. This Destination will cover all possible SLS values.
+	Therefore the value for first-sls =0, last-sls=255 and sls-mask=255</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_managing_sccp_dest_create_gui"><a class="anchor" href="#_managing_sccp_dest_create_gui"></a>Using GUI</h3>
+<div class="olist arabic">
+<div class="title">Procedure: Define a new Destination for a Service Access Point using GUI</div>
+<ol class="arabic">
+<li>
+<p>Navigate to the 'SAP' tab in the SCCP Management window and click on the row corresponding to the SAP for which you would like to define a new Destination.</p>
+</li>
+<li>
+<p>The SAP row will expand below to display the details of all configured Destinations.
+In this section for Destinations, click on the 'Create Destination' button.
+This will launch a new pop-up 'Create MTP3 Destination'.</p>
+</li>
+<li>
+<p>In the 'Create MTP3 Destination' pop-up, add details of the new Destination being defined for the Service Access Point.
+You must ensure that you fill in all the mandatory parameters.
+For definition of these parameters, please refer to the description of the CLI command for the same in the preceding section.</p>
+</li>
+<li>
+<p>Verify the details entered and then click on the 'Create' button.
+A new Destination will be created with parameters as specified.
+If there is an error in creating the SAP then you will find the details of the error in the Management Console Log section below.</p>
+</li>
+<li>
+<p>Click on the 'Close' button to close the 'Create MTP3 Destination' pop-up.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_dest_modify"><a class="anchor" href="#_managing_sccp_dest_modify"></a>Modify a Destination defined for a SAP</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_dest_modify_cli"><a class="anchor" href="#_managing_sccp_dest_modify_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can modify the values of a Destination defined for a Service Access Point by issuing the command <code>sccp dest modify</code> with appropriate parameters as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp dest modify
+
+SYNOPSIS
+	sccp dest modify &lt;sap-id&gt; &lt;id&gt; first-dpc &lt;first-dpc&gt; last-dpc &lt;last-dpc&gt; first-sls &lt;first-sls&gt; last-sls &lt;last-sls&gt;
+	sls-mask &lt;sls-mask&gt; stackname &lt;stack-name&gt;
+
+
+DESCRIPTION
+	This command is used to modify the values of a Destination previously defined for
+	a Service Access Point.
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;sap-id&gt;	-	The identifier of the SAP whose Destination is being
+				modified.
+
+	&lt;id&gt;		-	The identifier of the Destination that is being modified.
+
+	Optional Parameters
+	&lt;first-dpc&gt;	-	The first value of the remote signaling point codes range.
+
+	&lt;last-dpc&gt;	-	The last value of the remote signaling point codes range.
+				If the Destination specifies only a single Signaling
+				Point Code, this value must be equal to the value
+				specified for 'first-dpc'.
+
+	&lt;first-sls&gt;	-	The first value of the SLS range.
+				SLS value range is from 0 to 255.
+
+	&lt;last-sls&gt;	-	The last value of the SLS range.
+
+	&lt;sls-mask&gt;	-	The mask value. SLS of a message will be exposed by
+				performing a bitwise AND operation with this mask prior to
+				comparing it with first-sls and last-sls values.
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp dest modify 1 1 first-dpc 201 last-dpc 299 first-sls 0 last-sls 255 sls-mask 255
+
+	The above command will modify the values of the Destination identified by the
+	number '1' within the Service Access Point identified by the number '1'.
+	The new values for 'first-dpc', 'last-dpc', 'first-sls', 'last-sls' and 'sls-mask'
+	are 201, 299, 0, 255 and 255 respectively.</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_dest_delete"><a class="anchor" href="#_managing_sccp_dest_delete"></a>Delete a Destination defined for a SAP</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_dest_delete_cli"><a class="anchor" href="#_managing_sccp_dest_delete_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can delete a Destination defined for a SAP by issuing the command <code>sccp dest delete</code> with appropriate parameters as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp dest delete
+
+SYNOPSIS
+	sccp dest delete &lt;sap-id&gt; &lt;id&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	This command is used to remove a previously defined Destination from a
+	Service Access Point.
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;sap-id&gt;	-	The identifier of the SAP whose Destination is being
+				deleted.
+
+	&lt;id&gt;		-	The identifier of the Destination that is being
+				deleted.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp dest delete 1 1
+
+	The above command will delete the Destination identified by the number '1' from
+	the SAP identified by the number '1'.</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_managing_sccp_dest_delete_gui"><a class="anchor" href="#_managing_sccp_dest_delete_gui"></a>Using GUI</h3>
+<div class="olist arabic">
+<div class="title">Procedure: Delete a Destination defined for a SAP using GUI</div>
+<ol class="arabic">
+<li>
+<p>Navigate to the 'SAP' tab in the SCCP Management Unit window and click on the row corresponding to the SAP from which you wish to delete a Destination.</p>
+</li>
+<li>
+<p>The SAP row will expand below to display the details of all configured Destinations.
+In this section for Destinations, locate the specific Destination you wish to remove from the list.</p>
+</li>
+<li>
+<p>In the row corresponding to the identified Destination, click on the red 'x' button in the actions column to delete that Destination.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_addr_show"><a class="anchor" href="#_managing_sccp_addr_show"></a>View all configured SCCP Addresses</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_addr_show_cli"><a class="anchor" href="#_managing_sccp_addr_show_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can view the details of all configured SCCP Addresses by issuing the command <code>sccp address show</code> as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp address show
+
+SYNOPSIS
+	sccp address show id &lt;id&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	This command is used to view the details of all configured addresses.
+	If an &lt;id&gt; is specified in the command, it will only display the details of the
+	Address identified by the value of the 'id' specified.
+
+PARAMETERS
+
+	Optional Parameters
+
+	&lt;id&gt;			-	The id of the Address whose details are to be displayed.
+					If this parameter is not specified, the details of all
+					configured Addresses will be displayed.
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_managing_sccp_addr_show_gui"><a class="anchor" href="#_managing_sccp_addr_show_gui"></a>Using GUI</h3>
+<div class="paragraph">
+<p>Navigate to the specific SCCP Management unit and switch to the 'Address' tab.
+Here you can view a list of all the configured Addresses.
+Every correctly configured Address will be displayed in a row along with the defined values.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_addr_create"><a class="anchor" href="#_managing_sccp_addr_create"></a>Create a new Primary/Backup address</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_addr_create_cli"><a class="anchor" href="#_managing_sccp_addr_create_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can create a new primary address or backup address of translation by issuing the command <code>sccp address create</code> with appropriate parameters as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp address create
+
+SYNOPSIS
+	sccp address create &lt;id&gt; &lt;address-indicator&gt; &lt;point-code&gt; &lt;subsystem-number&gt;
+	&lt;translation-type&gt; &lt;numbering-plan&gt; &lt;nature-of-address-indicator&gt; &lt;digits&gt;
+	stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	This command is used to create a new primary address or backup address of
+	translation. You can create a new newCallingParty address as well
+	using this command. The global title address information of this command is combined with
+	the global title being translated by examining the mask provided in the
+	'sccp rule create' command.
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;id&gt;			-	A unique number to identify this address.
+
+	&lt;address-indicator&gt;	-	The address indicator is the first field in a SCCP
+					Party Address (called/calling) and is one octet in
+					length. Its function is to indicate which
+					information elements are present so that the
+					address can be interpreted. In other words, it
+					indicates the type of addressing information that
+					is to be found in the address field. The
+					addressing information from the original global
+					title is then compared with the passed address
+					information to match the rule.
+
+					SCCP ADDRESS INDICATOR
+					--------------------------------
+					| 8 | 7 | 6 | 5 | 4 |3 | 2 | 1 |
+					--------------------------------
+
+					Bit '1'     : PC Indicator
+						      (1 = included)
+
+					Bit '2'     : SSN Indicator
+						      (1 = included)
+
+					Bit '3 - 6' : GT Indicator
+						      (0000 = GT not included)
+						      (0001 = GT includes
+							      Nature of Address)
+						      (0010 = GT includes
+							      Translation Type)
+						      (0011 = GT includes
+							      Translation Type,
+							      Numbering Plan and
+							      Encoding Scheme)
+						      (0100 = GT includes
+							      Translation Type,
+							      Numbering Plan and
+							      Encoding Scheme and
+							      Nature of Address)
+
+					Bit '7'     : Routing Indicator
+						      (0 = Route on GT,
+						      1 = Route on PC + SSN)
+
+					Bit '8'     : Reserved for National use.
+
+					Only two fields of Address Indicator is used now for GTT:
+                    - GT Indicator (this is used for GlobalTitle type that
+                      will be created)
+                    - Routing Indicator bit (0 = Route on GT, 1 = Route on
+                      PC + SSN)
+                    GT Indicator for ITU-T network that is mostly used is -
+                    0100 (GT includes Translation Type, Numbering Plan and
+                    Encoding Scheme and Nature of Address). Digital value
+                    for it is - 16.
+                    For 0100 GT Indicator we will use two possible values:
+                    16 - 0100 GT Indicator and Route on GT
+                    80 - 0100 GT Indicator and Route on PC + SSN
+                    Even when SCCP stack works in ANSI mode Address Indicator
+                    value for CLI and GUI must have values that we use for
+                    ITU-T mode.
+
+	&lt;point-code&gt;		-	MTP Signaling Point Code.
+					This parameter contains a point code to which message will
+					be routed after GTT (DPC field).
+					This parameter is mandatory.
+
+	&lt;subsystem-number&gt;	- This parameter contains SSN which will be placed
+	                into CalledPartyAddress. If you set this parameter to "0",
+	                SSN from CalledPartyAddress of an original message will be
+	                put into CalledPartyAddress.
+
+	&lt;translation-type&gt;	-	This is ignored if GT Indicator is 0000 or 0001.
+
+					TRANSLATION TYPE VALUES
+
+					Value		Description
+					----------------------------------
+					0		Unknown
+
+					1  - 63		International Service
+
+					64 - 127	Spare
+
+					128 - 254	National Network Specific
+
+					255		Reserved for Expansion
+
+					Value of this parameter will be placed into
+					CalledPartyAddress. This parameter is mandatory if GT
+					Indicator suppose this parameter is included into GT.
+					Most used value: 0 - translation-type - Unknown
+
+	&lt;numbering-plan&gt;	-	The Number Plan (NP) field specifies the numbering
+					plan which the address information follows. This
+					is ignored if GT Indicator is 0000, 0001 or 0010.
+
+                    Value of this parameter will be placed into
+                    CalledPartyAddress. This parameter is mandatory if GT
+                    Indicator suppose this parameter is included into GT.
+                    Most used value: 1 - numbering-plan - ISDN/telephony
+
+	&lt;nature-of-address&gt;	-	The Nature of Address Indicator (NAI) field
+					defines the address range for a specific numbering
+					plan. This is only used if GT Indicator is 0100.
+
+                    Value of this parameter will be placed into
+                    CalledPartyAddress. This parameter is mandatory if GT
+                    Indicator suppose this parameter is included into GT.
+                    Most used value: 4 - nature-of-address - International
+
+	&lt;digits&gt;		-	The global title address information to translate
+					to. Specified as string of digits divided into
+					subsections using separator '/' depending on if
+					the mask contains separator or not.
+					The digits string can contain:
+
+					DIGIT PATTERN
+
+					Value		Description
+					----------------------------------
+					-		padding - ignored
+
+					/		separator used to split the digit
+							pattern into sections.
+							Each section is processed
+							differently as specified by the
+							mask parameter in the
+							'sccp rule create' command.
+
+                    We need this parameter if at least one section of Rule
+                    mask contains "R" (replace) value. Else set this field
+                    to "0". If this field is needed it should contain the
+                    same subsections as the rule mask has.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp address create 1 71 2 8 0 0 3 123456789</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_managing_sccp_addr_create_gui"><a class="anchor" href="#_managing_sccp_addr_create_gui"></a>Using GUI</h3>
+<div class="olist arabic">
+<div class="title">Procedure: Create a new Primary/Backup Address using GUI</div>
+<ol class="arabic">
+<li>
+<p>Navigate to the 'Address' tab in the SCCP Management window and click on the 'Create Address' button.
+This will launch a new pop-up 'Create SCCP Address'.</p>
+</li>
+<li>
+<p>In the 'Create SCCP Address' pop-up, add details of the new SCCP Address being defined.
+You must ensure that you fill in all the mandatory parameters.
+For definition of these parameters, please refer to the description of the CLI command for the same in the preceding section.</p>
+</li>
+<li>
+<p>Verify the details entered and then click on the 'Create' button.
+A new Address will be created with parameters as specified.
+If there is an error in creating the Address then you will find the details of the error in the Management Console Log section below.</p>
+</li>
+<li>
+<p>Click on the 'Close' button to close the 'Create SCCP Address' pop-up.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_addr_modify"><a class="anchor" href="#_managing_sccp_addr_modify"></a>Modify a Primary/Backup Address</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_addr_modify_cli"><a class="anchor" href="#_managing_sccp_addr_modify_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can modify the values of a primary address or backup address of translation by issuing the command <code>sccp address modify</code> with appropriate parameters as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp address modify
+
+SYNOPSIS
+	sccp address modify &lt;id&gt; address-indicator &lt;address-indicator&gt; point-code &lt;point-code&gt; subsystem-number &lt;subsystem-number&gt;
+	translation-type &lt;translation-type&gt; numbering-plan &lt;numbering-plan&gt; nature-of-address-indicator &lt;nature-of-address-indicator&gt; digits &lt;digits&gt;
+	stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	This command is used to modify the values of an address
+	previously defined.
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;id&gt;			-	Identifier of the address to be modified.
+
+	Optional Parameters
+	&lt;address-indicator&gt;	-	The address indicator is the first field in a SCCP
+					Party Address (called/calling) and is one octet in
+					length. Its function is to indicate which
+					information elements are present so that the
+					address can be interpreted. In other words, it
+					indicates the type of addressing information that
+					is to be found in the address field. The
+					addressing information from the original global
+					title is then compared with the passed address
+					information to match the rule.
+
+					SCCP ADDRESS INDICATOR
+					--------------------------------
+					| 8 | 7 | 6 | 5 | 4 |3 | 2 | 1 |
+					--------------------------------
+
+					Bit '1'     : PC Indicator
+						      (1 = included)
+
+					Bit '2'     : SSN Indicator
+						      (1 = included)
+
+					Bit '3 - 6' : GT Indicator
+						      (0000 = GT not included)
+						      (0001 = GT includes
+							      Nature of Address)
+						      (0010 = GT includes
+							      Translation Type)
+						      (0011 = GT includes
+							      Translation Type,
+							      Numbering Plan and
+							      Encoding Scheme)
+						      (0100 = GT includes
+							      Translation Type,
+							      Numbering Plan and
+							      Encoding Scheme and
+							      Nature of Address)
+
+					Bit '7'     : Routing Indicator
+						      (0 = Route on GT,
+						      1 = Route on PC + SSN)
+
+					Bit '8'     : Reserved for National use.
+
+                    Only two fields of Address Indicator is used now for GTT:
+                    - GT Indicator (this is used for GlobalTitle type that
+                      will be created)
+                    - Routing Indicator bit (0 = Route on GT, 1 = Route on
+                      PC + SSN)
+                    GT Indicator for ITU-T network that is mostly used is -
+                    0100 (GT includes Translation Type, Numbering Plan and
+                    Encoding Scheme and Nature of Address). Digital value
+                    for it is - 16.
+                    For 0100 GT Indicator we will use two possible values:
+                    16 - 0100 GT Indicator and Route on GT
+                    80 - 0100 GT Indicator and Route on PC + SSN
+                    Even when SCCP stack works in ANSI mode Address Indicator
+                    value for CLI and GUI must have values that we use for
+                    ITU-T mode.
+
+    &lt;point-code&gt;        -   MTP Signaling Point Code.
+                    This parameter contains a point code to which message will
+                    be routed after GTT (DPC field).
+                    This parameter is mandatory.
+
+    &lt;subsystem-number&gt;  - This parameter contains SSN which will be placed
+                    into CalledPartyAddress. If you set this parameter to "0",
+                    SSN from CalledPartyAddress of an original message will be
+                    put into CalledPartyAddress.
+
+	&lt;translation-type&gt;	-	This is ignored if GT Indicator is 0000 or 0001.
+
+					TRANSLATION TYPE VALUES
+
+					Value		Description
+					----------------------------------
+					0		Unknown
+
+					1  - 63		International Service
+
+					64 - 127	Spare
+
+					128 - 254	National Network Specific
+
+					255		Reserved for Expansion
+
+                    Value of this parameter will be placed into
+                    CalledPartyAddress. This parameter is mandatory if GT
+                    Indicator suppose this parameter is included into GT.
+                    Most used value: 0 - translation-type - Unknown
+
+    &lt;numbering-plan&gt;    -   The Number Plan (NP) field specifies the numbering
+                    plan which the address information follows. This
+                    is ignored if GT Indicator is 0000, 0001 or 0010.
+
+                    Value of this parameter will be placed into
+                    CalledPartyAddress. This parameter is mandatory if GT
+                    Indicator suppose this parameter is included into GT.
+                    Most used value: 1 - numbering-plan - ISDN/telephony
+
+    &lt;nature-of-address&gt; -   The Nature of Address Indicator (NAI) field
+                    defines the address range for a specific numbering
+                    plan. This is only used if GT Indicator is 0100.
+
+                    Value of this parameter will be placed into
+                    CalledPartyAddress. This parameter is mandatory if GT
+                    Indicator suppose this parameter is included into GT.
+                    Most used value: 4 - nature-of-address - International
+
+	&lt;digits&gt;		-	The global title address information to translate
+					to. Specified as string of digits divided into
+					subsections using separator '/' depending on if
+					the mask contains separator or not.
+					The digits string can contain:
+
+					DIGIT PATTERN
+
+					Value		Description
+					----------------------------------
+					-		padding - ignored
+
+					/		separator used to split the digit
+							pattern into sections.
+							Each section is processed
+							differently as specified by the
+							mask parameter in the
+							'sccp rule create' command.
+
+                    We need this parameter if at least one section of Rule
+                    mask contains "R" (replace) value. Else set this field
+                    to "0". If this field is needed it should contain the
+                    same subsections as the rule mask has.
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_addr_delete"><a class="anchor" href="#_managing_sccp_addr_delete"></a>Delete a Primary/Backup Address</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_addr_delete_cli"><a class="anchor" href="#_managing_sccp_addr_delete_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can delete a Primary or Backup Address by issuing the command <code>sccp address delete</code> with appropriate parameters as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp address delete
+
+SYNOPSIS
+	sccp address delete &lt;id&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	This command is used to remove previously defined addresses.
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;id&gt;		-	The identifier of the address that is being deleted.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp address delete 1
+
+	The above command will delete the address identified by the number '1'.</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_managing_sccp_addr_delete_gui"><a class="anchor" href="#_managing_sccp_addr_delete_gui"></a>Using GUI</h3>
+<div class="olist arabic">
+<div class="title">Procedure: Delete a Primary/Backup Address using GUI</div>
+<ol class="arabic">
+<li>
+<p>Navigate to the 'Address' tab in the SCCP Management Unit window and locate the row corresponding to the Address you wish to delete.</p>
+</li>
+<li>
+<p>In the row corresponding to the identified Address, click on the red 'x' button in the actions column to delete that Address.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_rule_show"><a class="anchor" href="#_managing_sccp_rule_show"></a>View all configured SCCP Rules</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_rule_show_cli"><a class="anchor" href="#_managing_sccp_rule_show_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can view the details of all configured SCCP Rules by issuing the command <code>sccp rule show</code> as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp rule show
+
+SYNOPSIS
+	sccp rule show id &lt;id&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	This command is used to view the details of all Rules configured. If an &lt;id&gt; is
+	specified in the command, it will only display the details of the Rule identified
+	by the value of the 'id' specified.
+
+PARAMETERS
+
+	Optional Parameters
+
+	&lt;id&gt;		-	The id of the Rule whose details are to be displayed.
+				If this parameter is not specified, the details of all
+				configured Rules will be displayed.
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+			If not passed, the first stack configured in ShellExecutor
+			will be used.</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_managing_sccp_rule_show_gui"><a class="anchor" href="#_managing_sccp_rule_show_gui"></a>Using GUI</h3>
+<div class="paragraph">
+<p>Navigate to the specific SCCP Management unit and switch to the 'Rules' tab.
+Here you can view a list of all the configured Rules.
+Every correctly configured Rule will be displayed in a row along with the defined values.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_rule_create"><a class="anchor" href="#_managing_sccp_rule_create"></a>Create a new SCCP Rule</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="sorting-algorithm"><a class="anchor" href="#sorting-algorithm"></a>Sorting Algorithm</h3>
+<div class="paragraph">
+<p>When you define Rules, a comparison function imposes ordering the collection of SCCP Rules using a sorting algorithm that is based on the GT digits.
+The algorithm is defined below:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Rules defined with OriginationType==localOriginated or OriginationType==remoteOriginated, are always at the top of the list.
+Rules defined with OriginationType==All are always at the bottom of the list.</p>
+<div class="paragraph">
+<p>Among rules with the same values for OriginationType (All or localOriginated/remoteOriginated), the sorting is done using the below rules.</p>
+</div>
+</li>
+<li>
+<p>Rules with GT digits having no wildcard (* or ?) are always at the top of the list.
+Between two Rules with GT digits, both having no wildcards, the one with the shortest length is at the top of the list.
+For example, Digit1 "123456" will be above Digit2 "1234567890" and this will be above Digit3 "999/*</p>
+</li>
+<li>
+<p>Rules with GT digits having the wildcard "?" are always above digits having the wildcard "<strong>". For example, Digit1 "800/????/9" will be above Digit2 "999/</strong></p>
+</li>
+<li>
+<p>Between Rules with two GT digits both having wildcard "?", the one with the least number of wildcard "?" is at the top of the list.
+For example, Digit1 "800/????/9" will be above Digit2 "800/?????/9"</p>
+</li>
+<li>
+<p>Between Rules with two GT digits both having an equal number of wildcard "?", the digit whose first appearance of "?" is after other, is at the top of the list.
+For example between Digit1 "80/??/0/???/9" and Digit 2 "800/?????/9", Digit2 is above Digit1.				When a Rule is compared during Translation, comparison always starts from the top of the list.</p>
+</li>
+<li>
+<p>If 2 rules have exactly same digits then rules are sorted using the above logic for calling digits.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Parameters backup-addressid (when ruleType parameter is "solitary"), loadsharing-algo (when ruleType parameter is not "loadshared"), newcgparty-addressid, origination-type, networkid, stackname and parameters for a calling party address (calling-ai, calling-pc, calling-ssn, calling-tt, calling-np, calling-nai, calling-digits-pattern) are optional. If newcgparty-addressid is not specified then calling party address will not be changed. If origination-type is not specified then a rule applies to
+all messages regardless of their origination. If networkid is not specified then networkid will be assigned to 0. If stackname is not specified then a rule will be applied to a default SCCP stack. If calling party address parameters are not specified then only called party address patterns will be taken into account.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_managing_sccp_rule_create_cli"><a class="anchor" href="#_managing_sccp_rule_create_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can create a new Rule by issuing the command <code>sccp rule create</code> with appropriate parameters as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp rule create
+
+SYNOPSIS
+	sccp rule create &lt;id&gt; &lt;mask&gt; &lt;address-indicator&gt; &lt;point-code&gt; &lt;subsystem-number&gt;
+	&lt;translation-type&gt; &lt;numbering-plan&gt; &lt;nature-of-address-indicator&gt; &lt;digits&gt;
+	&lt;ruleType&gt; &lt;primary-address-id&gt; backup-addressid &lt;backup-address-id&gt;
+	loadsharing-algo &lt;loadsharing-algorithm&gt; newcgparty-addressid
+	&lt;new-callingPartyAddress-id&gt; origination-type &lt;originationType&gt;
+	networkid &lt;networkId&gt; calling-ai &lt;calling-address-indicator&gt;
+	calling-pc &lt;calling-point-code&gt; calling-ssn &lt;calling-subsystem-number&gt;
+	calling-tt &lt;calling-translation-type&gt; calling-np &lt;calling-numbering-plan&gt;
+	calling-nai &lt;calling-nature-of-address-indicator&gt;
+	calling-digits-pattern &lt;calling-digits-pattern&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	This command is used to create a new SCCP Routing Rule. You must ensure that
+	primary and backup addresses are configured properly prior to executing this
+	command.
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;id&gt;			-	A unique number to identify this Rule.
+
+	&lt;mask&gt;			-	A mask defines which part of the originally dialed
+					digits remains in the translated digits and which
+					part is replaced by the digits from primary or
+					backup address. A mask is divided into sections by
+					separator '/'. The number of sections in a mask
+					should be equal to the sections in digits passed
+					in this command and the sections in primary or
+					backup address. This paramter is mandatory.
+
+					MASK DEFINITIONS
+
+					Mnemonic	Function
+					----------------------------------
+					- 		Ignore
+
+					/		Separator used to split the mask
+							into sections.
+
+					K		Retain the original dialed digits
+							of this section in the translated
+							digits.
+
+					R		Replace the original dialed digits
+							of this section with the same
+							section from primary or backup
+							address in the translated digits.
+
+	&lt;address-indicator&gt;	-	The address indicator is the first field in a SCCP
+					Party Address (called/calling) and is one octet in
+					length. Its function is to indicate which
+					information elements are present so that the
+					address can be interpreted. In other words, it
+					indicates the type of addressing information that
+					is to be found in the address field. The
+					addressing information from the original global
+					title is then compared with the passed address
+					information to match the rule.
+
+					SCCP ADDRESS INDICATOR
+					--------------------------------
+					| 8 | 7 | 6 | 5 | 4 |3 | 2 | 1 |
+					--------------------------------
+
+					Bit '1'     : PC Indicator
+						      (1 = included)
+
+					Bit '2'     : SSN Indicator
+						      (1 = included)
+
+					Bit '3 - 6' : GT Indicator
+						      (0000 = GT not included)
+						      (0001 = GT includes
+							      Nature of Address)
+						      (0010 = GT includes
+							      Translation Type)
+						      (0011 = GT includes
+							      Translation Type,
+							      Numbering Plan and
+							      Encoding Scheme)
+						      (0100 = GT includes
+							      Translation Type,
+							      Numbering Plan and
+							      Encoding Scheme and
+							      Nature of Address)
+
+					Bit '7'     : Routing Indicator
+						      (0 = Route on GT,
+						      1 = Route on PC + SSN)
+
+					Bit '8'     : Reserved for National use.
+
+					Only GT Indicator is used in the current implementation.
+					A Rule matches to an original address only if GT Indicator
+					from address-indicator is the same in a rule and in an
+					original address. GT Indicator for ITU-T network that is
+					mostly used is - 0100 (GT includes Translation Type,
+					Numbering Plan and Encoding Scheme and Nature of Address).
+					If you also use 0100 - use digital value for it - 16.
+                    Even when SCCP stack works in ANSI mode Address Indicator
+                    value for CLI and GUI must have values that we use for
+                    ITU-T mode.
+
+	&lt;point-code&gt;		-	MTP Signaling Point Code. This is ignored if
+					Bit '0' of address-indicator is not set.
+					This parameter is not used in currentimplemetation and
+					can be set to "0".
+
+	&lt;subsystem-number&gt;	-	This is ignored if Bit '1' of address-indicator is
+					not set.
+                    This parameter is not used in currentimplemetation and
+                    can be set to "0".
+
+	&lt;translation-type&gt;	-	This is ignored if GT Indicator is 0000 or 0001.
+
+					TRANSLATION TYPE VALUES
+
+					Value		Description
+					----------------------------------
+					0		Unknown
+
+					1  - 63		International Service
+
+					64 - 127	Spare
+
+					128 - 254	National Network Specific
+
+					255		Reserved for Expansion
+
+					This paramter is mandatory.
+					A Rule matches to an original address only if a value of
+					this parameter is the same in a rule and in an original
+					address. Values are compared only if GT type contains this
+					parameter (see GT Indicator description in
+					&lt;address-indicator&gt; parameter).
+					Most used values:
+					0 - translation-type - Unknown
+
+	&lt;numbering-plan&gt;	-	The Number Plan (NP) field specifies the numbering
+					plan which the address information follows. This
+					is ignored if GT Indicator is 0000, 0001 or 0010.
+
+					NUMBER PLAN VALUES
+
+					Value		Description
+					----------------------------------
+					0		Unknown
+
+					1		ISDN/Telephony Number Plan
+							(Recommendations E.163 and E.164)
+
+					2		Generic Numbering Plan
+
+					3		Data Numbering Plan
+							(Recommendations X.121)
+
+					4		Telex Numbering Plan
+							(Recommendations F.69)
+
+					5		Maritime Mobile Numbering Plan
+							(Recommendations E.210, E.211)
+
+					6		Land Mobile Numbering Plan
+							(Recommendations E.212)
+
+					7		ISDN/Mobile Numbering Plan
+							(Recommendations E.214)
+
+					8 to 13		Spare
+
+					14		Private Network or
+							Network-Specific Numbering Plan
+
+					15		Reserved
+
+                    This paramter is mandatory.
+                    A Rule matches to an original address only if a value of
+                    this parameter is the same in a rule and in an original
+                    address. Values are compared only if GT type contains this
+                    parameter (see GT Indicator description in
+                    &lt;address-indicator&gt; parameter).
+                    Most used values:
+                    1 - numbering-plan - ISDN/telephony
+
+	&lt;nature-of-address&gt;	-	The Nature of Address Indicator (NAI) field
+					defines the address range for a specific numbering
+					plan. This is only used if GT Indicator is 0100.
+
+					NAI VALUES
+
+					Value		Description
+					----------------------------------
+					0		Unknown
+
+					1		Subscriber Number
+
+					2		Reserved for National use
+
+					3		National Significant Number
+
+					4		International Number
+
+					5 to 127	Spare
+
+                    This paramter is mandatory.
+                    A Rule matches to an original address only if a value of
+                    this parameter is the same in a rule and in an original
+                    address. Values are compared only if GT type contains this
+                    parameter (see GT Indicator description in
+                    &lt;address-indicator&gt; parameter).
+                    Most used values:
+                    4 - nature-of-address - International
+
+	&lt;digits&gt;		-	Specifies the string of digits divided into
+					subsections using separator '/' depending on if
+					the mask contains separator or not. The dialed
+					digits should match with theses digits as per the
+					rule specified below:
+
+					DIGIT PATTERN
+
+					Value		Description
+					----------------------------------
+					-		padding - ignored
+
+					*		wildcard - matches any number of
+							digits
+
+					?		wildcard - matches exactly one
+							digit
+
+					/		separator used to split the digit
+							pattern into sections.
+							Each section can be processed
+							differently as specified
+							by the mask parameter.
+
+					This parameter is mandatory. It should contain the same
+					subsections count as the rule mask has.
+
+	&lt;ruleType&gt;		-	Takes one of the following values defined below.
+
+					RULE TYPE VALUES
+
+					Value		Description
+					----------------------------------
+					solitary	Only one (primary) address is used
+							for routing.
+							(&lt;backup-address-id&gt; may be missed
+							in this case).
+
+					dominant	Both primary and backup
+							addresses are used and mandatory.
+							If both the addresses are
+							available, the primary address is
+							used for routing.
+
+					loadshared	Both primary and backup
+							addresses are used and mandatory.
+							If both the addresses are
+							available, either primary or
+							backup address is used for
+							routing.
+							The &lt;loadsharing-algorithm&gt; should
+							be configured in this case.
+
+					broadcast	Both primary and backup addresses
+							are used and are mandatory. All
+							messages are routed to both
+							addresses.
+
+	&lt;primary-address-id&gt;	-	Identifies the SCCP Address used as the primary
+					translation.
+
+	Optional Parameters
+
+	&lt;backup-address-id&gt;	-	Identifies the SCCP Address used as the backup
+					translation in case the pointcode specified by the
+					primary address is not available. Backup address
+					is used if &lt;ruleType&gt; is not "solitary".
+
+	&lt;loadsharing-algorithm&gt;	-	This parameter is mandatory if &lt;ruleType&gt; is
+					"loadshared". The Loadsharing algorithm is
+					configured here. Possible values of the parameter
+					are:
+
+					LOAD SHARING ALGORITHM VALUES
+
+					Value		Description
+					----------------------------------
+					bit4 		if( (SLS &amp; 0x10) == 0 )
+							&lt;route to primary&gt; else
+							&lt;route to backup&gt;
+
+							This algorithm is the best if all
+							traffic is local (mobicents stack)
+							originated
+
+					bit3		if( (SLS &amp; 0x08) == 0 )
+							&lt;route to primary&gt; else
+							&lt;route to backup&gt;
+							This algorithm can be used if not
+							all traffic is local
+							(mobicents stack) originated.
+							But only 8 links are acceptable in
+							both linksets.
+
+					bit2		if( (SLS &amp; 0x04) == 0 )
+							&lt;route to primary&gt; else
+							&lt;route to backup&gt;
+							This algorithm can be used if not
+							all traffic is local
+							(mobicents stack) originated.
+							But only 8 links are acceptable in
+							both linksets.
+
+					bit1		if( (SLS &amp; 0x02) == 0 )
+							&lt;route to primary&gt; else
+							&lt;route to backup&gt;
+							This algorithm can be used if not
+							all traffic is local
+							(mobicents stack) originated.
+							But only 8 links are acceptable in
+							both linksets.
+
+					bit0		if( (SLS &amp; 0x01) == 0 )
+							&lt;route to primary&gt; else
+							&lt;route to backup&gt;
+							This algorithm can be used if not
+							all traffic is local
+							(mobicents stack) originated.
+							But only 8 links are acceptable in
+							both linksets.
+
+
+	&lt;new-callingPartyAddress-id&gt;
+				-	This address will replace the
+					callingPartyAddresses of messages that fit a Rule.
+
+	&lt;originationType&gt;	-	Takes one of the following values defined below.
+					If the parameter is not defined, rule applies to
+					all messages regardless of their origination.
+
+					ORIGINATION TYPE VALUES
+
+					Value			Description
+					-------------------------------------
+					localOriginated		If this parameter is
+								"localOriginated", then a
+								rule applies only for
+								messages originating from
+								local SCCP users
+								(for example a local
+								TCAP stack).
+
+					remoteOriginated	If this parameter is
+								"remoteOriginated", then a
+								rule applies only for
+								messages originating from
+								SS7 network and not for
+								messages originating from
+								local SCCP users.
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+    &lt;networkId&gt;     - A digital parameter that means to which virtual SS7 network
+                    belongs a Rule. If this parameter is skipped - networkId will
+                    be set to "0" when a Rule creation.
+                    Refer &lt;xref linkend="design_multitenancy"/&gt;.
+
+    &lt;calling-address-indicator&gt;
+                -   Address indicator for calling address matching.
+                    See above address-indicator
+
+    &lt;calling-point-code&gt;
+                -   Pointcode of calling sccp address. MTP Signaling Point Code.
+                    This is ignored if Bit '0' of address-indicator is not set.
+
+    &lt;calling-subsystem-number&gt;
+                -   This is ignored if Bit '1' of address-indicator is
+                    not set.
+
+    &lt;calling-translation-type&gt;
+                -   This is ignored if GT Indicator is 0000 or 0001.
+                    See &lt;translation-type&gt; above for more details.
+
+    &lt;calling-numbering-plan&gt;
+                -   A digital parameter that specifies to which virtual SS7
+                    network this rule belongs. If this parameter
+                    is skipped - networkId will be set to "0" by default.
+
+    &lt;calling-nature-of-address-indicator&gt;
+                -   The Nature of Address Indicator (NAI) field
+                    defines the address range for a specific numbering
+                    plan. This is only used if GT Indicator is 0100.
+
+     &lt;calling-digits-pattern&gt;
+                -   Specifies the string of digits for pattern matching.
+                    There is no mask for calling digits, hence the division separator is ignored.
+                    See above &lt;digits&gt; for more information on pattern matching.
+
+EXAMPLES
+	sccp rule create 1 R 71 2 8 0 0 3 123456789 solitary 1
+
+	sccp rule create 2 R 71 2 8 0 0 3 123456789 dominant 1 1
+
+	sccp rule create 2 R 71 2 8 0 0 3 123456789 loadshared 1 1 bit4
+
+    sccp rule create 21 R 71 2 8 0 0 3 123456789 dominant 2 backup-addressid 1 loadsharing-algo bit3 newcgparty-addressid 1 origination-type remoteoriginated calling-ai 18 calling-pc 0 calling-ssn 0 calling-tt 0 calling-nai 0 calling-np 0 calling-digits-pattern 567*</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_managing_sccp_rule_create_gui"><a class="anchor" href="#_managing_sccp_rule_create_gui"></a>Using GUI</h3>
+<div class="olist arabic">
+<div class="title">Procedure: Create a new Rule using GUI</div>
+<ol class="arabic">
+<li>
+<p>Navigate to the 'Rules' tab in the SCCP Management window and click on the 'Create Rule' button.
+This will launch a new pop-up 'Create Rule'.</p>
+</li>
+<li>
+<p>In the 'Create Rule' pop-up, add details of the new SCCP Rule being defined.
+You must ensure that you fill in all the mandatory parameters.
+For definition of these parameters, please refer to the description of the CLI command for the same in the preceding section.</p>
+</li>
+<li>
+<p>Verify the details entered and then click on the 'Create' button.
+A new Rule will be created with parameters as specified.
+If there is an error in creating the Rule then you will find the details of the error in the Management Console Log section below.</p>
+</li>
+<li>
+<p>Click on the 'Close' button to close the 'Create Rule' pop-up.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_rule_modify"><a class="anchor" href="#_managing_sccp_rule_modify"></a>Modify a SCCP Rule</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_rule_modify_cli"><a class="anchor" href="#_managing_sccp_rule_modify_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can modify the values of a Rule by issuing the command <code>sccp rule modify</code> with appropriate parameters as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp rule modify
+
+SYNOPSIS
+	sccp rule modify &lt;id&gt; mask &lt;mask&gt; address-indicator &lt;address-indicator&gt; point-code &lt;point-code&gt; subsystem-number &lt;subsystem-number&gt;
+	translation-type &lt;translation-type&gt; numbering-plan &lt;numbering-plan&gt; nature-of-address-indicator &lt;nature-of-address-indicator&gt; digits &lt;digits&gt;
+	rule-type &lt;rule-type&gt; primary-address-id &lt;primary-address-id&gt; backup-addressid &lt;backup-address-id&gt;
+	loadsharing-algo &lt;loadsharing-algorithm&gt; newcgparty-addressid
+	&lt;new-callingPartyAddress-id&gt; origination-type &lt;originationType&gt;
+	networkid &lt;networkId&gt; calling-ai &lt;calling-address-indicator&gt;
+	calling-pc &lt;calling-point-code&gt; calling-ssn &lt;calling-subsystem-number&gt;
+	calling-tt &lt;calling-translation-type&gt; calling-np &lt;calling-numbering-plan&gt;
+	calling-nai &lt;calling-nature-of-address-indicator&gt;
+	calling-digits-pattern &lt;calling-digits-pattern&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	This command is used to modify the values of a SCCP Route previously defined.
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;id&gt;			-	A unique number to identify this Rule.
+
+	Optional Parameters
+	&lt;mask&gt;			-	A mask defines which part of the originally dialed
+					digits remains in the translated digits and which
+					part is replaced by the digits from primary or
+					backup address. A mask is divided into sections by
+					separator '/'. The number of sections in a mask
+					should be equal to the sections in digits passed
+					in this command and the sections in primary or
+					backup address. This paramter is mandatory.
+
+					MASK DEFINITIONS
+
+					Mnemonic	Function
+					----------------------------------
+					- 		Ignore
+
+					/		Separator used to split the mask
+							into sections.
+
+					K		Retain the original dialed digits
+							of this section in the translated
+							digits.
+
+					R		Replace the original dialed digits
+							of this section with the same
+							section from primary or backup
+							address in the translated digits.
+
+	&lt;address-indicator&gt;	-	The address indicator is the first field in a SCCP
+					Party Address (called/calling) and is one octet in
+					length. Its function is to indicate which
+					information elements are present so that the
+					address can be interpreted. In other words, it
+					indicates the type of addressing information that
+					is to be found in the address field. The
+					addressing information from the original global
+					title is then compared with the passed address
+					information to match the rule.
+
+					SCCP ADDRESS INDICATOR
+					--------------------------------
+					| 8 | 7 | 6 | 5 | 4 |3 | 2 | 1 |
+					--------------------------------
+
+					Bit '1'     : PC Indicator
+						      (1 = included)
+
+					Bit '2'     : SSN Indicator
+						      (1 = included)
+
+					Bit '3 - 6' : GT Indicator
+						      (0000 = GT not included)
+						      (0001 = GT includes
+							      Nature of Address)
+						      (0010 = GT includes
+							      Translation Type)
+						      (0011 = GT includes
+							      Translation Type,
+							      Numbering Plan and
+							      Encoding Scheme)
+						      (0100 = GT includes
+							      Translation Type,
+							      Numbering Plan and
+							      Encoding Scheme and
+							      Nature of Address)
+
+					Bit '7'     : Routing Indicator
+						      (0 = Route on GT,
+						      1 = Route on PC + SSN)
+
+					Bit '8'     : Reserved for National use.
+
+                    Only GT Indicator is used in the current implementation.
+                    A Rule matches to an original address only if GT Indicator
+                    from address-indicator is the same in a rule and in an
+                    original address. GT Indicator for ITU-T network that is
+                    mostly used is - 0100 (GT includes Translation Type,
+                    Numbering Plan and Encoding Scheme and Nature of Address).
+                    If you also use 0100 - use digital value for it - 16.
+                    Even when SCCP stack works in ANSI mode Address Indicator
+                    value for CLI and GUI must have values that we use for
+                    ITU-T mode.
+
+	&lt;point-code&gt;		-	MTP Signaling Point Code. This is ignored if
+					Bit '0' of address-indicator is not set.
+                    This parameter is not used in currentimplemetation and
+                    can be set to "0".
+
+	&lt;subsystem-number&gt;	-	This is ignored if Bit '1' of address-indicator is
+					not set.
+                    This parameter is not used in currentimplemetation and
+                    can be set to "0".
+
+	&lt;translation-type&gt;	-	This is ignored if GT Indicator is 0000 or 0001.
+
+					TRANSLATION TYPE VALUES
+
+					Value		Description
+					----------------------------------
+					0		Unknown
+
+					1  - 63		International Service
+
+					64 - 127	Spare
+
+					128 - 254	National Network Specific
+
+					255		Reserved for Expansion
+
+                    This paramter is mandatory.
+                    A Rule matches to an original address only if a value of
+                    this parameter is the same in a rule and in an original
+                    address. Values are compared only if GT type contains this
+                    parameter (see GT Indicator description in
+                    &lt;address-indicator&gt; parameter).
+                    Most used values:
+                    0 - translation-type - Unknown
+
+	&lt;numbering-plan&gt;	-	The Number Plan (NP) field specifies the numbering
+					plan which the address information follows. This
+					is ignored if GT Indicator is 0000, 0001 or 0010.
+
+					NUMBER PLAN VALUES
+
+					Value		Description
+					----------------------------------
+					0		Unknown
+
+					1		ISDN/Telephony Number Plan
+							(Recommendations E.163 and E.164)
+
+					2		Generic Numbering Plan
+
+					3		Data Numbering Plan
+							(Recommendations X.121)
+
+					4		Telex Numbering Plan
+							(Recommendations F.69)
+
+					5		Maritime Mobile Numbering Plan
+							(Recommendations E.210, E.211)
+
+					6		Land Mobile Numbering Plan
+							(Recommendations E.212)
+
+					7		ISDN/Mobile Numbering Plan
+							(Recommendations E.214)
+
+					8 to 13		Spare
+
+					14		Private Network or
+							Network-Specific Numbering Plan
+
+					15		Reserved
+
+                    This paramter is mandatory.
+                    A Rule matches to an original address only if a value of
+                    this parameter is the same in a rule and in an original
+                    address. Values are compared only if GT type contains this
+                    parameter (see GT Indicator description in
+                    &lt;address-indicator&gt; parameter).
+                    Most used values:
+                    1 - numbering-plan - ISDN/telephony
+
+	&lt;nature-of-address&gt;	-	The Nature of Address Indicator (NAI) field
+					defines the address range for a specific numbering
+					plan. This is only used if GT Indicator is 0100.
+
+					NAI VALUES
+
+					Value		Description
+					----------------------------------
+					0		Unknown
+
+					1		Subscriber Number
+
+					2		Reserved for National use
+
+					3		National Significant Number
+
+					4		International Number
+
+					5 to 127	Spare
+
+                    This paramter is mandatory.
+                    A Rule matches to an original address only if a value of
+                    this parameter is the same in a rule and in an original
+                    address. Values are compared only if GT type contains this
+                    parameter (see GT Indicator description in
+                    &lt;address-indicator&gt; parameter).
+                    Most used values:
+                    4 - nature-of-address - International
+
+	&lt;digits&gt;		-	Specifies the string of digits divided into
+					subsections using separator '/' depending on if
+					the mask contains separator or not. The dialed
+					digits should match with theses digits as per the
+					rule specified below:
+
+					DIGIT PATTERN
+
+					Value		Description
+					----------------------------------
+					-		padding - ignored
+
+					*		wildcard - matches any number of
+							digits
+
+					?		wildcard - matches exactly one
+							digit
+
+					/		separator used to split the digit
+							pattern into sections.
+							Each section can be processed
+							differently as specified
+							by the mask parameter.
+
+                    This parameter is mandatory. It should contain the same
+                    subsections count as the rule mask has.
+
+	&lt;ruleType&gt;		-	Takes one of the following values defined below.
+
+					RULE TYPE VALUES
+
+					Value		Description
+					----------------------------------
+					solitary	Only one (primary) address is used
+							for routing.
+							(&lt;backup-address-id&gt; may be missed
+							in this case).
+
+					dominant	Both primary and backup
+							addresses are used and mandatory.
+							If both the addresses are
+							available, the primary address is
+							used for routing.
+
+					loadshared	Both primary and backup
+							addresses are used and mandatory.
+							If both the addresses are
+							available, either primary or
+							backup address is used for
+							routing.
+							The &lt;loadsharing-algorithm&gt; should
+							be configured in this case.
+
+					broadcast	Both primary and backup addresses
+							are used and are mandatory. All
+							messages are routed to both
+							addresses.
+
+	&lt;primary-address-id&gt;	-	Identifies the SCCP Address used as the primary
+					translation.
+
+
+	&lt;backup-address-id&gt;	-	Identifies the SCCP Address used as the backup
+					translation in case the pointcode specified by the
+					primary address is not available. Backup address
+					is used if &lt;ruleType&gt; is not "solitary".
+
+	&lt;loadsharing-algorithm&gt;	-	This parameter is mandatory if &lt;ruleType&gt; is
+					"loadshared". The Loadsharing algorithm is
+					configured here. Possible values of the parameter
+					are:
+
+					LOAD SHARING ALGORITHM VALUES
+
+					Value		Description
+					----------------------------------
+					bit4 		if( (SLS &amp; 0x10) == 0 )
+							&lt;route to primary&gt; else
+							&lt;route to backup&gt;
+
+							This algorithm is the best if all
+							traffic is local (mobicents stack)
+							originated
+
+					bit3		if( (SLS &amp; 0x08) == 0 )
+							&lt;route to primary&gt; else
+							&lt;route to backup&gt;
+							This algorithm can be used if not
+							all traffic is local
+							(mobicents stack) originated.
+							But only 8 links are acceptable in
+							both linksets.
+
+	&lt;new-callingPartyAddress-id&gt;
+				-	This address will replace the
+					callingPartyAddresses of messages that fit a Rule.
+
+	&lt;originationType&gt;	-	Takes one of the following values defined below.
+					If the parameter is not defined, rule applies to
+					all messages regardless of their origination.
+
+					ORIGINATION TYPE VALUES
+
+					Value			Description
+					-------------------------------------
+					localOriginated		If this parameter is
+								"localOriginated", then a
+								rule applies only for
+								messages originating from
+								local SCCP users
+								(for example a local
+								TCAP stack).
+
+					remoteOriginated	If this parameter is
+								"remoteOriginated", then a
+								rule applies only for
+								messages originating from
+								SS7 network and not for
+								messages originating from
+								local SCCP users.
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+    &lt;networkId&gt;     - A digital parameter that means to which virtual SS7 network
+                    belongs a Rule. If this parameter is skipped - networkId will
+                    be set to "0" when a Rule creation.
+                    Refer &lt;xref linkend="design_multitenancy"/&gt;.
+
+   &lt;calling-address-indicator&gt;
+               -   Address indicator for calling address matching.
+                   See above address-indicator
+
+   &lt;calling-point-code&gt;
+               -   Pointcode of calling sccp address. MTP Signaling Point Code.
+                   This is ignored if Bit '0' of address-indicator is not set.
+
+   &lt;calling-subsystem-number&gt;
+               -   This is ignored if Bit '1' of address-indicator is
+                   not set.
+
+   &lt;calling-translation-type&gt;
+               -   This is ignored if GT Indicator is 0000 or 0001.
+                   See &lt;translation-type&gt; above for more details.
+
+   &lt;calling-numbering-plan&gt;
+               -   A digital parameter that specifies to which virtual SS7
+                   network this rule belongs. If this parameter
+                   is skipped - networkId will be set to "0" by default.
+
+   &lt;calling-nature-of-address-indicator&gt;
+               -   The Nature of Address Indicator (NAI) field
+                   defines the address range for a specific numbering
+                   plan. This is only used if GT Indicator is 0100.
+
+    &lt;calling-digits-pattern&gt;
+               -   Specifies the string of digits for pattern matching.
+                   There is no mask for calling digits, hence the division separator is ignored.
+                   See above &lt;digits&gt; for more information on pattern matching.</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_rule_delete"><a class="anchor" href="#_managing_sccp_rule_delete"></a>Delete a Rule</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_rule_delete_cli"><a class="anchor" href="#_managing_sccp_rule_delete_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can delete a Rule by issuing the command <code>sccp rule delete</code> with appropriate parameters as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp rule delete
+
+SYNOPSIS
+	sccp rule delete &lt;id&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	This command is used to remove a previously defined Rule.
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;id&gt;			-	The identifier of the Rule that is being deleted.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp rule delete 1
+
+	The above command will delete the Rule identified by the number '1'.</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_managing_sccp_rule_delete_gui"><a class="anchor" href="#_managing_sccp_rule_delete_gui"></a>Using GUI</h3>
+<div class="olist arabic">
+<div class="title">Procedure: Delete a Rule using GUI</div>
+<ol class="arabic">
+<li>
+<p>Navigate to the 'Rules' tab in the SCCP Management Unit window and locate the row corresponding to the Rule you wish to delete.</p>
+</li>
+<li>
+<p>In the row corresponding to the identified Rule, click on the red 'x' button in the actions column to delete that Rule.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_rsp_show"><a class="anchor" href="#_managing_sccp_rsp_show"></a>View all configured Remote Signaling Points (RSP)</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_rsp_show_cli"><a class="anchor" href="#_managing_sccp_rsp_show_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can view the details of all configured Remote Signaling Points by issuing the command <code>sccp rsp show</code> as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp rsp show
+
+SYNOPSIS
+	sccp rsp show id &lt;id&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	This command is used to view the details of all configured Remote Signaling Points.
+
+	If an &lt;id&gt; is specified in the command, it will only display the details of the
+	Remote Signaling Point identified by the value of the 'id' specified.
+
+PARAMETERS
+
+	Optional Parameters
+
+	&lt;id&gt;		-	The id of the Remote Signaling Point whose details are
+				to be displayed. If this parameter is not specified, the
+				details of all configured Remote Signaling Points will be
+				displayed.
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_managing_sccp_rsp_show_gui"><a class="anchor" href="#_managing_sccp_rsp_show_gui"></a>Using GUI</h3>
+<div class="paragraph">
+<p>Navigate to the specific SCCP Management unit and switch to the 'RSP' tab.
+Here you can view a list of all the configured Remote Signaling Pointcodes.
+Every correctly configured RSP will be displayed in a row along with the defined values.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_rsp_create"><a class="anchor" href="#_managing_sccp_rsp_create"></a>Create a new Remote Signaling Pointcode</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_rsp_create_cli"><a class="anchor" href="#_managing_sccp_rsp_create_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can create a new RSP by issuing the command <code>sccp rsp create</code> with appropriate parameters as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp rsp create
+
+SYNOPSIS
+	sccp rsp create &lt;id&gt; &lt;remote-spc&gt; &lt;rspc-flag&gt; &lt;mask&gt;
+	stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	This command is used to define a new Remote Signaling Point. Each remote signaling
+	point that SCCP can communicate with must be configured using this command.
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;id&gt;			-	A unique number to identify this
+					Remote Signaling Point.
+
+	&lt;remote-spc&gt;		-	The Remote Signaling Point
+
+	&lt;rspc-flag&gt;		-	32 bit value. Not used for now.
+					Reserved for future
+
+	&lt;mask&gt;			-	32 bit value. Not used for now.
+					Reserved for future
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp rsp create 1 6477 0 0</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_managing_sccp_rsp_create_gui"><a class="anchor" href="#_managing_sccp_rsp_create_gui"></a>Using GUI</h3>
+<div class="olist arabic">
+<div class="title">Procedure: Create a new RSP using GUI</div>
+<ol class="arabic">
+<li>
+<p>Navigate to the 'RSP' tab in the SCCP Management window and click on the 'Create RSP' button.
+This will launch a new pop-up 'Create Remote Signaling Pointcode'.</p>
+</li>
+<li>
+<p>In the 'Create Remote Signaling Pointcode' pop-up, add details of the new RSP being defined.
+You must ensure that you fill in all the mandatory parameters.
+For definition of these parameters, please refer to the description of the CLI command for the same in the preceding section.</p>
+</li>
+<li>
+<p>Verify the details entered and then click on the 'Create' button.
+A new RSP will be created with parameters as specified.
+If there is an error in creating the RSP then you will find the details of the error in the Management Console Log section below.</p>
+</li>
+<li>
+<p>Click on the 'Close' button to close the 'Create Remote Signaling Pointcode' pop-up.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_rsp_modify"><a class="anchor" href="#_managing_sccp_rsp_modify"></a>Modify a Remote Signaling Pointcode</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_rsp_modify_cli"><a class="anchor" href="#_managing_sccp_rsp_modify_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can modify the values of a RSP by issuing the command <code>sccp rsp modify</code> with appropriate parameters as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp rsp modify
+
+SYNOPSIS
+	sccp rsp modify &lt;id&gt; remote-spc &lt;remote-spc&gt; rspc-flag &lt;rspc-flag&gt; mask &lt;mask&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	This command is used to modify the values of a Remote Signaling Point previously
+	defined.
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;id&gt;			-	Identifier of the Remote Signaling Point to be
+					modified.
+
+	&lt;remote-spc&gt;		-	The Remote Signaling Point
+
+	&lt;rspc-flag&gt;		-	32 bit value. Not used for now.
+					Reserved for future
+
+	&lt;mask&gt;			-	32 bit value. Not used for now.
+					Reserved for future
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_rsp_delete"><a class="anchor" href="#_managing_sccp_rsp_delete"></a>Delete a Remote Signaling Pointcode</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_rsp_delete_cli"><a class="anchor" href="#_managing_sccp_rsp_delete_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can delete a RSP by issuing the command <code>sccp rsp delete</code> with appropriate parameters as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp rsp delete
+
+SYNOPSIS
+	sccp rsp delete &lt;id&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	This command is used to delete a Remote Signaling Point.
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;id&gt;		-	The identifier of the Remote Signaling Point that is being
+				deleted.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp rsp delete 1
+
+	The above command will delete the Remote Signaling Point identified by the
+	number '1'.</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_managing_sccp_rsp_delete_gui"><a class="anchor" href="#_managing_sccp_rsp_delete_gui"></a>Using GUI</h3>
+<div class="olist arabic">
+<div class="title">Procedure: Delete a RSP using GUI</div>
+<ol class="arabic">
+<li>
+<p>Navigate to the 'RSP' tab in the SCCP Management Unit window and locate the row corresponding to the RSP you wish to delete.</p>
+</li>
+<li>
+<p>In the row corresponding to the identified RSP, click on the red 'x' button in the actions column to delete that RSP.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_rss_show"><a class="anchor" href="#_managing_sccp_rss_show"></a>View all configured Remote Sub-Systems (RSS)</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_rss_show_cli"><a class="anchor" href="#_managing_sccp_rss_show_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can view the details of all configured Remote Sub-Systems by issuing the command <code>sccp rss show</code> as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp rss show
+
+SYNOPSIS
+	sccp rss show id &lt;id&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	This command is used to view the details of all configured Remote Sub-Systems.
+	If an &lt;id&gt; is specified in the command, it will only display the details of the
+	Remote Sub-System identified by the value of the 'id' specified.
+
+PARAMETERS
+
+	Optional Parameters
+
+	&lt;id&gt;		-	The id of the Remote Sub-System whose details are to be
+				displayed. If this parameter is not specified, the details
+				of all configured Remote Sub-Systems will be displayed.
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_managing_sccp_rss_show_gui"><a class="anchor" href="#_managing_sccp_rss_show_gui"></a>Using GUI</h3>
+<div class="paragraph">
+<p>Navigate to the specific SCCP Management unit and switch to the 'RSS' tab.
+Here you can view a list of all the configured Remote Sub-Systems.
+Every correctly configured RSS will be displayed in a row along with the defined values.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_rss_create"><a class="anchor" href="#_managing_sccp_rss_create"></a>Create a new Remote Sub-System</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_rss_create_cli"><a class="anchor" href="#_managing_sccp_rss_create_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can create a new RSS by issuing the command <code>sccp rss create</code> with appropriate parameters as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp rss create
+
+SYNOPSIS
+	sccp rss create &lt;id&gt; &lt;remote-spc&gt; &lt;remote-ssn&gt; &lt;rss-flag&gt;
+	&lt;mark-prohibited-when-spc-resuming&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	This command is used to define a new Remote Sub-System. Each Remote Sub-System
+	that SCCP can communicate with must be configured using this command. You must
+	ensure that the Remote Signaling Point is configured prior to issuing this
+	command.
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;id&gt;			-	A unique number to identify this Remote
+					Sub-System.
+
+	&lt;remote-spc&gt;		-	The Remote Signaling Point where this Remote
+					Sub-System is being deployed.
+
+	&lt;remote-ssn&gt;		-	The Remote Sub-System number.
+
+	&lt;rss-flag&gt;		-	32 bit value. Not used for now.
+					Reserved for future.
+
+	Optional Parameters
+
+	&lt;mark-prohibited-when-spc-resuming&gt;
+				-	Possible value: prohibitedWhenSpcResuming.
+					When this parameter is specified, the configured
+					subsystem is marked as prohibited when its
+					corresponding signaling point code has been
+					resumed.
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp rss create 1 6477 8 0 prohibitedWhenSpcResuming</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_managing_sccp_rss_create_gui"><a class="anchor" href="#_managing_sccp_rss_create_gui"></a>Using GUI</h3>
+<div class="olist arabic">
+<div class="title">Procedure: Create a new RSS using GUI</div>
+<ol class="arabic">
+<li>
+<p>Navigate to the 'RSS' tab in the SCCP Management window and click on the 'Create RSS' button.
+This will launch a new pop-up 'Create Remote Sub-System'.</p>
+</li>
+<li>
+<p>In the 'Create Remote Sub-System' pop-up, add details of the new RSS being defined.
+You must ensure that you fill in all the mandatory parameters.
+For definition of these parameters, please refer to the description of the CLI command for the same in the preceding section.</p>
+</li>
+<li>
+<p>Verify the details entered and then click on the 'Create' button.
+A new RSS will be created with parameters as specified.
+If there is an error in creating the RSS then you will find the details of the error in the Management Console Log section below.</p>
+</li>
+<li>
+<p>Click on the 'Close' button to close the 'Create Remote Sub-System' pop-up.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_rss_modify"><a class="anchor" href="#_managing_sccp_rss_modify"></a>Modify a Remote Signaling Sub-System</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_rss_modify_cli"><a class="anchor" href="#_managing_sccp_rss_modify_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can modify the values of a RSS by issuing the command <code>sccp rss modify</code> with appropriate parameters as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp rss modify
+
+SYNOPSIS
+	sccp rss modify &lt;id&gt; remote-spc &lt;remote-spc&gt; remote-ssn &lt;remote-ssn&gt; rss-flag &lt;rss-flag&gt;
+	prohibitedwhenspcresuming &lt;mark-prohibited-when-spc-resuming&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	This command is used to modify the values of a Remote Sub-System previously
+	defined.
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;id&gt;			-	Identifier of the Remote Sub-System to be
+					modified.
+
+	Optional Parameters
+
+	&lt;remote-spc&gt;		-	The Remote Signaling Point where this Remote
+					Sub-System is deployed.
+
+	&lt;remote-ssn&gt;		-	The Remote Sub-System number.
+
+	&lt;rss-flag&gt;		-	32 bit value. Not used for now.
+					Reserved for future.
+
+	&lt;mark-prohibited-when-spc-resuming&gt;
+				-	Possible value: prohibitedWhenSpcResuming.
+					When this parameter is specified, the configured
+					subsystem is marked as prohibited when its
+					corresponding signaling point code has been
+					resumed.
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_rss_delete"><a class="anchor" href="#_managing_sccp_rss_delete"></a>Delete a Remote Signaling Sub-System</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_rss_delete_cli"><a class="anchor" href="#_managing_sccp_rss_delete_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can delete a RSS by issuing the command <code>sccp rss delete</code> with appropriate parameters as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp rss delete
+
+SYNOPSIS
+	sccp rss delete &lt;id&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	This command is used to delete a Remote Sub-System.
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;id&gt;		-	The identifier of the Remote Sub-System that is being
+				deleted.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp rss delete 1
+
+	The above command will delete the Remote Sub-System identified by the number '1'.</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_managing_sccp_rss_delete_gui"><a class="anchor" href="#_managing_sccp_rss_delete_gui"></a>Using GUI</h3>
+<div class="olist arabic">
+<div class="title">Procedure: Delete a RSS using GUI</div>
+<ol class="arabic">
+<li>
+<p>Navigate to the 'RSS' tab in the SCCP Management Unit window and locate the row corresponding to the RSS you wish to delete.</p>
+</li>
+<li>
+<p>In the row corresponding to the identified RSS, click on the red 'x' button in the actions column to delete that RSS.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_lmr_show"><a class="anchor" href="#_managing_sccp_lmr_show"></a>View all configured Long Message Rules (LMR)</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_lmr_show_cli"><a class="anchor" href="#_managing_sccp_lmr_show_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can view the details of all configured Long Message Rules by issuing the command <code>sccp lmr show</code> as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp lmr show
+
+SYNOPSIS
+	sccp lmr show id &lt;id&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	This command is used to view the details of all configured Long Message Rules.
+	If an &lt;id&gt; is specified in the command, it will only display the details of the
+	Long Message Rule identified by the value of the 'id' specified.
+
+PARAMETERS
+
+	Optional Parameters
+
+	&lt;id&gt;			-	The id of the Long Message Rule whose details are to be
+					displayed. If this parameter is not specified, the details
+					of all configured Long Message Rules will be displayed.
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_managing_sccp_lmr_show_gui"><a class="anchor" href="#_managing_sccp_lmr_show_gui"></a>Using GUI</h3>
+<div class="paragraph">
+<p>Navigate to the specific SCCP Management unit and switch to the 'LMR' tab.
+Here you can view a list of all the configured Long Message Rules.
+Every correctly configured LMR will be displayed in a row along with the defined values.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_lmr_create"><a class="anchor" href="#_managing_sccp_lmr_create"></a>Create a new Long Message Rule</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_lmr_create_cli"><a class="anchor" href="#_managing_sccp_lmr_create_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can create a new LMR by issuing the command <code>sccp lmr create</code> with appropriate parameters as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp lmr create
+
+SYNOPSIS
+	sccp lmr create &lt;id&gt; &lt;first-spc&gt; &lt;last-spc&gt; &lt;long-message-rule-type&gt;
+	stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	This command is used to define a new Long Message Rule. Long message rules specify
+	which message types (UDT/XUDT/LUDT) will be used for outgoing message encoding
+	depends on dpc. If long message rules are not configured only UDT messages
+	will be used.
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;id&gt;			-	A unique number to identify this
+					Long Message Rule.
+
+	&lt;first-spc&gt;		-	The first value of the remote signaling
+					point code range, for which this Long message Rule
+					will apply.
+
+	&lt;last-spc&gt;		-	The last value of the remote signaling point code
+					range. If Long message rule specifies a single
+					signaling point code, this value must be equal to
+					first-spc.
+
+	&lt;long-message-rule-type&gt;-	Message types used for the remote signaling
+					point codes range.
+					Possible values : udt, xudt, ludt and ludt_segm.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp lmr create 1 201 201 xudt
+
+	sccp lmr create 2 230 239 udt</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_managing_sccp_lmr_create_gui"><a class="anchor" href="#_managing_sccp_lmr_create_gui"></a>Using GUI</h3>
+<div class="olist arabic">
+<div class="title">Procedure: Create a new LMR using GUI</div>
+<ol class="arabic">
+<li>
+<p>Navigate to the 'LMR' tab in the SCCP Management window and click on the 'Create LMR' button.
+This will launch a new pop-up 'Create Long Message Rule'.</p>
+</li>
+<li>
+<p>In the 'Create Long Message Rule' pop-up, add details of the new LMR being defined.
+You must ensure that you fill in all the mandatory parameters.
+For definition of these parameters, please refer to the description of the CLI command for the same in the preceding section.</p>
+</li>
+<li>
+<p>Verify the details entered and then click on the 'Create' button.
+A new LMR will be created with parameters as specified.
+If there is an error in creating the LMR then you will find the details of the error in the Management Console Log section below.</p>
+</li>
+<li>
+<p>Click on the 'Close' button to close the 'Create Long Message Rule' pop-up.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_lmr_modify"><a class="anchor" href="#_managing_sccp_lmr_modify"></a>Modify a Long Message Rule</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_lmr_modify_cli"><a class="anchor" href="#_managing_sccp_lmr_modify_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can modify the values of a LMR by issuing the command <code>sccp lmr modify</code> with appropriate parameters as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp lmr modify
+
+SYNOPSIS
+	sccp lmr modify &lt;id&gt; first-spc &lt;first-spc&gt; last-spc &lt;last-spc&gt; rule-type &lt;long-message-rule-type&gt;
+	stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	This command is used to modify the values of a Long Message Rule previously
+	defined.
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;id&gt;			-	Identifier of the Long Message Rule to be
+					modified.
+
+	Optional Parameters
+	&lt;first-spc&gt;		-	The first value of the remote signaling
+					point code range, for which this Long message Rule
+					will apply.
+
+	&lt;last-spc&gt;		-	The last value of the remote signaling point code
+					range. If Long message rule specifies a single
+					signaling point code, this value must be equal to
+					first-spc.
+
+	&lt;long-message-rule-type&gt;-	Message types used for the remote signaling point
+					codes range.
+					Possible values : udt, xudt, ludt and ludt_segm.
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_lmr_delete"><a class="anchor" href="#_managing_sccp_lmr_delete"></a>Delete a Long Message Rule</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_lmr_delete_cli"><a class="anchor" href="#_managing_sccp_lmr_delete_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can delete a LMR by issuing the command <code>sccp lmr delete</code> with appropriate parameters as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp lmr delete
+
+SYNOPSIS
+	sccp lmr delete &lt;id&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	This command is used to delete a Long Message Rule.
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;id&gt;		-	The identifier of the Long Message Rule that is being
+				deleted.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp lmr delete 1
+
+	The above command will delete the Long Message Rule identified by the number '1'.</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_managing_sccp_lmr_delete_gui"><a class="anchor" href="#_managing_sccp_lmr_delete_gui"></a>Using GUI</h3>
+<div class="olist arabic">
+<div class="title">Procedure: Delete a Long Message Rule using GUI</div>
+<ol class="arabic">
+<li>
+<p>Navigate to the 'LMR' tab in the SCCP Management Unit window and locate the row corresponding to the LMR you wish to delete.</p>
+</li>
+<li>
+<p>In the row corresponding to the identified LMR, click on the red 'x' button in the actions column to delete that LMR.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_csp_show"><a class="anchor" href="#_managing_sccp_csp_show"></a>View all configured Concerned Signaling Point Codes (CSP)</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_csp_show_cli"><a class="anchor" href="#_managing_sccp_csp_show_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can view the details of all configured Concerned Signaling Point Codes by issuing the command <code>sccp csp show</code> as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp csp show
+
+SYNOPSIS
+	sccp csp show id &lt;id&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	This command is used to view the details of all configured Concerned Signaling
+	Point Codes. If an &lt;id&gt; is specified in the command, it will only display the
+	details of the Concerned Signaling Point Code identified by the value of the 'id'
+	specified.
+
+PARAMETERS
+
+	Optional Parameters
+
+	&lt;id&gt;			-	The id of the Concerned Signaling Point Code whose details
+					are to be displayed. If this parameter is not specified,
+					the details of all configured Concerned Signaling Point
+					Codes will be displayed.
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_managing_sccp_csp_show_gui"><a class="anchor" href="#_managing_sccp_csp_show_gui"></a>Using GUI</h3>
+<div class="paragraph">
+<p>Navigate to the specific SCCP Management unit and switch to the 'CSP' tab.
+Here you can view a list of all the configured Concerned Signaling Point Code.
+Every correctly configured CSP will be displayed in a row along with the defined values.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_csp_create"><a class="anchor" href="#_managing_sccp_csp_create"></a>Create a new Concerned Signaling Point Code</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_csp_create_cli"><a class="anchor" href="#_managing_sccp_csp_create_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can create a new CSP by issuing the command <code>sccp csp create</code> with appropriate parameters as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp csp create
+
+SYNOPSIS
+	sccp csp create &lt;id&gt; &lt;spc&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	This command is used to define a new Concerned Signaling Point Code. Concerned
+	signaling point codes define a DPC list that will be notified when local SSN is
+	registered (SSA messages) or unregistered (SSP messages).
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;id&gt;			-	A unique number to identify this
+					Concerned Signaling Point Code.
+
+	&lt;spc&gt;			-	The Remote Signaling Point Code,
+					which will be notified.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+
+EXAMPLES
+	sccp csp create 1 201
+
+	sccp csp create 2 202</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_managing_sccp_csp_create_gui"><a class="anchor" href="#_managing_sccp_csp_create_gui"></a>Using GUI</h3>
+<div class="olist arabic">
+<div class="title">Procedure: Create a new CSP using GUI</div>
+<ol class="arabic">
+<li>
+<p>Navigate to the 'CSP' tab in the SCCP Management window and click on the 'Create CSP' button.
+This will launch a new pop-up 'Create Concerned Signaling Point Code'.</p>
+</li>
+<li>
+<p>In the 'Create Concerned Signaling Point Code' pop-up, add details of the new CSP being defined.
+You must ensure that you fill in all the mandatory parameters.
+For definition of these parameters, please refer to the description of the CLI command for the same in the preceding section.</p>
+</li>
+<li>
+<p>Verify the details entered and then click on the 'Create' button.
+A new CSP will be created with parameters as specified.
+If there is an error in creating the CSP then you will find the details of the error in the Management Console Log section below.</p>
+</li>
+<li>
+<p>Click on the 'Close' button to close the 'Create Concerned Signaling Point Code' pop-up.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_csp_modify"><a class="anchor" href="#_managing_sccp_csp_modify"></a>Modify a Concerned Signaling Point Code</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_csp_modify_cli"><a class="anchor" href="#_managing_sccp_csp_modify_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can modify the values of a CSP by issuing the command <code>sccp csp modify</code> with appropriate parameters as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp csp modify
+
+SYNOPSIS
+	sccp csp modify &lt;id&gt; &lt;spc&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	This command is used to modify the values of a Concerned Signaling Point Code
+	previously defined.
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;id&gt;			-	Identifier of the Concerned Signaling Point Code
+					to be modified.
+
+	&lt;spc&gt;			-	The Remote Signaling Point Code, which will be
+					notified.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_sccp_csp_delete"><a class="anchor" href="#_managing_sccp_csp_delete"></a>Delete a Concerned Signaling Point Code</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_managing_sccp_csp_delete_cli"><a class="anchor" href="#_managing_sccp_csp_delete_cli"></a>Using CLI</h3>
+<div class="paragraph">
+<p>You can delete a CSP by issuing the command <code>sccp csp delete</code> with appropriate parameters as described below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name
+	sccp csp delete
+
+SYNOPSIS
+	sccp csp delete &lt;id&gt; stackname &lt;stack-name&gt;
+
+DESCRIPTION
+	This command is used to delete a Concerned Signaling Point Code.
+
+PARAMETERS
+
+	Standard Parameters
+
+	&lt;id&gt;		-	The identifier of the Concerned Signaling Point Code
+				that is being deleted.
+
+	Optional Parameters
+
+	&lt;stack-name&gt;	-	Name of the stack on which this command is executed.
+					If not passed, the first stack configured in ShellExecutor
+					will be used.
+
+EXAMPLES
+	sccp csp delete 1
+
+	The above command will delete the Concerned Signaling Point Code identified by the
+	number '1'.</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_managing_sccp_csp_delete_gui"><a class="anchor" href="#_managing_sccp_csp_delete_gui"></a>Using GUI</h3>
+<div class="olist arabic">
+<div class="title">Procedure: Delete a Concerned Signaling Point Code using GUI</div>
+<ol class="arabic">
+<li>
+<p>Navigate to the 'CSP' tab in the SCCP Management Unit window and locate the row corresponding to the CSP you wish to delete.</p>
+</li>
+<li>
+<p>In the row corresponding to the identified CSP, click on the red 'x' button in the actions column to delete that CSP.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2019-08-14 16:42:49 UTC
+</div>
+</div>
+</body>
+</html>
